@@ -1,0 +1,22 @@
+{
+  "name": "vellum",
+  "version": "0.1.0",
+  "homepage": "https://github.com/mobify/vellum",
+  "authors": [
+    "Kyle Peatt <kpeatt@gmail.com>"
+  ],
+  "main": "dist/_vellum.scss",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "spline": "~0.1.1",
+    "modularized-normalize-scss": "~3.0.0"
+  }
+}

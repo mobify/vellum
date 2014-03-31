@@ -1,0 +1,124 @@
+// TYPOGRAPHY
+// ==========
+
+// HTML
+// ----
+html {
+    font-size: $rem-base;
+}
+
+// BODY
+// ----
+
+body {
+    color: $base-font-color;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+}
+
+// HEADERS
+// -------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+
+    font-family: $header-font-family;
+    line-height: 1.25;
+}
+
+%x-h1,
+h1,
+.x-h1 {
+    font-size: rem(28px);
+}
+
+%x-h2,
+h2,
+.x-h2 {
+    font-size: rem(24px);
+}
+
+%x-h3,
+h3,
+.x-h3 {
+    font-size: rem(20px);
+}
+
+%x-h4,
+h4,
+.x-h4 {
+    font-size: rem(18px);
+}
+
+%x-h5,
+h5,
+.x-h5 {
+    font-size: rem(16px);
+}
+
+%x-h6,
+h6,
+.x-h6 {
+    font-size: $base-font-size;
+}
+
+p {
+    margin: 0 0 $base-margin;
+}
+
+a {
+    color: $base-link-color;
+    text-decoration: none;
+
+    &:active,
+    &:focus {
+        color: $active-link-color;
+    }
+}
+
+hr {
+    margin: $base-line-height 0;
+    border: 1px solid $base-border-color;
+    border-width: 0 0 1px;
+}
+
+img {
+    margin: 0;
+    max-width: 100%;
+}
+
+address {
+    display: block;
+    margin: 0 0 $base-margin;
+}
+
+hgroup {
+    margin-bottom: $base-margin;
+}
+
+del {
+    color: lighten($base-font-color, 15);
+}
+
+blockquote {
+    margin: $base-line-height 0;
+    padding-left: $base-margin;
+    border-left: 2px solid $base-border-color;
+    
+    color: lighten($base-font-color, 15);
+}
+
+cite {
+    color: lighten($base-font-color, 25);
+    font-style: italic;
+    
+    &:before {
+        content: '\2014 \00A0';
+    }
+}

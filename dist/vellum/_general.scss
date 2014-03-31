@@ -1,0 +1,14 @@
+// GENERAL
+// =======
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html {
+    // This fixes an issue with text resizing on iOS devices rotation
+    // http://stackoverflow.com/a/2711132/1757952
+    -webkit-text-size-adjust: none;
+}
