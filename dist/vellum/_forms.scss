@@ -104,14 +104,15 @@ input[type="radio"] {
         
         &::after {
             content: '';
-        
+
             position: absolute;
 
             display: block;
-            top: 20%;
-            left: 20%;
-            right: 20%;
-            bottom: 20%;
+            
+            font-size: rem(32px);
+            font-family: $form-font-family;
+            color: $grey5;
+            line-height: $form-font-size;
         }
     }
 }
@@ -120,8 +121,23 @@ input[type="radio"] {
     border-radius: rem(24px);
     
     &:after {
+        top: 20%;
+        left: 20%;
+        right: 20%;
+        bottom: 20%;
+
         background: $grey5;
         border-radius: rem(24px);
+    }
+}
+
+input[type="checkbox"] {
+    &:checked {
+        &:after {
+            content: '\2714';
+            
+            top: 0;
+        }
     }
 }
 

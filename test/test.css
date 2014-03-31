@@ -456,16 +456,24 @@ input[type="checkbox"], input[type="radio"] {
       content: '';
       position: absolute;
       display: block;
-      top: 20%;
-      left: 20%;
-      right: 20%;
-      bottom: 20%; }
+      font-size: 2rem;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #343839;
+      line-height: 0.875rem; }
 
 input[type="radio"] {
   border-radius: 1.5rem; }
   input[type="radio"]:after {
+    top: 20%;
+    left: 20%;
+    right: 20%;
+    bottom: 20%;
     background: #343839;
     border-radius: 1.5rem; }
+
+input[type="checkbox"]:checked:after {
+  content: '\2714';
+  top: 0; }
 
 button, input[type="submit"] {
   display: block;
