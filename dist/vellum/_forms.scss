@@ -72,7 +72,7 @@ textarea {
 
 select {
     padding: rem(8px) rem(15px);
-    border-color: $grey3;
+    border-color: darken($form-border-color, 0.25);
     
     text-indent: rem(5px);
     
@@ -87,10 +87,10 @@ input[type="radio"] {
     top: -2px; // Aligns them with any inline content that follows
 
     display: inline-block;
-    margin-right: $base-line-height / 4;
+    margin-right: $base-margin;
     width: rem(24px);
     height: rem(24px);
-    border-color: $grey3;
+    border-color: darken($form-border-color, 0.25);
     
     background: $grey1 $light-gradient;
     
@@ -150,7 +150,7 @@ input[type="submit"] {
     padding: rem(10px) rem(15px);
     
     background: $light-gradient;
-    border-color: $grey3;
+    border-color: darken($form-border-color, 0.25);
 
     -webkit-appearance: none;
 }

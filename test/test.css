@@ -433,7 +433,7 @@ textarea {
 
 select {
   padding: 0.5rem 0.9375rem;
-  border-color: #95a5a6;
+  border-color: #bcc2c6;
   text-indent: 0.3125rem;
   -webkit-appearance: menulist-button; }
 
@@ -441,10 +441,10 @@ input[type="checkbox"], input[type="radio"] {
   position: relative;
   top: -2px;
   display: inline-block;
-  margin-right: 0.32812rem;
+  margin-right: 0.65625rem;
   width: 1.5rem;
   height: 1.5rem;
-  border-color: #95a5a6;
+  border-color: #bcc2c6;
   background: #ecf0f1 linear-gradient(#ffffff, #ecf0f1);
   vertical-align: middle;
   -webkit-appearance: none; }
@@ -482,7 +482,7 @@ button, input[type="submit"] {
   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ecf0f1));
   background: -webkit-linear-gradient(#ffffff, #ecf0f1);
   background: linear-gradient(#ffffff, #ecf0f1);
-  border-color: #95a5a6;
+  border-color: #bcc2c6;
   -webkit-appearance: none; }
 
 ul, ol {
