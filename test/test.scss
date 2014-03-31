@@ -1,3 +1,21 @@
 @import "bower_components/modularized-normalize-scss/_normalize.scss";
 @import "bower_components/spline/dist/_spline.scss";
 @import "../dist/_vellum.scss";
+
+// Test CSS
+
+body {
+    padding: $base-margin;
+}
+
+h1[id] {
+    margin-bottom: $base-margin;
+}
+
+ul.default {
+    @extend %default-ul;
+}
+
+ol.default {
+    @extend %default-ol;
+}

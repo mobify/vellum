@@ -94,8 +94,8 @@ $base-border-color: $grey2; // Light Grey
 // ex: background-image: $light-gradient;
 
 // Neutrals
-$gradient: linear-gradient($grey2, $grey3);
-$light-gradient: linear-gradient($grey1, $grey2);
+$gradient: linear-gradient($grey1, $grey2);
+$light-gradient: linear-gradient(white, $grey1);
 $dark-gradient: linear-gradient(grey3, $grey4);
 
 $gradient-reverse: linear-gradient(to top, $grey2, $grey3);

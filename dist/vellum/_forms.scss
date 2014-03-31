@@ -1,7 +1,3 @@
-//
-// Forms
-// --------------------------------------------------
-
 $form-border-color: $base-border-color;
 $form-border-color-active: darken($base-border-color, 10);
 $form-border-color-focus: $base-accent-color;
@@ -10,7 +6,8 @@ $form-font-size: $base-font-size;
 $form-font-family: $base-font-family;
 
 fieldset {
-    margin: 0 0 ($base-line-height / 2) 0;
+    padding: 0;
+    margin: 0 0 $base-margin 0;
     border: 0;
 }
 
@@ -25,10 +22,9 @@ select {
 
 label {
     font-weight: bold;
-    margin-bottom: $base-line-height / 4;
+    margin-bottom: $base-margin / 2;
 }
 
-// Stretch inputs/textareas to full width and add height to maintain a consistent baseline
 select,
 textarea,
 input[type="text"],
@@ -46,8 +42,8 @@ input[type="url"],
 input[type="tel"],
 input[type="color"] {
     width: 100%;
-    height: 40px;
-    padding: 10px 15px;
+    height: rem(40px);
+    padding: rem(10px) rem(15px);
     margin-bottom: $base-margin;
     border: $base-border;
 
@@ -75,27 +71,70 @@ textarea {
 }
 
 select {
-    padding: 8px 15px;
-
-    background-color: #f8f8f8;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+    padding: rem(8px) rem(15px);
+    border-color: $grey3;
+    
+    text-indent: rem(5px);
+    
+    // Turn Select Appearance back on
+    // If you want to style this select box, delete this line
+    -webkit-appearance: menulist-button;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
     position: relative;
-    top: 4px; // Aligns them with any inline content that follows
+    top: -2px; // Aligns them with any inline content that follows
 
-    display: inline;
+    display: inline-block;
     margin-right: $base-line-height / 4;
-    width: 24px;
-    height: 24px;
+    width: rem(24px);
+    height: rem(24px);
+    border-color: $grey3;
     
-    + label {
-        vertical-align: middle;
+    background: $grey1 $light-gradient;
+    
+    vertical-align: middle;
+
+    -webkit-appearance: none;
+    
+    &:checked {
+        background: $grey1;
+        box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1);
+        
+        &::after {
+            content: '';
+        
+            position: absolute;
+
+            display: block;
+            top: 20%;
+            left: 20%;
+            right: 20%;
+            bottom: 20%;
+        }
     }
 }
 
 input[type="radio"] {
-    border-radius: 24px;
+    border-radius: rem(24px);
+    
+    &:after {
+        background: $grey5;
+        border-radius: rem(24px);
+    }
+}
+
+// Buttons
+
+button,
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: rem(10px) rem(15px);
+    
+    background: $light-gradient;
+    border-color: $grey3;
+
+    -webkit-appearance: none;
 }
