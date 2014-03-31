@@ -459,12 +459,12 @@ input[type="checkbox"], input[type="radio"] {
       top: 20%;
       left: 20%;
       right: 20%;
-      bottom: 20%;
-      background: #343839; }
+      bottom: 20%; }
 
 input[type="radio"] {
   border-radius: 1.5rem; }
   input[type="radio"]:after {
+    background: #343839;
     border-radius: 1.5rem; }
 
 button, input[type="submit"] {
@@ -502,6 +502,24 @@ dt {
 
 dd {
   margin: 0; }
+
+table {
+  border-collapse: collapse;
+  margin: 0.65625rem 0;
+  width: 100%; }
+
+th {
+  border-bottom: 1px solid #949da4;
+  font-weight: bold;
+  padding: 0.65625rem 0;
+  text-align: left; }
+
+td {
+  border-bottom: 1px solid #bdc3c7;
+  padding: 0.65625rem 0; }
+
+tr, td, th {
+  vertical-align: middle; }
 
 body {
   padding: 0.65625rem; }
