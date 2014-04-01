@@ -12,10 +12,10 @@ $base-font-family: $sans-serif;
 $header-font-family: $base-font-family;
 
 // Sizes
-
 $rem-base: 100%;
 $base-font-size: rem(14px);
 $base-line-height: $base-font-size * 1.5;
+
 
 // SIZING
 // ------
@@ -23,11 +23,12 @@ $base-line-height: $base-font-size * 1.5;
 $base-border-radius: rem(4px);
 $base-margin: $base-line-height * .5;
 
+
 // COLOURS
 // -------
 
-// ## Definitions
-// --------------
+// ### Definitions
+//
 // Color variables should have a descriptive variable name
 
 // Neutrals
@@ -43,8 +44,8 @@ $turquoise: #16a085;
 $green: #27ae60;
 $red: #c0392b;
 
-// ## Assignments
-// --------------
+// ### Assignments
+//
 // Color variables declared above get assigned to their function in this section
 
 // Neutrals
@@ -88,8 +89,8 @@ $base-body-color: white;
 // Border
 $base-border-color: $grey2; // Light Grey
 
-// ## Gradient Variables
-// ----------------------
+// ### Gradient Variables
+//
 // Variables containing all of the gradients used in the site
 // ex: background-image: $light-gradient;
 
@@ -116,6 +117,7 @@ $dark-accent-gradient: linear-gradient($accent, $dark-accent);
 $accent-gradient-reverse: linear-gradient(to top, $light-accent, $accent);
 $accent-dark-gradient-reverse: linear-gradient(to top, $accent, $dark-accent);
 
+
 // Z-INDEX
 // -------
 //
@@ -128,6 +130,7 @@ $layer-overlay:   1000; // "overlay" should exist in front of everything else
 $layer-frontrow:  100;  // "frontrow" is a layer that is in front of most things
 $layer-stage:     10;   // "stage" is used for 99% of content placed in front of the backdrop
 $layer-backdrop:  1;    // "backdrop" is used for layers behind everything else
+
 
 // SHORTHAND VALUES
 // ----------------
