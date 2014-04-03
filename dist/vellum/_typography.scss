@@ -32,39 +32,33 @@ h6 {
     line-height: 1.25;
 }
 
-%x-h1,
-h1,
-.x-h1 {
+%h1,
+h1 {
     font-size: rem(28px);
 }
 
-%x-h2,
-h2,
-.x-h2 {
+%h2,
+h2 {
     font-size: rem(24px);
 }
 
-%x-h3,
-h3,
-.x-h3 {
+%h3,
+h3 {
     font-size: rem(20px);
 }
 
-%x-h4,
-h4,
-.x-h4 {
+%h4,
+h4 {
     font-size: rem(18px);
 }
 
-%x-h5,
-h5,
-.x-h5 {
+%h5,
+h5 {
     font-size: rem(16px);
 }
 
-%x-h6,
-h6,
-.x-h6 {
+%h6,
+h6 {
     font-size: $base-font-size;
 }
 
