@@ -48,11 +48,11 @@ $red: #c0392b;
 // Color variables declared above get assigned to their function in this section
 
 // Neutrals
-$grey1: $xlight-grey;
-$grey2: $light-grey;
-$grey3: $medium-grey;
-$grey4: $dark-grey;
-$grey5: $xdark-grey;
+$grey10: $xlight-grey;
+$grey20: $light-grey;
+$grey30: $medium-grey;
+$grey40: $dark-grey;
+$grey50: $xdark-grey;
 
 // Brand
 $brand: $blue;
@@ -78,7 +78,7 @@ $dark-error: darken($error, 60);
 $base-font-color: $grey5;
 $base-accent-color: $accent;
 
-//  Text Link Colors
+// Text Link Colors
 $base-link-color: $accent;
 $active-link-color: darken($base-accent-color, 15);
 
