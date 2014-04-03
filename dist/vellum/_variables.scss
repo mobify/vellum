@@ -76,7 +76,7 @@ $light-error: lighten($error, 60);
 $dark-error: darken($error, 60);
 
 // Font Colors
-$base-font-color: $grey5;
+$base-font-color: $grey50;
 $base-accent-color: $accent;
 
 // Text Link Colors
@@ -87,7 +87,7 @@ $active-link-color: darken($base-accent-color, 15);
 $base-body-color: white;
 
 // Border
-$base-border-color: $grey2; // Light Grey
+$base-border-color: $grey20; // Light Grey
 
 // ### Gradient Variables
 //
@@ -95,13 +95,13 @@ $base-border-color: $grey2; // Light Grey
 // ex: background-image: $light-gradient;
 
 // Neutrals
-$gradient: linear-gradient($grey1, $grey2);
-$light-gradient: linear-gradient(white, $grey1);
-$dark-gradient: linear-gradient(grey3, $grey4);
+$gradient: linear-gradient($grey10, $grey20);
+$light-gradient: linear-gradient(white, $grey10);
+$dark-gradient: linear-gradient($grey30, $grey40);
 
-$gradient-reverse: linear-gradient(to top, $grey2, $grey3);
-$light-gradient-reverse: linear-gradient(to top, $grey1, $grey2);
-$dark-gradient-reverse: linear-gradient(to top, $grey3, $grey4);
+$gradient-reverse: linear-gradient(to top, $grey20, $grey30);
+$light-gradient-reverse: linear-gradient(to top, $grey10, $grey20);
+$dark-gradient-reverse: linear-gradient(to top, $grey30, $grey40);
 
 // Brand
 $brand-gradient: linear-gradient($light-brand, $brand);
