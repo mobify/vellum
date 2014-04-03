@@ -25,6 +25,12 @@ select {
 label {
     font-weight: bold;
     margin-bottom: $base-margin / 2;
+    
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    
+    &:active {
+        color: $active-link-color;
+    }
 }
 
 select,
@@ -99,6 +105,11 @@ select {
     vertical-align: middle;
 
     -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    &:active {
+        background: $grey20 $light-gradient-reverse;
+    }
     
     &:checked {
         background: $grey10;
