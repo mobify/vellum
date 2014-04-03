@@ -100,7 +100,7 @@ $light-gradient: linear-gradient(white, $grey10);
 $dark-gradient: linear-gradient($grey30, $grey40);
 
 $gradient-reverse: linear-gradient(to top, $grey20, $grey30);
-$light-gradient-reverse: linear-gradient(to top, $grey10, $grey20);
+$light-gradient-reverse: linear-gradient(to top, white, $grey10);
 $dark-gradient-reverse: linear-gradient(to top, $grey30, $grey40);
 
 // Brand
