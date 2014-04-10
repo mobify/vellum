@@ -12,27 +12,26 @@ ol {
 }
 
 // Use this extension to turn default styling for unordered lists back on
-%default-ul {
+%list-bullet {
     list-style-type: disc;
-    margin-bottom: $base-margin;
-    padding-left: $base-line-height;
+    margin-bottom: $margin;
+    padding-left: $line-height;
 }
 
 // Use this extension to turn default styling for ordered lists back on
-%default-ol {
+%list-decimal {
     list-style-type: decimal;
-    margin-bottom: $base-margin;
-    padding-left: $base-line-height;
+    margin-bottom: $margin;
+    padding-left: $line-height;
 }
 
 dl {
-    line-height: $base-line-height;
-    margin-bottom: $base-margin;
+    margin-bottom: $margin;
 }
 
 dt {
     font-weight: bold;
-    margin-top: $base-margin;
+    margin-top: $margin;
 }
 
 dd {
