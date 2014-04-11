@@ -100,7 +100,7 @@ select {
     height: rem(24px);
     border: 1px solid darken($form-border-color, 0.25);
     
-    background: $grey10 $light-gradient;
+    background: $grey-10 $light-gradient;
     
     vertical-align: middle;
 
@@ -108,11 +108,11 @@ select {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
     &:active {
-        background: $grey20 $light-gradient-reverse;
+        background: $grey-20 $light-gradient-reverse;
     }
     
     &:checked {
-        background: $grey10;
+        background: $grey-10;
         box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1);
         
         &::after {
@@ -134,7 +134,7 @@ select {
         right: 20%;
         bottom: 20%;
 
-        background: $grey50;
+        background: $grey-50;
         border-radius: rem(24px);
     }
 }
@@ -148,7 +148,7 @@ select {
             
             font-size: rem(32px);
             font-family: $form-font-family;
-            color: $grey50;
+            color: $grey-50;
             line-height: $form-font-size;
         }
     }
