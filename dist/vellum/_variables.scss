@@ -29,6 +29,8 @@ $base-margin: $base-line-height * .5;
 // ### Definitions
 //
 // Color variables should have a descriptive variable name
+// They get modifiers appended to the end of them.
+// eg. $success-color, $success-color-light, $success-color-dark
 
 // Neutrals
 $grey-10: #eee;
