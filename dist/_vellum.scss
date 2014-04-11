@@ -10,10 +10,9 @@
 // GENERAL
 // -------
 //
-// General styles. Typically these cover your basic HTML element
-// styles like html, lists, img, etc.
+// Document styles. Typically these cover your document-wide styles.
 
-@import 'vellum/general';
+@import 'vellum/document';
 
 
 // TYPOGRAPHY
@@ -41,11 +40,3 @@
 // -----
 
 @import 'vellum/tables';
-
-
-// STATES
-// ------
-//
-// State classes, typically for use with Javascript
-
-// @import 'vellum/states';
