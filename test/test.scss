@@ -5,17 +5,17 @@
 // Test CSS
 
 body {
-    padding: $base-margin;
+    padding: $margin;
 }
 
 h1[id] {
-    margin-bottom: $base-margin;
+    margin-bottom: $margin;
 }
 
 ul.default {
-    @extend %default-ul;
+    @extend %list-bullet;
 }
 
 ol.default {
-    @extend %default-ol;
+    @extend %list-decimal;
 }

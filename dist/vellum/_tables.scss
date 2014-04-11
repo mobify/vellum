@@ -1,19 +1,18 @@
 table {
     border-collapse: collapse;
-    margin: $base-margin 0;
+    margin: $margin 0;
     width: 100%;
 }
 
 th {
-    border-bottom: 1px solid darken($base-border-color, 15%);
+    border-bottom: 1px solid darken($border-color, 15%);
     font-weight: bold;
-    padding: $base-margin 0;
+    padding: $margin 0;
     text-align: left;
 }
 
 td {
-  border-bottom: 1px solid $base-border-color;
-  padding: $base-margin 0;
+  padding: $margin 0;
 }
 
 tr,

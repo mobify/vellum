@@ -5,10 +5,10 @@
 // ----
 
 body {
-    color: $base-font-color;
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
+    color: $font-color;
+    font-family: $font-family;
+    font-size: $font-size;
+    line-height: $line-height;
 }
 
 // HEADERS
@@ -22,7 +22,6 @@ h5,
 h6 {
     margin: 0;
 
-    font-family: $header-font-family;
     line-height: 1.25;
 }
 
@@ -53,15 +52,15 @@ h5 {
 
 %h6,
 h6 {
-    font-size: $base-font-size;
+    font-size: $font-size;
 }
 
 p {
-    margin: 0 0 $base-margin;
+    margin: 0 0 $margin;
 }
 
 a {
-    color: $base-link-color;
+    color: $link-color;
     text-decoration: none;
 
     &:active,
@@ -71,8 +70,8 @@ a {
 }
 
 hr {
-    margin: $base-line-height 0;
-    border: 1px solid $base-border-color;
+    margin: $line-height 0;
+    border: 1px solid $border-color;
     border-width: 0 0 1px;
 }
 
@@ -83,27 +82,27 @@ img {
 
 address {
     display: block;
-    margin: 0 0 $base-margin;
+    margin: 0 0 $margin;
 }
 
 hgroup {
-    margin-bottom: $base-margin;
+    margin-bottom: $margin;
 }
 
 del {
-    color: lighten($base-font-color, 15);
+    color: lighten($font-color, 15);
 }
 
 blockquote {
-    margin: $base-line-height 0;
-    padding-left: $base-margin;
-    border-left: 2px solid $base-border-color;
+    margin: $line-height 0;
+    padding-left: $margin;
+    border-left: 2px solid $border-color;
     
-    color: lighten($base-font-color, 15);
+    color: lighten($font-color, 15);
 }
 
 cite {
-    color: lighten($base-font-color, 25);
+    color: lighten($font-color, 25);
     font-style: italic;
     
     &:before {

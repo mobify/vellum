@@ -5,22 +5,18 @@
 // TYPOGRAPHY
 // ----------
 
-$sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif: Georgia, Times, "Times New Roman", serif;
-
-$base-font-family: $sans-serif;
-$header-font-family: $base-font-family;
+$font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // Sizes
-$base-font-size: 14px;
-$base-line-height: $base-font-size * 1.5;
+$font-size: 14px;
+$line-height: $font-size * 1.5;
 
 
 // SIZING
 // ------
 
-$base-border-radius: 4px;
-$base-margin: $base-line-height * .5;
+$border-radius: 4px;
+$margin: $line-height * .5;
 
 
 // COLOURS
@@ -75,18 +71,18 @@ $light-error: lighten($error, 60);
 $dark-error: darken($error, 60);
 
 // Font Colors
-$base-font-color: $grey50;
-$base-accent-color: $accent;
+$font-color: $grey50;
+$accent-color: $accent;
 
 // Text Link Colors
-$base-link-color: $accent;
-$active-link-color: darken($base-accent-color, 15);
+$link-color: $accent;
+$active-link-color: darken($accent-color, 15);
 
 // Body Color
-$base-body-color: white;
+$body-color: white;
 
 // Border
-$base-border-color: $grey20; // Light Grey
+$border-color: $grey20; // Light Grey
 
 // ### Gradient Variables
 //
@@ -135,5 +131,6 @@ $layer-backdrop:  1;    // "backdrop" is used for layers behind everything else
 // ----------------
 //
 // This is a place to collect quick ways to write certain properties that you re-use often
+// eg. $border: 1px solid $border-color;
 
-$base-border: 1px solid $base-border-color;
+$border: 1px solid $border-color;
