@@ -2,7 +2,7 @@
 // -----------------------
 $form-border-color: $base-border-color;
 $form-border-color-active: darken($base-border-color, 10);
-$form-border-color-focus: $base-accent-color;
+$form-border-color-focus: $accent-color;
 $form-border-radius: $base-border-radius;
 $form-font-size: $base-font-size;
 $form-font-family: $base-font-family;
@@ -100,7 +100,7 @@ select {
     height: 24px;
     border: 1px solid darken($form-border-color, 0.25);
     
-    background: $grey-10 $light-gradient;
+    background: $grey-10 $grey-gradient;
     
     vertical-align: middle;
 
@@ -108,7 +108,7 @@ select {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
     &:active {
-        background: $grey-20 $light-gradient-reverse;
+        background: $grey-20 $grey-gradient-reverse;
     }
     
     &:checked {
@@ -162,7 +162,7 @@ button,
     width: 100%;
     padding: 10px 15px;
     
-    background: $light-gradient;
+    background: $grey-gradient;
     border: 1px solid darken($form-border-color, 0.25);
 
     -webkit-appearance: none;
