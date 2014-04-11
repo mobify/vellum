@@ -1,12 +1,6 @@
 // TYPOGRAPHY
 // ==========
 
-// HTML
-// ----
-html {
-    font-size: $rem-base;
-}
-
 // BODY
 // ----
 
@@ -34,27 +28,27 @@ h6 {
 
 %h1,
 h1 {
-    font-size: rem(28px);
+    font-size: 28px;
 }
 
 %h2,
 h2 {
-    font-size: rem(24px);
+    font-size: 24px;
 }
 
 %h3,
 h3 {
-    font-size: rem(20px);
+    font-size: 20px;
 }
 
 %h4,
 h4 {
-    font-size: rem(18px);
+    font-size: 18px;
 }
 
 %h5,
 h5 {
-    font-size: rem(16px);
+    font-size: 16px;
 }
 
 %h6,

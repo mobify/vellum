@@ -50,8 +50,8 @@ textarea,
 [type="tel"],
 [type="color"] {
     width: 100%;
-    height: rem(40px);
-    padding: rem(10px) rem(15px);
+    height: 40px;
+    padding: 10px 15px;
     margin-bottom: $base-margin;
     border: $base-border;
 
@@ -79,10 +79,10 @@ textarea {
 }
 
 select {
-    padding: rem(8px) rem(15px);
+    padding: 8px 15px;
     border-color: darken($form-border-color, 0.25);
     
-    text-indent: rem(5px);
+    text-indent: 5px;
     
     // Turn Select Appearance back on
     // If you want to style this select box, delete this line
@@ -96,8 +96,8 @@ select {
 
     display: inline-block;
     margin-right: $base-margin;
-    width: rem(24px);
-    height: rem(24px);
+    width: 24px;
+    height: 24px;
     border: 1px solid darken($form-border-color, 0.25);
     
     background: $grey-10 $light-gradient;
@@ -126,7 +126,7 @@ select {
 }
 
 [type="radio"] {
-    border-radius: rem(24px);
+    border-radius: 24px;
     
     &:after {
         top: 20%;
@@ -135,7 +135,7 @@ select {
         bottom: 20%;
 
         background: $grey-50;
-        border-radius: rem(24px);
+        border-radius: 24px;
     }
 }
 
@@ -146,7 +146,7 @@ select {
             
             top: 0;
             
-            font-size: rem(32px);
+            font-size: 32px;
             font-family: $form-font-family;
             color: $grey-50;
             line-height: $form-font-size;
@@ -160,7 +160,7 @@ button,
 [type="submit"] {
     display: block;
     width: 100%;
-    padding: rem(10px) rem(15px);
+    padding: 10px 15px;
     
     background: $light-gradient;
     border: 1px solid darken($form-border-color, 0.25);
