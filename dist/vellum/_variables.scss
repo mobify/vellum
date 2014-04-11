@@ -39,55 +39,55 @@ $dark-grey: #7f8c8d;
 $xdark-grey: #343839;
 
 // Colors
-$blue: #3498db;
-$turquoise: #16a085;
-$green: #27ae60;
-$red: #c0392b;
+$blue-color: #3498db;
+$turquoise-color: #16a085;
+$green-color: #27ae60;
+$red-color: #c0392b;
 
 // ### Assignments
 //
 // Color variables declared above get assigned to their function in this section
 
 // Neutrals
-$grey10: $xlight-grey;
-$grey20: $light-grey;
-$grey30: $medium-grey;
-$grey40: $dark-grey;
-$grey50: $xdark-grey;
+$grey-10: $xlight-grey;
+$grey-20: $light-grey;
+$grey-30: $medium-grey;
+$grey-40: $dark-grey;
+$grey-50: $xdark-grey;
 
 // Brand
-$brand: $blue;
-$light-brand: lighten($brand, 60);
-$dark-brand: darken($brand, 60);
+$brand-color: $blue-color;
+$brand-color-light: lighten($brand-color, 60);
+$brand-color-dark: darken($brand-color, 60);
 
 // Accent
-$accent: $turquoise;
-$light-accent: lighten($accent, 60);
-$dark-accent: darken($accent, 60);
+$accent-color: $turquoise-color;
+$accent-color-light: lighten($accent-color, 60);
+$accent-color-dark: darken($accent-color, 60);
 
 // Success
-$success: $green;
-$light-success: lighten($success, 60);
-$dark-success: darken($success, 60);
+$success-color: $green-color;
+$success-color-light: lighten($success-color, 60);
+$success-color-dark: darken($success-color, 60);
 
 // Error
-$error: $red;
-$light-error: lighten($error, 60);
-$dark-error: darken($error, 60);
+$error-color: $red-color;
+$error-color-light: lighten($error-color, 60);
+$error-color-dark: darken($error-color, 60);
 
 // Font Colors
-$base-font-color: $grey50;
-$base-accent-color: $accent;
+$base-font-color: $grey-50;
+$base-accent-color: $accent-color;
 
 // Text Link Colors
-$base-link-color: $accent;
+$base-link-color: $accent-color;
 $active-link-color: darken($base-accent-color, 15);
 
 // Body Color
 $base-body-color: white;
 
 // Border
-$base-border-color: $grey20; // Light Grey
+$base-border-color: $grey-20; // Light Grey
 
 // ### Gradient Variables
 //
@@ -95,27 +95,27 @@ $base-border-color: $grey20; // Light Grey
 // ex: background-image: $light-gradient;
 
 // Neutrals
-$gradient: linear-gradient($grey10, $grey20);
-$light-gradient: linear-gradient(white, $grey10);
-$dark-gradient: linear-gradient($grey30, $grey40);
+$gradient: linear-gradient($grey-10, $grey-20);
+$light-gradient: linear-gradient(white, $grey-10);
+$dark-gradient: linear-gradient($grey-30, $grey-40);
 
-$gradient-reverse: linear-gradient(to top, $grey20, $grey30);
-$light-gradient-reverse: linear-gradient(to top, white, $grey10);
-$dark-gradient-reverse: linear-gradient(to top, $grey30, $grey40);
+$gradient-reverse: linear-gradient(to top, $grey-20, $grey-30);
+$light-gradient-reverse: linear-gradient(to top, white, $grey-10);
+$dark-gradient-reverse: linear-gradient(to top, $grey-30, $grey-40);
 
 // Brand
-$brand-gradient: linear-gradient($light-brand, $brand);
-$dark-brand-gradient: linear-gradient($brand, $dark-brand);
+$brand-gradient: linear-gradient($brand-color-light, $brand-color);
+$brand-dark-gradient: linear-gradient($brand-color, $brand-color-dark);
 
-$brand-gradient-reverse: linear-gradient(to top, $light-brand, $brand);
-$brand-dark-gradient-reverse: linear-gradient(to top, $brand, $dark-brand);
+$brand-gradient-reverse: linear-gradient(to top, $brand-color-light, $brand-color);
+$brand-dark-gradient-reverse: linear-gradient(to top, $brand-color, $brand-color-dark);
 
 // Accent
-$accent-gradient: linear-gradient($light-accent, $accent);
-$dark-accent-gradient: linear-gradient($accent, $dark-accent);
+$accent-gradient: linear-gradient($accent-color-light, $accent-color);
+$accent-dark-gradient: linear-gradient($accent-color, $accent-color-dark);
 
-$accent-gradient-reverse: linear-gradient(to top, $light-accent, $accent);
-$accent-dark-gradient-reverse: linear-gradient(to top, $accent, $dark-accent);
+$accent-gradient-reverse: linear-gradient(to top, $accent-color-light, $accent-color);
+$accent-dark-gradient-reverse: linear-gradient(to top, $accent-color, $accent-color-dark);
 
 
 // Z-INDEX
