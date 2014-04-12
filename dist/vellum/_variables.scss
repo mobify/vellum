@@ -20,7 +20,7 @@ $base-line-height: $base-font-size * 1.5;
 // ------
 
 $base-border-radius: 4px;
-$base-margin: $base-line-height * .5;
+$base-margin: $base-line-height * 0.5;
 
 
 // COLOURS
@@ -123,13 +123,12 @@ $accent-dark-gradient-reverse: linear-gradient(to top, $accent, $dark-accent);
 // This is effectively a list of layers that are available for use to
 // define your z-index properties. Try not to overuse z-index numbers unnecessarily.
 // These can be incremented slightly as necessary.
-// eg. $layer-stage + 1;
+// eg. $stage-layer + 1;
 
-$layer-overlay:   1000; // "overlay" should exist in front of everything else
-$layer-frontrow:  100;  // "frontrow" is a layer that is in front of most things
-$layer-stage:     10;   // "stage" is used for 99% of content placed in front of the backdrop
-$layer-backdrop:  1;    // "backdrop" is used for layers behind everything else
-
+$base-layer:     1;    // "base" should be your first resort for bringing an item up. Likely an icon.
+$stage-layer:    10;   // "stage" should be used when base isn't enough. Likely a menu overlay.
+$frontrow-layer: 100;  // "frontrow" should be used to explicitly place content in front. Likely a modal shield.
+$overlay-layer:  1000; // "overlay" is your last resort for moving content forward. Likely modals.
 
 // SHORTHAND VALUES
 // ----------------
