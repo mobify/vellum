@@ -12,14 +12,14 @@ ol {
 }
 
 // Use this extension to turn default styling for unordered lists back on
-%default-ul {
+%bullet-list {
     list-style-type: disc;
     margin-bottom: $base-margin;
     padding-left: $base-line-height;
 }
 
 // Use this extension to turn default styling for ordered lists back on
-%default-ol {
+%decimal-list {
     list-style-type: decimal;
     margin-bottom: $base-margin;
     padding-left: $base-line-height;
