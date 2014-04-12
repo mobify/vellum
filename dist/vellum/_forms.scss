@@ -56,7 +56,6 @@ textarea,
     border: $base-border;
 
     background-color: #fff;
-    outline: none;
     border-radius: $base-border-radius;
 
     line-height: $base-line-height;
@@ -70,7 +69,6 @@ textarea,
     
     &:focus {
         border-color: $form-border-color-focus;
-        outline: none;
     }
 }
 
