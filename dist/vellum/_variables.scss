@@ -1,139 +1,73 @@
-// VARIABLES
-// =========
-
 
 // TYPOGRAPHY
 // ----------
 
-$sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif: Georgia, Times, "Times New Roman", serif;
+$font-family: "Helvetica Neue", Arial, sans-serif;
+$font-family-heading: Georgia, serif;
 
-$base-font-family: $sans-serif;
-$header-font-family: $base-font-family;
+$font-size: 14px;
 
-// Sizes
-$base-font-size: 14px;
-$base-line-height: $base-font-size * 1.5;
-
-
-// SIZING
-// ------
-
-$base-border-radius: 4px;
-$base-margin: $base-line-height * .5;
+$line-height: $font-size * 1.5;
 
 
 // COLOURS
 // -------
 
-// ### Definitions
-//
-// Color variables should have a descriptive variable name
+$grey-10: hsl(0, 0%,  8%);
+$grey-20: hsl(0, 0%, 18%);
+$grey-50: hsl(0, 0%, 46%);
+$grey-80: hsl(0, 0%, 83%);
+$grey-90: hsl(0, 0%, 93%);
 
-// Neutrals
-$xlight-grey: #ecf0f1;
-$light-grey: #bdc3c7;
-$medium-grey: #95a5a6;
-$dark-grey: #7f8c8d;
-$xdark-grey: #343839;
+$brand-color: blue;
+$brand-color-light: lighten($brand-color, 10%);
+$brand-color-dark: darken($brand-color, 10%);
 
-// Colors
-$blue: #3498db;
-$turquoise: #16a085;
-$green: #27ae60;
-$red: #c0392b;
+$accent-color: cyan;
+$accent-color-light: lighten($accent-color, 10%);
+$accent-color-dark: darken($accent-color, 10%);
 
-// ### Assignments
-//
-// Color variables declared above get assigned to their function in this section
+$font-color: $grey-20;
+$font-color-light: $grey-50;
 
-// Neutrals
-$grey10: $xlight-grey;
-$grey20: $light-grey;
-$grey30: $medium-grey;
-$grey40: $dark-grey;
-$grey50: $xdark-grey;
+$link-color: $accent-color;
+$link-color-active: darken($accent-color, 10%);
 
-// Brand
-$brand: $blue;
-$light-brand: lighten($brand, 60);
-$dark-brand: darken($brand, 60);
+$border-color: $grey-80;
 
-// Accent
-$accent: $turquoise;
-$light-accent: lighten($accent, 60);
-$dark-accent: darken($accent, 60);
+$background-color: white;
 
-// Success
-$success: $green;
-$light-success: lighten($success, 60);
-$dark-success: darken($success, 60);
+$success-color: green;
+$warning-color: yellow;
+$error-color: red;
 
-// Error
-$error: $red;
-$light-error: lighten($error, 60);
-$dark-error: darken($error, 60);
 
-// Font Colors
-$base-font-color: $grey50;
-$base-accent-color: $accent;
+// GRADIENTS
+// ---------
 
-// Text Link Colors
-$base-link-color: $accent;
-$active-link-color: darken($base-accent-color, 15);
+$grey-gradient: linear-gradient($grey-10, $grey-20);
+$grey-gradient-light: linear-gradient(white, $grey-10);
 
-// Body Color
-$base-body-color: white;
+$brand-gradient: linear-gradient($brand-color-light, $brand-color);
 
-// Border
-$base-border-color: $grey20; // Light Grey
 
-// ### Gradient Variables
-//
-// Variables containing all of the gradients used in the site
-// ex: background-image: $light-gradient;
+// APPEARANCE
+// ----------
 
-// Neutrals
-$gradient: linear-gradient($grey10, $grey20);
-$light-gradient: linear-gradient(white, $grey10);
-$dark-gradient: linear-gradient($grey30, $grey40);
+$border-radius: 4px;
 
-$gradient-reverse: linear-gradient(to top, $grey20, $grey30);
-$light-gradient-reverse: linear-gradient(to top, white, $grey10);
-$dark-gradient-reverse: linear-gradient(to top, $grey30, $grey40);
 
-// Brand
-$brand-gradient: linear-gradient($light-brand, $brand);
-$dark-brand-gradient: linear-gradient($brand, $dark-brand);
+// LAYOUT
+// ------
 
-$brand-gradient-reverse: linear-gradient(to top, $light-brand, $brand);
-$brand-dark-gradient-reverse: linear-gradient(to top, $brand, $dark-brand);
-
-// Accent
-$accent-gradient: linear-gradient($light-accent, $accent);
-$dark-accent-gradient: linear-gradient($accent, $dark-accent);
-
-$accent-gradient-reverse: linear-gradient(to top, $light-accent, $accent);
-$accent-dark-gradient-reverse: linear-gradient(to top, $accent, $dark-accent);
+$v-space: $line-height;
+$h-space: $line-height;
 
 
 // Z-INDEX
 // -------
-//
-// This is effectively a list of layers that are available for use to
-// define your z-index properties. Try not to overuse z-index numbers unnecessarily.
-// These can be incremented slightly as necessary.
-// eg. $layer-stage + 1;
 
-$layer-overlay:   1000; // "overlay" should exist in front of everything else
-$layer-frontrow:  100;  // "frontrow" is a layer that is in front of most things
-$layer-stage:     10;   // "stage" is used for 99% of content placed in front of the backdrop
-$layer-backdrop:  1;    // "backdrop" is used for layers behind everything else
-
-
-// SHORTHAND VALUES
-// ----------------
-//
-// This is a place to collect quick ways to write certain properties that you re-use often
-
-$base-border: 1px solid $base-border-color;
+$layer-1:    1;
+$layer-10:   10;
+$layer-100:  100;
+$layer-1000: 1000;
