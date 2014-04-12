@@ -1,9 +1,28 @@
 
+// VARIABLES
+// =========
+//
+// Variables are formatted using the following rules:
+// - Names must be lowercase and dash-separated (kebab-case).
+// - Variables without a qualifier at the end are considered “base” variables,
+//   i.e. the default value for that type, e.g. $font-size, $brand-color,
+//   $grey-50.
+// - Variables with a qualifier at the end are considered “variations” on a base
+//   variable, e.g. $font-size-small, $brand-color-light, $grey-50-light.
+// - Some variables use a predefined, loose scale: $grey-10, -20, -30, etc.
+//   These should be defined in multiples of 10, with actual values
+//   only approximate. This provides room to adjust values without changing
+//   variable names, but allows users to more precicely gauge the variable by
+//   name. Additional variables can be inserted between values with a variation
+//   suffix such as $grey-10-light. Again, this provides the advantages of an
+//   absolute scale without encoding absolute values in the variable names.
+
+
 // TYPOGRAPHY
 // ----------
 
-$font-family: "Helvetica Neue", Arial, sans-serif;
-$font-family-heading: Georgia, serif;
+$font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-heading: Georgia, Times, "Times New Roman", serif;
 
 $font-size: 14px;
 
@@ -13,9 +32,9 @@ $line-height: $font-size * 1.5;
 // COLOURS
 // -------
 
-$grey-10: hsl(0, 0%,  8%);
 $grey-20: hsl(0, 0%, 18%);
 $grey-50: hsl(0, 0%, 46%);
+$grey-70: hsl(0, 0%, 73%);
 $grey-80: hsl(0, 0%, 83%);
 $grey-90: hsl(0, 0%, 93%);
 
@@ -23,32 +42,38 @@ $brand-color: blue;
 $brand-color-light: lighten($brand-color, 10%);
 $brand-color-dark: darken($brand-color, 10%);
 
-$accent-color: cyan;
+$accent-color: turquoise;
 $accent-color-light: lighten($accent-color, 10%);
 $accent-color-dark: darken($accent-color, 10%);
-
-$font-color: $grey-20;
-$font-color-light: $grey-50;
-
-$link-color: $accent-color;
-$link-color-active: darken($accent-color, 10%);
-
-$border-color: $grey-80;
-
-$background-color: white;
 
 $success-color: green;
 $warning-color: yellow;
 $error-color: red;
 
+$font-color: $grey-20;
+$font-color-light: $grey-50;
+
+$link-color: $accent-color;
+$link-color-active: darken($link-color, 10%);
+
+$border-color: $grey-80;
+
+$background-color: white;
+
+
 
 // GRADIENTS
 // ---------
 
-$grey-gradient: linear-gradient($grey-10, $grey-20);
-$grey-gradient-light: linear-gradient(white, $grey-10);
+$grey-gradient: linear-gradient($grey-90, $grey-80);
+$grey-gradient-light: linear-gradient(white, $grey-90);
+$grey-gradient-dark: linear-gradient($grey-80, $grey-70);
 
 $brand-gradient: linear-gradient($brand-color-light, $brand-color);
+$brand-gradient-dark: linear-gradient($brand-color, $brand-color-dark);
+
+$accent-gradient: linear-gradient($accent-color-light, $accent-color);
+$accent-gradient-dark: linear-gradient($accent-color, $accent-color-dark);
 
 
 // APPEARANCE
@@ -66,8 +91,19 @@ $h-space: $line-height;
 
 // Z-INDEX
 // -------
+//
+// Organizes z-index usage by providing a set of named layers. Values can be incremented/decremented slightly as necessary. eg. $layer-stage + 1;
 
-$layer-1:    1;
-$layer-10:   10;
-$layer-100:  100;
-$layer-1000: 1000;
+$layer-overlay: 1000; // Should exist in front of everything else
+$layer-front:   100;  // Exists in front of most things
+$layer-main:    10;   // Used for 99% of stacked content
+$layer-back:    1;    // Used for the bottom-most stacked layers
+
+
+// SHORTHAND VARIABLES
+// -------------------
+//
+// This is a place to collect quick ways to write certain properties that you
+// re-use often.
+
+$border: 1px solid $border-color;
