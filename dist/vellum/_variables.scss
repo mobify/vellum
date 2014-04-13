@@ -36,8 +36,8 @@ $line-height: $font-size * 1.5;
 $grey-20: hsl(0, 0%, 18%);
 $grey-50: hsl(0, 0%, 46%);
 $grey-70: hsl(0, 0%, 73%);
-$grey-80: hsl(0, 0%, 83%);
-$grey-90: hsl(0, 0%, 93%);
+$grey-80: hsl(0, 0%, 80%);
+$grey-90: hsl(0, 0%, 90%);
 
 // Brand
 $brand-color: blue;
@@ -45,7 +45,7 @@ $brand-color-light: lighten($brand-color, 60%);
 $brand-color-dark: darken($brand-color, 60%);
 
 // Accent
-$accent-color: turquoise;
+$accent-color: mediumseagreen;
 $accent-color-light: lighten($accent-color, 60%);
 $accent-color-dark: darken($accent-color, 60%);
 
@@ -79,7 +79,9 @@ $border-color: $grey-80;
 
 $grey-gradient: linear-gradient($grey-90, $grey-80);
 $grey-gradient-light: linear-gradient(white, $grey-90);
+$grey-gradient-light-reverse: linear-gradient($grey-90, white);
 $grey-gradient-dark: linear-gradient($grey-80, $grey-70);
+$grey-gradient-dark-reverse: linear-gradient($grey-70, $grey-80);
 
 $brand-gradient: linear-gradient($brand-color-light, $brand-color);
 $brand-gradient-dark: linear-gradient($brand-color, $brand-color-dark);

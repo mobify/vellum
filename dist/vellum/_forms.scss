@@ -1,15 +1,15 @@
 // Form Specific Variables
 // -----------------------
-$form-border-color: $base-border-color;
-$form-border-color-active: darken($base-border-color, 10);
-$form-border-color-focus: $base-accent-color;
-$form-border-radius: $base-border-radius;
-$form-font-size: $base-font-size;
-$form-font-family: $base-font-family;
+$border-color-form: $border-color;
+$border-color-form-active: darken($border-color, 10);
+$border-color-form-focus: $accent-color;
+$border-radius-form: $border-radius;
+$font-size-form: $font-size;
+$font-family-form: $font-family;
 
 fieldset {
     padding: 0;
-    margin: 0 0 $base-margin 0;
+    margin: 0 0 $margin 0;
     border: 0;
 }
 
@@ -18,18 +18,18 @@ label,
 textarea,
 select {
     display: block;
-    font-family: $form-font-family;
-    font-size: $form-font-size;
+    font-family: $font-family-form;
+    font-size: $font-size-form;
 }
 
 label {
     font-weight: bold;
-    margin-bottom: $base-margin / 2;
-    
+    margin-bottom: $margin / 2;
+
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    
+
     &:active {
-        color: $active-link-color;
+        color: $link-color-active;
     }
 }
 
@@ -52,24 +52,24 @@ textarea,
     width: 100%;
     height: 40px;
     padding: 10px 15px;
-    margin-bottom: $base-margin;
-    border: $base-border;
+    margin-bottom: $margin;
+    border: $border;
 
     background-color: #fff;
     outline: none;
-    border-radius: $base-border-radius;
+    border-radius: $border-radius;
 
-    line-height: $base-line-height;
+    line-height: $line-height;
 
     -webkit-appearance: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    
+
     &:active {
-        border-color: $form-border-color-active;
+        border-color: $border-color-form-active;
     }
-    
+
     &:focus {
-        border-color: $form-border-color-focus;
+        border-color: $border-color-form-focus;
         outline: none;
     }
 }
@@ -80,10 +80,10 @@ textarea {
 
 select {
     padding: 8px 15px;
-    border-color: darken($form-border-color, 0.25);
-    
+    border-color: darken($border-color-form, 0.25);
+
     text-indent: 5px;
-    
+
     // Turn Select Appearance back on
     // If you want to style this select box, delete this line
     -webkit-appearance: menulist-button;
@@ -95,26 +95,26 @@ select {
     top: -2px; // Aligns them with any inline content that follows
 
     display: inline-block;
-    margin-right: $base-margin;
+    margin-right: $margin;
     width: 24px;
     height: 24px;
-    border: 1px solid darken($form-border-color, 0.25);
-    
-    background: $grey10 $light-gradient;
-    
+    border: 1px solid darken($border-color-form, 0.25);
+
+    background: $grey-90 $grey-gradient-light;
+
     vertical-align: middle;
 
     -webkit-appearance: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
     &:active {
-        background: $grey20 $light-gradient-reverse;
+        background: $grey-80 $grey-gradient-light-reverse;
     }
-    
+
     &:checked {
-        background: $grey10;
+        background: $grey-90;
         box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1);
-        
+
         &::after {
             content: '';
 
@@ -127,14 +127,14 @@ select {
 
 [type="radio"] {
     border-radius: 24px;
-    
+
     &:after {
         top: 20%;
         left: 20%;
         right: 20%;
         bottom: 20%;
 
-        background: $grey50;
+        background: $grey-20;
         border-radius: 24px;
     }
 }
@@ -143,13 +143,13 @@ select {
     &:checked {
         &:after {
             content: '\2714';
-            
+
             top: 0;
-            
+
             font-size: 32px;
-            font-family: $form-font-family;
-            color: $grey50;
-            line-height: $form-font-size;
+            font-family: $font-family-form;
+            color: $grey-20;
+            line-height: $font-size-form;
         }
     }
 }
@@ -161,9 +161,9 @@ button,
     display: block;
     width: 100%;
     padding: 10px 15px;
-    
-    background: $light-gradient;
-    border: 1px solid darken($form-border-color, 0.25);
+
+    background: $grey-gradient-light;
+    border: 1px solid darken($border-color-form, 0.25);
 
     -webkit-appearance: none;
 }
