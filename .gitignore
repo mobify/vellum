@@ -30,5 +30,5 @@ node_modules
 # OSX Files
 .DS_Store
 
-# Test files
-test/test.css
+# Generated CSS
+*.css
