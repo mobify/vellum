@@ -92,12 +92,21 @@ $h-space: $line-height;
 // Z-INDEX
 // -------
 //
-// Organizes z-index usage by providing a set of named layers. Values can be incremented/decremented slightly as necessary. eg. $layer-stage + 1;
+// Organizes z-index usage by providing a set of named layers. Values can be
+// incremented/decremented slightly as necessary. eg. $layer-stage + 1;
+//
+// 1. “base” should be your first resort for bringing an item up. Likely
+//    an icon.
+// 2. "stage" should be used when base isn't enough. Likely a menu overlay.
+// 3. "frontrow" should be used to explicitly place content in front.
+//    Likely a modal shield.
+// 4. "overlay" is your last resort for moving content forward. Likely a
+//    modal dialog.
 
-$layer-overlay: 1000; // Should exist in front of everything else
-$layer-front:   100;  // Exists in front of most things
-$layer-main:    10;   // Used for 99% of stacked content
-$layer-back:    1;    // Used for the bottom-most stacked layers
+$base-layer:     1;    // 1
+$stage-layer:    10;   // 2
+$frontrow-layer: 100;  // 3
+$overlay-layer:  1000; // 4
 
 
 // SHORTHAND VARIABLES
