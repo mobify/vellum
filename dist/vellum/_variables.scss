@@ -32,34 +32,46 @@ $line-height: $font-size * 1.5;
 // COLOURS
 // -------
 
+// Neutrals
 $grey-20: hsl(0, 0%, 18%);
 $grey-50: hsl(0, 0%, 46%);
 $grey-70: hsl(0, 0%, 73%);
 $grey-80: hsl(0, 0%, 83%);
 $grey-90: hsl(0, 0%, 93%);
 
+// Brand
 $brand-color: blue;
-$brand-color-light: lighten($brand-color, 10%);
-$brand-color-dark: darken($brand-color, 10%);
+$brand-color-light: lighten($brand-color, 60%);
+$brand-color-dark: darken($brand-color, 60%);
 
+// Accent
 $accent-color: turquoise;
-$accent-color-light: lighten($accent-color, 10%);
-$accent-color-dark: darken($accent-color, 10%);
+$accent-color-light: lighten($accent-color, 60%);
+$accent-color-dark: darken($accent-color, 60%);
 
+// Success
 $success-color: green;
-$warning-color: yellow;
-$error-color: red;
+$success-color-light: lighten($success-color, 60%);
+$success-color-dark: darken($success-color, 60%);
 
+// Error
+$error-color: red;
+$error-color-light: lighten($error-color, 60%);
+$error-color-dark: darken($error-color, 60%);
+
+// Font Colors
 $font-color: $grey-20;
 $font-color-light: $grey-50;
 
+// Text Link Colors
 $link-color: $accent-color;
-$link-color-active: darken($link-color, 10%);
+$link-color-active: darken($link-color, 15%);
 
-$border-color: $grey-80;
-
+// Backgrounds
 $background-color: white;
 
+// Borders
+$border-color: $grey-80;
 
 
 // GRADIENTS
@@ -92,20 +104,12 @@ $margin: $line-height * 0.5;
 // -------
 //
 // Organizes z-index usage by providing a set of named layers. Values can be
-// incremented/decremented slightly as necessary. eg. $layer-stage + 1;
-//
-// 1. “base” should be your first resort for bringing an item up. Likely
-//    an icon.
-// 2. "stage" should be used when base isn't enough. Likely a menu overlay.
-// 3. "frontrow" should be used to explicitly place content in front.
-//    Likely a modal shield.
-// 4. "overlay" is your last resort for moving content forward. Likely a
-//    modal dialog.
+// incremented/decremented slightly as necessary. eg. $stage-layer + 1;
 
-$base-layer:     1;    // 1
-$stage-layer:    10;   // 2
-$frontrow-layer: 100;  // 3
-$overlay-layer:  1000; // 4
+$base-layer:     1;    // Default for bringing an item forward; e.g. an icon
+$stage-layer:    10;   // Place content above “base”; e.g. a menu overlay
+$frontrow-layer: 100;  // Explicitly place content in front; e.g. a modal shield
+$overlay-layer:  1000; // Place an item above all else; e.g. a modal dialog
 
 
 // SHORTHAND VARIABLES
