@@ -1,6 +1,22 @@
 // VARIABLES
 // =========
-
+//
+// Variables are formatted using the following rules:
+// - Names must be lowercase and dash-separated (kebab-case).
+// - Names should represent properties or applications as closely as possible
+// - Modifiers, qualifiers, or applications should be prepended to the variable
+//   name. e.g. $form-family vs. $form-font-family
+// - Variables without a qualifier are considered “base” variables,
+//   i.e. the default value for that type, e.g. $font-size, $brand-color,
+//   $grey-50.
+// - Variables with qualifiers at the beginning are considered “variations” on a
+//   base variable, e.g. $small-font-size, $light-brand-color.
+// - Some variables use a predefined, loose scale: $grey-10, -20, -30, etc.
+//   These should be defined in multiples of 10, with actual values
+//   only approximate. This provides room to adjust values without changing
+//   variable names, but allows users to more precisely gauge the variable by
+//   name. Additional variables can be inserted between values with a variation
+//   prefix such as $light-grey-10.
 
 // TYPOGRAPHY
 // ----------
@@ -8,19 +24,11 @@
 $sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif: Georgia, Times, "Times New Roman", serif;
 
-$base-font-family: $sans-serif;
-$header-font-family: $base-font-family;
+$font-family: $sans-serif;
+$header-font-family: $font-family;
 
-// Sizes
-$base-font-size: 14px;
-$base-line-height: $base-font-size * 1.5;
-
-
-// SIZING
-// ------
-
-$base-border-radius: 4px;
-$base-margin: $base-line-height * .5;
+$font-size: 14px;
+$line-height: $font-size * 1.5;
 
 
 // COLOURS
@@ -38,102 +46,119 @@ $dark-grey: #7f8c8d;
 $xdark-grey: #343839;
 
 // Colors
-$blue: #3498db;
-$turquoise: #16a085;
-$green: #27ae60;
-$red: #c0392b;
+$blue-color: #3498db;
+$turquoise-color: #16a085;
+$green-color: #27ae60;
+$red-color: #c0392b;
 
 // ### Assignments
 //
 // Color variables declared above get assigned to their function in this section
 
 // Neutrals
-$grey10: $xlight-grey;
-$grey20: $light-grey;
-$grey30: $medium-grey;
-$grey40: $dark-grey;
-$grey50: $xdark-grey;
+$grey-10: $xlight-grey;
+$grey-20: $light-grey;
+$grey-30: $medium-grey;
+$grey-40: $dark-grey;
+$grey-50: $xdark-grey;
 
-// Brand
-$brand: $blue;
-$light-brand: lighten($brand, 60);
-$dark-brand: darken($brand, 60);
+// Brand Colors
+$brand-color: $blue-color;
+$light-brand-color: lighten($brand-color, 60);
+$dark-brand-color: darken($brand-color, 60);
 
-// Accent
-$accent: $turquoise;
-$light-accent: lighten($accent, 60);
-$dark-accent: darken($accent, 60);
+// Accent Colors
+$accent-color: $turquoise-color;
+$light-accent-color: lighten($accent-color, 60);
+$dark-accent-color: darken($accent-color, 60);
 
-// Success
-$success: $green;
-$light-success: lighten($success, 60);
-$dark-success: darken($success, 60);
+// Success Colors
+$success-color: $green-color;
+$light-success-color: lighten($success-color, 60);
+$dark-success-color: darken($success-color, 60);
 
-// Error
-$error: $red;
-$light-error: lighten($error, 60);
-$dark-error: darken($error, 60);
+// Error Colors
+$error-color: $red-color;
+$light-error-color: lighten($error-color, 60);
+$dark-error-color: darken($error-color, 60);
 
 // Font Colors
-$base-font-color: $grey50;
-$base-accent-color: $accent;
+$font-color: $grey-50;
 
 // Text Link Colors
-$base-link-color: $accent;
-$active-link-color: darken($base-accent-color, 15);
+$link-color: $accent-color;
+$active-link-color: darken($link-color, 15);
 
-// Body Color
-$base-body-color: white;
+// Background Colors
+$background-color: white;
 
-// Border
-$base-border-color: $grey20; // Light Grey
+// Borders
+$border-color: $grey-20; // Light Grey
 
 // ### Gradient Variables
 //
 // Variables containing all of the gradients used in the site
-// ex: background-image: $light-gradient;
+// e.g. background-image: $light-grey-gradient;
 
 // Neutrals
-$gradient: linear-gradient($grey10, $grey20);
-$light-gradient: linear-gradient(white, $grey10);
-$dark-gradient: linear-gradient($grey30, $grey40);
+$grey-gradient: linear-gradient($grey-10, $grey-20);
+$light-grey-gradient: linear-gradient(white, $grey-10);
+$dark-grey-gradient: linear-gradient($grey-30, $grey-40);
 
-$gradient-reverse: linear-gradient(to top, $grey20, $grey30);
-$light-gradient-reverse: linear-gradient(to top, white, $grey10);
-$dark-gradient-reverse: linear-gradient(to top, $grey30, $grey40);
+$reverse-grey-gradient: linear-gradient(to top, $grey-20, $grey-30);
+$reverse-light-grey-gradient: linear-gradient(to top, white, $grey-10);
+$reverse-dark-grey-gradient: linear-gradient(to top, $grey-30, $grey-40);
 
 // Brand
-$brand-gradient: linear-gradient($light-brand, $brand);
-$dark-brand-gradient: linear-gradient($brand, $dark-brand);
+$brand-gradient: linear-gradient($light-brand-color, $brand-color);
+$dark-brand-gradient: linear-gradient($brand-color, $dark-brand-color);
 
-$brand-gradient-reverse: linear-gradient(to top, $light-brand, $brand);
-$brand-dark-gradient-reverse: linear-gradient(to top, $brand, $dark-brand);
+$reverse-brand-gradient: linear-gradient(to top, $light-brand-color, $brand-color);
+$reverse-dark-brand-gradient: linear-gradient(to top, $brand-color, $dark-brand-color);
 
-// Accent
-$accent-gradient: linear-gradient($light-accent, $accent);
-$dark-accent-gradient: linear-gradient($accent, $dark-accent);
+// accent-color
+$accent-gradient: linear-gradient($light-accent-color, $accent-color);
+$dark-accent-gradient: linear-gradient($accent-color, $dark-accent-color);
 
-$accent-gradient-reverse: linear-gradient(to top, $light-accent, $accent);
-$accent-dark-gradient-reverse: linear-gradient(to top, $accent, $dark-accent);
+$reverse-accent-gradient: linear-gradient(to top, $light-accent-color, $accent-color);
+$reverse-dark-accent-gradient: linear-gradient(to top, $accent-color, $dark-accent-color);
+
+// APPEARANCE
+// ----------
+
+$border-radius: 4px;
+
+
+// LAYOUT
+// ------
+
+$margin: $line-height * 0.5;
 
 
 // Z-INDEX
 // -------
 //
-// This is effectively a list of layers that are available for use to
-// define your z-index properties. Try not to overuse z-index numbers unnecessarily.
-// These can be incremented slightly as necessary.
-// eg. $layer-stage + 1;
-
-$layer-overlay:   1000; // "overlay" should exist in front of everything else
-$layer-frontrow:  100;  // "frontrow" is a layer that is in front of most things
-$layer-stage:     10;   // "stage" is used for 99% of content placed in front of the backdrop
-$layer-backdrop:  1;    // "backdrop" is used for layers behind everything else
-
-
-// SHORTHAND VALUES
-// ----------------
+// Organizes z-index usage by providing a set of named layers. Values can be
+// incremented/decremented slightly as necessary. eg. $layer-stage + 1;
 //
-// This is a place to collect quick ways to write certain properties that you re-use often
+// 1. “backdrop” should be your first resort for bringing an item up. Likely
+//    an icon.
+// 2. "stage" should be used when base isn't enough. Likely a menu overlay.
+// 3. "frontrow" should be used to explicitly place content in front.
+//    Likely a modal shield.
+// 4. "overlay" is your last resort for moving content forward. Likely a
+//    modal dialog.
 
-$base-border: 1px solid $base-border-color;
+$backdrop-layer: 1;    // 1
+$stage-layer:    10;   // 2
+$frontrow-layer: 100;  // 3
+$overlay-layer:  1000; // 4
+
+
+// SHORTHAND VARIABLES
+// -------------------
+//
+// This is a place to collect quick ways to write certain properties that you
+// re-use often
+
+$border: 1px solid $border-color;

@@ -1,15 +1,15 @@
 // Form Specific Variables
 // -----------------------
-$form-border-color: $base-border-color;
-$form-border-color-active: darken($base-border-color, 10);
-$form-border-color-focus: $base-accent-color;
-$form-border-radius: $base-border-radius;
-$form-font-size: $base-font-size;
-$form-font-family: $base-font-family;
+$form-border-color: $border-color;
+$active-form-border-color: darken($border-color, 10);
+$focus-form-border-color: $accent-color;
+$form-border-radius: $border-radius;
+$form-font-size: $font-size;
+$form-font-family: $font-family;
 
 fieldset {
     padding: 0;
-    margin: 0 0 $base-margin 0;
+    margin: 0 0 $margin 0;
     border: 0;
 }
 
@@ -24,7 +24,7 @@ select {
 
 label {
     font-weight: bold;
-    margin-bottom: $base-margin / 2;
+    margin-bottom: $margin / 2;
     
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     
@@ -52,23 +52,23 @@ textarea,
     width: 100%;
     height: 40px;
     padding: 10px 15px;
-    margin-bottom: $base-margin;
-    border: $base-border;
+    margin-bottom: $margin;
+    border: $border;
 
     background-color: #fff;
-    border-radius: $base-border-radius;
+    border-radius: $border-radius;
 
-    line-height: $base-line-height;
+    line-height: $line-height;
 
     -webkit-appearance: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     
     &:active {
-        border-color: $form-border-color-active;
+        border-color: $active-form-border-color;
     }
     
     &:focus {
-        border-color: $form-border-color-focus;
+        border-color: $focus-form-border-color;
     }
 }
 
@@ -93,12 +93,12 @@ select {
     top: -2px; // Aligns them with any inline content that follows
 
     display: inline-block;
-    margin-right: $base-margin;
+    margin-right: $margin;
     width: 24px;
     height: 24px;
     border: 1px solid darken($form-border-color, 0.25);
     
-    background: $grey10 $light-gradient;
+    background: $grey-10 $light-grey-gradient;
     
     vertical-align: middle;
 
@@ -106,11 +106,11 @@ select {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
     &:active {
-        background: $grey20 $light-gradient-reverse;
+        background: $grey-20 $reverse-light-grey-gradient;
     }
     
     &:checked {
-        background: $grey10;
+        background: $grey-10;
         box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1);
         
         &::after {
@@ -132,7 +132,7 @@ select {
         right: 20%;
         bottom: 20%;
 
-        background: $grey50;
+        background: $grey-50;
         border-radius: 24px;
     }
 }
@@ -146,7 +146,7 @@ select {
             
             font-size: 32px;
             font-family: $form-font-family;
-            color: $grey50;
+            color: $grey-50;
             line-height: $form-font-size;
         }
     }
@@ -160,7 +160,7 @@ button,
     width: 100%;
     padding: 10px 15px;
     
-    background: $light-gradient;
+    background: $light-grey-gradient;
     border: 1px solid darken($form-border-color, 0.25);
 
     -webkit-appearance: none;
