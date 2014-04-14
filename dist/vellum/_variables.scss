@@ -19,6 +19,7 @@
 //   name. Additional variables can be inserted between values with a variation
 //   prefix such as $light-grey-10.
 
+
 // TYPOGRAPHY
 // ----------
 
@@ -123,6 +124,7 @@ $dark-accent-gradient: linear-gradient($accent-color, $dark-accent-color);
 
 $reverse-accent-gradient: linear-gradient(to top, $light-accent-color, $accent-color);
 $reverse-dark-accent-gradient: linear-gradient(to top, $accent-color, $dark-accent-color);
+
 
 // APPEARANCE
 // ----------
