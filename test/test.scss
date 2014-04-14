@@ -13,9 +13,9 @@ h1[id] {
 }
 
 ul.default {
-    @extend %default-ul;
+    @extend %bullet-list;
 }
 
 ol.default {
-    @extend %default-ol;
+    @extend %decimal-list;
 }
