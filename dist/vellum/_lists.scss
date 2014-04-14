@@ -1,5 +1,5 @@
-// Lists
-// -----
+// LISTS
+// =====
 //
 // We default to unstyled lists because they seem to be a more common usecase.
 // Use the extensions to re-add the defaults back in.
@@ -14,25 +14,25 @@ ol {
 // Use this extension to turn default styling for unordered lists back on
 %bullet-list {
     list-style-type: disc;
-    margin-bottom: $base-margin;
-    padding-left: $base-line-height;
+    margin-bottom: $margin;
+    padding-left: $line-height;
 }
 
 // Use this extension to turn default styling for ordered lists back on
 %decimal-list {
     list-style-type: decimal;
-    margin-bottom: $base-margin;
-    padding-left: $base-line-height;
+    margin-bottom: $margin;
+    padding-left: $line-height;
 }
 
 dl {
-    line-height: $base-line-height;
-    margin-bottom: $base-margin;
+    line-height: $line-height;
+    margin-bottom: $margin;
 }
 
 dt {
     font-weight: bold;
-    margin-top: $base-margin;
+    margin-top: $margin;
 }
 
 dd {
