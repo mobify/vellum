@@ -1,11 +1,22 @@
-// Form Specific Variables
+// FORMS
+// =====
+
+
+// FORM SPECIFIC VARIABLES
 // -----------------------
+
 $form-border-color: $border-color;
 $active-form-border-color: darken($border-color, 10);
 $focus-form-border-color: $accent-color;
 $form-border-radius: $border-radius;
 $form-font-size: $font-size;
 $form-font-family: $font-family;
+
+
+// FORM ELEMENTS
+// -------------
+
+// ### General Form Elements
 
 fieldset {
     padding: 0;
@@ -87,6 +98,8 @@ select {
     -webkit-appearance: menulist-button;
 }
 
+// ### Checkbox and Radios
+
 [type="checkbox"],
 [type="radio"] {
     position: relative;
@@ -152,7 +165,7 @@ select {
     }
 }
 
-// Buttons
+// ### Buttons
 
 button,
 [type="submit"] {
