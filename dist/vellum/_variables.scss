@@ -142,7 +142,7 @@ $margin: $line-height * 0.5;
 // -------
 //
 // Organizes z-index usage by providing a set of named layers. Values can be
-// incremented/decremented slightly as necessary. eg. $layer-stage + 1;
+// incremented/decremented slightly as necessary. eg. $stage-layer + 1;
 //
 // 1. “backdrop” should be your first resort for bringing an item up. Likely
 //    an icon.
