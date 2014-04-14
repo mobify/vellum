@@ -5,7 +5,7 @@
 // - Names must be lowercase and dash-separated (kebab-case).
 // - Names should represent properties or applications as closely as possible
 // - Modifiers, qualifiers, or applications should be prepended to the variable
-//   name. e.g. $form-family vs. $form-font-family
+//   name. e.g. $form-family (bad) vs. $form-font-family (better)
 // - Variables without a qualifier are considered “base” variables,
 //   i.e. the default value for that type, e.g. $font-size, $brand-color,
 //   $grey-50.
