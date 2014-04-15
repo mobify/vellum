@@ -60,6 +60,9 @@ h6 {
     font-size: $font-size;
 }
 
+// ADDITIONAL ELEMENTS
+// --------------------
+
 p {
     margin: 0 0 $margin;
 }
@@ -85,32 +88,10 @@ img {
     max-width: 100%;
 }
 
-address {
-    display: block;
-    margin: 0 0 $margin;
-}
-
-hgroup {
-    margin-bottom: $margin;
-}
-
-del {
-    color: lighten($font-color, 15);
-}
-
 blockquote {
     margin: $line-height 0;
     padding-left: $margin;
     border-left: 2px solid $border-color;
     
     color: lighten($font-color, 15);
-}
-
-cite {
-    color: lighten($font-color, 25);
-    font-style: italic;
-    
-    &:before {
-        content: '\2014 \00A0';
-    }
 }
