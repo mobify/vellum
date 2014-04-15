@@ -32,3 +32,5 @@ node_modules
 
 # Generated CSS
 *.css
+
+.idea/
