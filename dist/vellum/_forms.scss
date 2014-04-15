@@ -173,8 +173,13 @@ button,
     width: 100%;
     padding: 10px 15px;
     
-    background: $light-grey-gradient;
+    background: $grey-10 $light-grey-gradient;
     border: 1px solid darken($form-border-color, 0.25);
 
     -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    
+    &:active {
+        background: $grey-20 $reverse-light-grey-gradient;
+    }
 }
