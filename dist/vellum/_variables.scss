@@ -102,29 +102,17 @@ $border-color: $grey-20; // Light Grey
 // Variables containing all of the gradients used in the site
 // e.g. background-image: $light-grey-gradient;
 
-// Neutrals
-$grey-gradient: linear-gradient($grey-10, $grey-20);
-$light-grey-gradient: linear-gradient(white, $grey-10);
-$dark-grey-gradient: linear-gradient($grey-30, $grey-40);
+// Neutral Gradient
+$grey-gradient: linear-gradient(white, $grey-10);
+$reverse-grey-gradient: linear-gradient(to top, white, $grey-10);
 
-$reverse-grey-gradient: linear-gradient(to top, $grey-20, $grey-30);
-$reverse-light-grey-gradient: linear-gradient(to top, white, $grey-10);
-$reverse-dark-grey-gradient: linear-gradient(to top, $grey-30, $grey-40);
-
-// Brand
+// Brand Gradient
 $brand-gradient: linear-gradient($light-brand-color, $brand-color);
-$dark-brand-gradient: linear-gradient($brand-color, $dark-brand-color);
-
 $reverse-brand-gradient: linear-gradient(to top, $light-brand-color, $brand-color);
-$reverse-dark-brand-gradient: linear-gradient(to top, $brand-color, $dark-brand-color);
 
-// accent-color
+// Accent Gradient
 $accent-gradient: linear-gradient($light-accent-color, $accent-color);
-$dark-accent-gradient: linear-gradient($accent-color, $dark-accent-color);
-
 $reverse-accent-gradient: linear-gradient(to top, $light-accent-color, $accent-color);
-$reverse-dark-accent-gradient: linear-gradient(to top, $accent-color, $dark-accent-color);
-
 
 // APPEARANCE
 // ----------
