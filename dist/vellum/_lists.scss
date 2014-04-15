@@ -14,25 +14,25 @@ ol {
 // Use this extension to turn default styling for unordered lists back on
 %bullet-list {
     list-style-type: disc;
-    margin-bottom: $margin;
-    padding-left: $line-height;
+    margin-bottom: $v-space;
+    padding-left: $h-space;
 }
 
 // Use this extension to turn default styling for ordered lists back on
 %decimal-list {
     list-style-type: decimal;
-    margin-bottom: $margin;
-    padding-left: $line-height;
+    margin-bottom: $v-space;
+    padding-left: $h-space;
 }
 
 dl {
     line-height: $line-height;
-    margin-bottom: $margin;
+    margin-bottom: $v-space;
 }
 
 dt {
     font-weight: bold;
-    margin-top: $margin;
+    margin-top: $v-space;
 }
 
 dd {
