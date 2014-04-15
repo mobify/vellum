@@ -5,11 +5,11 @@
 // Test CSS
 
 body {
-    padding: $margin;
+    padding: $v-space $h-space;
 }
 
 h1[id] {
-    margin-bottom: $margin;
+    margin-bottom: $v-space;
 }
 
 ul.default {
