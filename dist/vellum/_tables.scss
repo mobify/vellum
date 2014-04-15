@@ -3,20 +3,20 @@
 
 table {
     border-collapse: collapse;
-    margin: $margin 0;
+    margin: $v-space 0;
     width: 100%;
 }
 
 th {
     border-bottom: 1px solid darken($border-color, 15%);
     font-weight: bold;
-    padding: $margin 0;
+    padding: $v-space 0;
     text-align: left;
 }
 
 td {
   border-bottom: 1px solid $border-color;
-  padding: $margin 0;
+  padding: $v-space 0;
 }
 
 tr,
