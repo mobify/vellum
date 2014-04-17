@@ -112,7 +112,7 @@ select {
     height: 24px;
     border: 1px solid darken($form-border-color, 0.25);
     
-    background: $grey-10 $light-grey-gradient;
+    background: $grey-10 $grey-gradient;
     
     vertical-align: middle;
 
@@ -120,7 +120,7 @@ select {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
     &:active {
-        background: $grey-20 $reverse-light-grey-gradient;
+        background: $grey-20 reverse-gradient($grey-gradient);
     }
     
     &:checked {
@@ -174,13 +174,13 @@ button,
     width: 100%;
     padding: 10px 15px;
     
-    background: $grey-10 $light-grey-gradient;
+    background: $grey-10 $grey-gradient;
     border: 1px solid darken($form-border-color, 0.25);
 
     -webkit-appearance: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     
     &:active {
-        background: $grey-20 $reverse-light-grey-gradient;
+        background: $grey-20 reverse-gradient($grey-gradient);
     }
 }
