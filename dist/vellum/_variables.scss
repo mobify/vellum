@@ -80,18 +80,17 @@ $border-color: $grey-20;
 //
 // Variables containing all of the gradients used in the site
 // e.g. background-image: $light-grey-gradient;
+// To reverse a gradient, you can use the Spline function `reverse-gradient()`
+// e.g. background-image: reverse-gradient($grey-gradient);
 
 // Neutral Gradient
 $grey-gradient: linear-gradient(white, $grey-10);
-$reverse-grey-gradient: linear-gradient(to top, white, $grey-10);
 
 // Brand Gradient
 $brand-gradient: linear-gradient($light-brand-color, $brand-color);
-$reverse-brand-gradient: linear-gradient(to top, $light-brand-color, $brand-color);
 
 // Accent Gradient
 $accent-gradient: linear-gradient($light-accent-color, $accent-color);
-$reverse-accent-gradient: linear-gradient(to top, $light-accent-color, $accent-color);
 
 // APPEARANCE
 // ----------
