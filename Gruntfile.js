@@ -16,8 +16,7 @@ module.exports = function(grunt) {
     sass: {
         dist: {
             options: {
-                includePaths: ['bower_components/'],
-                outputStyle: 'nested'
+                style: 'nested'
             },
             files: {
                 'test/test.css': 'test/test.scss'
