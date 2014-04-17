@@ -1,6 +1,6 @@
 {
   "name": "spline",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "homepage": "https://github.com/mobify/spline",
   "authors": [
     "Mobify",
@@ -22,14 +22,13 @@
     "test",
     "tests"
   ],
-  "_release": "0.1.1",
+  "_release": "0.2.0",
   "_resolution": {
     "type": "version",
-    "tag": "v0.1.1",
-    "commit": "bd7e7a11bc44b9cfa6ff641a52068024de1e15f3"
+    "tag": "v0.2.0",
+    "commit": "8c8773f369506755bb3cf3e1feefffe7f40572bf"
   },
   "_source": "git://github.com/mobify/spline.git",
-  "_target": "~0.1.1",
-  "_originalSource": "spline",
-  "_direct": true
+  "_target": "~0.2.0",
+  "_originalSource": "spline"
 }

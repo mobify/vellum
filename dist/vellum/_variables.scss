@@ -36,51 +36,30 @@ $line-height: $font-size * 1.5;
 // COLOURS
 // -------
 
-// ### Definitions
-//
-// Color variables should have a descriptive variable name
-
 // Neutrals
-$xlight-grey: #ecf0f1;
-$light-grey: #bdc3c7;
-$medium-grey: #95a5a6;
-$dark-grey: #7f8c8d;
-$xdark-grey: #343839;
-
-// Colors
-$blue-color: #3498db;
-$turquoise-color: #16a085;
-$green-color: #27ae60;
-$red-color: #c0392b;
-
-// ### Assignments
-//
-// Color variables declared above get assigned to their function in this section
-
-// Neutrals
-$grey-10: $xlight-grey;
-$grey-20: $light-grey;
-$grey-30: $medium-grey;
-$grey-40: $dark-grey;
-$grey-50: $xdark-grey;
+$grey-10: #ecf0f1;
+$grey-20: #bdc3c7;
+$grey-30: #95a5a6;
+$grey-40: #7f8c8d;
+$grey-50: #343839;
 
 // Brand Colors
-$brand-color: $blue-color;
+$brand-color: #3498db; // blue
 $light-brand-color: lighten($brand-color, 60);
 $dark-brand-color: darken($brand-color, 60);
 
 // Accent Colors
-$accent-color: $turquoise-color;
+$accent-color: #16a085; // turquoise
 $light-accent-color: lighten($accent-color, 60);
 $dark-accent-color: darken($accent-color, 60);
 
 // Success Colors
-$success-color: $green-color;
+$success-color: #27ae60; // green
 $light-success-color: lighten($success-color, 60);
 $dark-success-color: darken($success-color, 60);
 
 // Error Colors
-$error-color: $red-color;
+$error-color: #c0392b; // red
 $light-error-color: lighten($error-color, 60);
 $dark-error-color: darken($error-color, 60);
 
@@ -95,7 +74,7 @@ $active-link-color: darken($link-color, 15);
 $background-color: white;
 
 // Borders
-$border-color: $grey-20; // Light Grey
+$border-color: $grey-20;
 
 // ### Gradient Variables
 //
