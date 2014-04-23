@@ -2,25 +2,25 @@
 // ======
 
 table {
-    border-collapse: collapse;
-    margin: $v-space 0;
     width: 100%;
+    margin: $v-space 0;
+    border-collapse: collapse;
 }
 
 th {
+    padding: $v-space 0;
     border-bottom: 1px solid darken($border-color, 15%);
     font-weight: bold;
-    padding: $v-space 0;
     text-align: left;
 }
 
 td {
-  border-bottom: 1px solid $border-color;
-  padding: $v-space 0;
+    padding: $v-space 0;
+    border-bottom: 1px solid $border-color;
 }
 
 tr,
 td,
 th {
-  vertical-align: middle;
+    vertical-align: middle;
 }

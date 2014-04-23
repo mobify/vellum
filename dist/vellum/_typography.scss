@@ -84,14 +84,14 @@ hr {
 }
 
 img {
-    margin: 0;
     max-width: 100%;
+    margin: 0;
 }
 
 blockquote {
     margin: $v-space*2 0;
     padding-left: $h-space;
     border-left: 2px solid $border-color;
-    
+
     color: lighten($font-color, 15);
 }
