@@ -2,19 +2,6 @@
 // ==========
 
 
-// BODY
-// ----
-
-body {
-    background: $background-color;
-
-    color: $font-color;
-    font-family: $font-family;
-    font-size: $font-size;
-    line-height: $line-height;
-}
-
-
 // HEADERS
 // -------
 
@@ -92,6 +79,6 @@ blockquote {
     margin: $v-space*2 0;
     padding-left: $h-space;
     border-left: 2px solid $border-color;
-    
+
     color: lighten($font-color, 15);
 }
