@@ -20,8 +20,8 @@ $form-font-family: $font-family;
 
 fieldset {
     min-width: 0;
+    margin: 0 0 $v-space;
     padding: 0;
-    margin: 0 0 $v-space 0;
     border: 0;
 }
 
@@ -35,8 +35,8 @@ select {
 }
 
 label {
-    font-weight: bold;
     margin-bottom: $v-space / 2;
+    font-weight: bold;
 
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
@@ -64,7 +64,6 @@ textarea,
     width: 100%;
     height: 40px;
     padding: 10px 15px;
-
     border: $border;
 
     background-color: #fff;
@@ -72,8 +71,9 @@ textarea,
 
     line-height: $line-height;
 
-    -webkit-appearance: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    -webkit-appearance: none;
 
     &:active {
         border-color: $active-form-border-color;
@@ -107,17 +107,18 @@ select {
     top: -2px; // Aligns them with any inline content that follows
 
     display: inline-block;
-    margin-right: $h-space / 2;
     width: 24px;
     height: 24px;
+    margin-right: $h-space / 2;
     border: 1px solid darken($form-border-color, 0.25);
 
     background: $grey-10 $grey-gradient;
 
     vertical-align: middle;
 
-    -webkit-appearance: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    -webkit-appearance: none;
 
     &:active {
         background: $grey-20 reverse-gradient($grey-gradient);
@@ -142,9 +143,9 @@ select {
 
     &:after {
         top: 20%;
-        left: 20%;
         right: 20%;
         bottom: 20%;
+        left: 20%;
 
         background: $grey-50;
         border-radius: 24px;
@@ -158,9 +159,9 @@ select {
 
             top: 0;
 
-            font-size: 32px;
-            font-family: $form-font-family;
             color: $grey-50;
+            font-family: $form-font-family;
+            font-size: 32px;
             line-height: $form-font-size;
         }
     }
@@ -174,11 +175,12 @@ button,
     width: 100%;
     padding: 10px 15px;
 
-    background: $grey-10 $grey-gradient;
     border: 1px solid darken($form-border-color, 0.25);
+    background: $grey-10 $grey-gradient;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
     -webkit-appearance: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
     &:active {
         background: $grey-20 reverse-gradient($grey-gradient);
