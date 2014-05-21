@@ -30,7 +30,8 @@ $font-family: $sans-serif;
 $header-font-family: $font-family;
 
 $font-size: 14px;
-$line-height: $font-size * 1.5;
+$leading-ratio: 1.5;
+$line-height: $font-size * $leading-ratio;
 
 
 // COLOURS
