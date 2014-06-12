@@ -115,16 +115,16 @@ $v-space: $line-height * 0.5;
 //
 // 1. “backdrop” should be your first resort for bringing an item up. Likely
 //    an icon.
-// 2. "stage" should be used when base isn't enough. Likely a menu overlay.
-// 3. "frontrow" should be used to explicitly place content in front.
+// 2. "stage" should be used when backdrop isn't enough. Likely a menu overlay.
+// 3. "orchestra" should be used to explicitly place content in front.
 //    Likely a modal shield.
-// 4. "overlay" is your last resort for moving content forward. Likely a
+// 4. "frontrow" is your last resort for moving content forward. Likely a
 //    modal dialog.
 
 $backdrop-layer: 1;    // 1
 $stage-layer:    10;   // 2
-$frontrow-layer: 100;  // 3
-$overlay-layer:  1000; // 4
+$orchestra-layer: 100;  // 3
+$frontrow-layer:  1000; // 4
 
 
 // SHORTHAND VARIABLES
