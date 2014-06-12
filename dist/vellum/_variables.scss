@@ -121,8 +121,8 @@ $v-space: $line-height * 0.5;
 // 4. "frontrow" is your last resort for moving content forward. Likely a
 //    modal dialog.
 
-$backdrop-layer: 1;    // 1
-$stage-layer:    10;   // 2
+$backdrop-layer:  1;    // 1
+$stage-layer:     10;   // 2
 $orchestra-layer: 100;  // 3
 $frontrow-layer:  1000; // 4
 
