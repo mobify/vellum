@@ -9,8 +9,6 @@
 
 // 1. Provide default line-height as a ratio rather than a fixed value.
 //    http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/
-// 2. Prevent iOS from resizing text on orientation change, without disabling
-//    user zoom. http://stackoverflow.com/a/2711132/1757952
 
 html {
     background: $background-color;
@@ -19,6 +17,4 @@ html {
     font-family: $font-family;
     font-size: $font-size;
     line-height: $leading-ratio; // 1
-
-    -webkit-text-size-adjust: 100%; // 2
 }
