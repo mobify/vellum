@@ -77,6 +77,7 @@ If you use a vertical rhythm, feel free to add variables for it here.
 
 #### Z-Index
 Organizes z-index usage by providing a set of named layers. Values can be incremented/decremented slightly as necessary. eg. `$stage-layer + 1`;
+
 1. “backdrop” should be used for purposefully placing an item behind a staged item. Likely a background for an element.
 2. "stage" should be your first choice for moving an item in front of others. Likely an icon or an interface element.
 3. "orchestra" should be used to explicitly place content in front of the stage. Likely a modal shield.
