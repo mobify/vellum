@@ -104,6 +104,8 @@ This is a place to collect quick ways to write certain properties that you re-us
 
 Vellum was built with a whole lot of care by [Jeff Kamo](http://www.twitter.com/jeffkamo), [Kyle Peatt](http://twitter.com/kpeatt), and [Ryan Frederick](http://twitter.com/ry5n). It is maintained and funded on [Mobify](http://www.mobify.com)'s dime. If you've got things you'd like to see added or removed, submit a PR or tweet at us.
 
+We also owe a lot of thanks to [Thoughtbot's bitters](http://www.github.com/thoughtbot/bitters) which Vellum was inspired by and draws a lot of its work from.
+
 ## License
 
 *MIT License. Vellum is Copyright © 2014 Mobify. It is free software and may be redistributed under the terms specified in the LICENSE file.*
