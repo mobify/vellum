@@ -1,6 +1,20 @@
 # Vellum
 
-### Default Sass styles and variables for a mobile-first site build using [Spline](http://github.com/mobify/spline).
+**Default Sass styles and variables for a mobile-first site build using [Spline](http://github.com/mobify/spline).**
+
+### Efficient
+
+Vellum is written to help designers and developers of mobile-first projects get started quickly by defining a set of variables, typographic hierarchy, and default styles.
+
+### Customizable
+
+This is just the beginning. Vellum is made to be customized for your project. Think of Vellum like tracing paper: it gets you started but the lines are all your own.
+
+### Extensible
+
+Vellum comes with an easy to comprehend variable naming system so you can easily extend it with new elements and new styles. Think you've added something every project needs? Commit it back into the project.
+
+## The Idea
 
 Vellum is built to get [Mobify](http://www.mobify.com) Adaptive.js projects off the ground quickly. It provides variable definitions, base typographic and form styles, and mobile-first defaults. It’s based on our mixin library, [Spline](https://www.github.com/mobify/spline) and relies on [Autoprefixer](https://github.com/ai/autoprefixer) for prefixing.
 
