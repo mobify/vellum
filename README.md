@@ -98,7 +98,7 @@ Organizes z-index usage by providing a set of named layers. Values can be increm
 4. `$frontrow-layer` is your last resort for moving content forward. Likely a modal dialog.
 
 #### Shorthand Variables
-This is a place to collect quick ways to write certain properties that you re-use often. We basically just declare a default `$border` here.
+This is a place to collect quick ways to write certain properties that you re-use often. We only declare a default `$border` here but you could add any you need.
 
 ## Special Thanks
 
