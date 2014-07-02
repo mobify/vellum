@@ -62,11 +62,10 @@ The variables file is where we set the majority of default values used throughou
 
 Variables are formatted using the following rules:
 * Names must be lowercase and dash-separated (kebab-case).
-* Names should represent properties or applications as closely as possible.
-* Modifiers, qualifiers, or applications should be prepended to the variable name. e.g. `$form-family` (bad) vs. `$form-font-family` (better)
-* Variables without a qualifier are considered “base” variables, i.e. the default value for that type, e.g. `$font-size`, `$brand-color`, `$grey-50`.
-* Variables with qualifiers at the beginning are considered “variations” on a base variable, e.g. `$small-font-size`, `$light-brand-color`.
-* Some variables use a predefined, loose scale: `$grey-10`, `-20`, `-30`, etc. These should be defined in multiples of 10, with actual values only approximate. This provides room to adjust values without changing variable names, but allows users to more precisely gauge the variable by name. Additional variables can be inserted between values with a variation prefix such as `$light-grey-10`.
+* Names should closely map to the property or application that they match up with. e.g. `$font-family: 'Helvetica Neue', Arial, sans-serif;`;
+* Variables with qualifiers at the beginning are considered _variations_ on a base variable. e.g. `$small-font-size`, `$light-brand-color`.
+* Variables without a qualifier are considered _base_ variables. i.e. the default value for that type. e.g. `$font-size`, `$brand-color`, `$grey-50`.
+* Some variables use a predefined, loose scale: `$grey-10`, `-20`, `-30`, etc. These should be defined in multiples of 10, with actual values only approximate. This provides room to adjust values without changing variable names while still allowing users to more precisely gauge the variable by name. Additional variables can be inserted between values with a variation prefix such as `$light-grey-10`.
 
 #### Typography
 Standard font families and typographic settings are set in this section.
