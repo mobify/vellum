@@ -92,10 +92,10 @@ If you use a vertical rhythm, feel free to add variables for it here.
 #### Z-Index
 Organizes z-index usage by providing a set of named layers. Values can be incremented/decremented slightly as necessary. eg. `$stage-layer + 1`;
 
-1. “backdrop” should be used for purposefully placing an item behind a staged item. Likely a background for an element.
-2. "stage" should be your first choice for moving an item in front of others. Likely an icon or an interface element.
-3. "orchestra" should be used to explicitly place content in front of the stage. Likely a modal shield.
-4. "frontrow" is your last resort for moving content forward. Likely a modal dialog.
+1. `$backdrop-layer` should be used for purposefully placing an item behind a staged item. Likely an element that is used as a background.
+2. `$stage-layer` should be your first choice for moving an item in front of others. Likely an icon or an interface element.
+3. `$orchestra-layer` should be used to explicitly place content in front of the stage. Likely a modal shield.
+4. `$frontrow-layer` is your last resort for moving content forward. Likely a modal dialog.
 
 #### Shorthand Variables
 This is a place to collect quick ways to write certain properties that you re-use often. We basically just declare a default `$border` here.
