@@ -104,7 +104,7 @@ $border-radius: 4px;
 // ------
 
 $h-space: $line-height;
-$v-space: $line-height * 0.5;
+$v-space: round($line-height * 0.5);
 
 
 // Z-INDEX
