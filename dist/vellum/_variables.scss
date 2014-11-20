@@ -1,18 +1,23 @@
-// VARIABLES
-// =========
+// Variables
+// ===
 //
 // Variables are formatted using the following rules:
 //
-// - Names must be lowercase and dash-separated (kebab-case).
-// - Names should represent properties or applications as closely as possible
-// - Modifiers, qualifiers, or applications should be prepended to the variable
+// * Names must be lowercase and dash-separated (kebab-case).
+//
+// * Names should represent properties or applications as closely as possible
+//
+// * Modifiers, qualifiers, or applications should be prepended to the variable
 //   name. e.g. $form-family (bad) vs. $form-font-family (better)
-// - Variables without a qualifier are considered “base” variables,
+//
+// * Variables without a qualifier are considered “base” variables,
 //   i.e. the default value for that type, e.g. $font-size, $brand-color,
 //   $grey-50.
-// - Variables with qualifiers at the beginning are considered “variations” on a
+//
+// * Variables with qualifiers at the beginning are considered “variations” on a
 //   base variable, e.g. $small-font-size, $light-brand-color.
-// - Some variables use a predefined, loose scale: $grey-10, -20, -30, etc.
+//
+// * Some variables use a predefined, loose scale: $grey-10, -20, -30, etc.
 //   These should be defined in multiples of 10, with actual values
 //   only approximate. This provides room to adjust values without changing
 //   variable names, but allows users to more precisely gauge the variable by
@@ -20,8 +25,8 @@
 //   prefix such as $light-grey-10.
 
 
-// TYPOGRAPHY
-// ----------
+// Typography
+// ---
 
 $sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif: Georgia, Times, "Times New Roman", serif;
@@ -34,8 +39,8 @@ $leading-ratio: 1.5;
 $line-height: $font-size * $leading-ratio;
 
 
-// COLOURS
-// -------
+// Colors
+// ---
 
 // Neutrals
 $grey-10: #ecf0f1;
@@ -77,7 +82,9 @@ $background-color: white;
 // Borders
 $border-color: $grey-20;
 
-// ### Gradient Variables
+
+// Gradient Colors
+// ---
 //
 // Variables containing all of the gradients used in the site
 // e.g. background-image: $light-grey-gradient;
@@ -94,21 +101,22 @@ $brand-gradient: linear-gradient($light-brand-color, $brand-color);
 // Accent Gradient
 $accent-gradient: linear-gradient($light-accent-color, $accent-color);
 
-// APPEARANCE
-// ----------
+
+// Appearance
+// ---
 
 $border-radius: 4px;
 
 
-// LAYOUT
-// ------
+// Layout
+// ---
 
 $h-space: $line-height;
 $v-space: round($line-height * 0.5);
 
 
-// Z-INDEX
-// -------
+// Layers and `z-index`
+// ---
 //
 // Organizes z-index usage by providing a set of named layers. Values can be
 // incremented/decremented slightly as necessary. eg. $stage-layer + 1;
@@ -128,8 +136,8 @@ $orchestra-layer: 100;  // 3
 $frontrow-layer:  1000; // 4
 
 
-// SHORTHAND VARIABLES
-// -------------------
+// Shorthand Variables
+// ---
 //
 // This is a place to collect quick ways to write certain properties that you
 // re-use often

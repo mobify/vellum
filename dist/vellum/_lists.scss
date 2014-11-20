@@ -1,8 +1,15 @@
-// LISTS
-// =====
+// Lists
+// ===
+
+
+// Ordered and Unordered Lists
+// ---
 //
 // We default to unstyled lists because they seem to be a more common usecase.
 // Use the extensions to re-add the defaults back in.
+//
+// It is our recommendation that instead of styling the ul and ol directly that
+// you create a list component that can be added to lists when needed.
 
 ul,
 ol {
@@ -11,19 +18,27 @@ ol {
     list-style-type: none;
 }
 
-// Use this extension to turn default styling for unordered lists back on
-%bullet-list {
-    margin-bottom: $v-space;
-    padding-left: $h-space;
-    list-style-type: disc;
-}
+// If you want to have your unordered lists have default styles, uncomment the
+// following code:
+//
+// ul {
+//     margin-bottom: $v-space;
+//     padding-left: $h-space;
+//     list-style-type: disc;
+// }
 
-// Use this extension to turn default styling for ordered lists back on
-%decimal-list {
-    margin-bottom: $v-space;
-    padding-left: $h-space;
-    list-style-type: decimal;
-}
+// If you want to have your ordered lists have default styles, uncomment the
+// following code:
+//
+// ol {
+//     margin-bottom: $v-space;
+//     padding-left: $h-space;
+//     list-style-type: decimal;
+// }
+
+
+// Definition Lists
+// ---
 
 dl {
     margin-bottom: $v-space;
