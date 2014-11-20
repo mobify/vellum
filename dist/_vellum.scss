@@ -1,9 +1,9 @@
-// Vellum
-// ===
+// VELLUM
+// ======
 
 
-// Variables
-// ---
+// VARIABLES
+// ---------
 //
 // These must come first so that they are accessible in all the
 // following stylesheets.
@@ -11,46 +11,36 @@
 @import 'vellum/variables';
 
 
-// Attributes
-// ---
-//
-// Attribute styles. Works on any element using these attributes.
-
-@import 'vellum/attribute';
-
-
-// Document
-// ---
+// DOCUMENT
+// --------
 //
 // Document styles. Typically these cover your document-wide styles.
 
 @import 'vellum/document';
 
 
-// Typography
-// ---
+// TYPOGRAPHY
+// ----------
 //
 // Styles for your text, headers, links, etc.
 
 @import 'vellum/typography';
 
 
-// Forms
-// ---
+// FORMS
+// -----
 //
 // Styles for your forms, inputs, selects, radio buttons,
 // checkboxes, fields, legends, etc.
 
 @import 'vellum/forms';
 
-
-// Lists
-// ---
+// LISTS
+// -----
 
 @import 'vellum/lists';
 
-
-// Tables
-// ---
+// TABLES
+// -----
 
 @import 'vellum/tables';

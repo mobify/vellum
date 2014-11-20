@@ -1,9 +1,9 @@
-// Typography
-// ===
+// TYPOGRAPHY
+// ==========
 
 
-// Headers
-// ---
+// HEADERS
+// -------
 
 h1,
 h2,
@@ -17,33 +17,38 @@ h6 {
     line-height: 1.25;
 }
 
+%h1,
 h1 {
     font-size: 28px;
 }
 
+%h2,
 h2 {
     font-size: 24px;
 }
 
+%h3,
 h3 {
     font-size: 20px;
 }
 
+%h4,
 h4 {
     font-size: 18px;
 }
 
+%h5,
 h5 {
     font-size: 16px;
 }
 
+%h6,
 h6 {
     font-size: $font-size;
 }
 
-
-// Text Elements
-// ---
+// ADDITIONAL ELEMENTS
+// --------------------
 
 p {
     margin: 0 0 $v-space;
@@ -58,10 +63,6 @@ a {
         color: $active-link-color;
     }
 }
-
-
-// Miscellaneous Elements
-// ---
 
 hr {
     margin: $v-space*2 0;

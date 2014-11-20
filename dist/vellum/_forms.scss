@@ -1,9 +1,9 @@
-// Forms
-// ===
+// FORMS
+// =====
 
 
-// Form Specific Variables
-// ---
+// FORM SPECIFIC VARIABLES
+// -----------------------
 
 $form-border-color: $border-color;
 $active-form-border-color: darken($border-color, 10);
@@ -13,13 +13,15 @@ $form-font-size: $font-size;
 $form-font-family: $font-family;
 
 
-// General Form Elements
-// ---
+// FORM ELEMENTS
+// -------------
+
+// ### General Form Elements
 //
 // Notes:
 //
-// 1. These properties must be set with a slightly higher specificity for search
-//    inputs because Normalize's defaults are a bit too specific
+// 1. These properties must be set with a slightly higher specificity for search inputs
+//    because Normalize's defaults are a bit too specific
 
 fieldset {
     min-width: 0;
@@ -68,9 +70,9 @@ textarea,
     height: 40px;
     padding: 10px 15px;
     border: $border;
-    border-radius: $border-radius;
 
     background-color: #fff;
+    border-radius: $border-radius;
 
     line-height: $line-height;
 
@@ -107,16 +109,12 @@ select {
     -webkit-appearance: menulist-button;
 }
 
-
-// Checkbox and Radios
-// ---
-//
-// 1. Aligns them with any inline content that follows
+// ### Checkbox and Radios
 
 [type="checkbox"],
 [type="radio"] {
     position: relative;
-    top: -2px; // 1
+    top: -2px; // Aligns them with any inline content that follows
 
     display: inline-block;
     width: 24px;
@@ -159,9 +157,8 @@ select {
         bottom: 20%;
         left: 20%;
 
-        border-radius: 24px;
-
         background: $grey-50;
+        border-radius: 24px;
     }
 }
 
@@ -180,9 +177,7 @@ select {
     }
 }
 
-
-// Buttons
-// ---
+// ### Buttons
 
 button,
 [type="submit"] {
