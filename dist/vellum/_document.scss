@@ -1,14 +1,16 @@
-// DOCUMENT
-// ========
-
-*,
-*:after,
-*:before {
-    box-sizing: border-box;
-}
-
+// Document
+// ===
+//
 // 1. Provide default line-height as a ratio rather than a fixed value.
 //    http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/
+// 2. Applying styles to *::before or *::after is a performance issue on some
+//    legacy Android devices (4.1.x). As such, these are disabled by default.
+
+// *::after, // 2
+// *::before, // 2
+* {
+    box-sizing: border-box;
+}
 
 html {
     background: $background-color;
