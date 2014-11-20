@@ -11,19 +11,23 @@ ol {
     list-style-type: none;
 }
 
-// Use this extension to turn default styling for unordered lists back on
-%bullet-list {
-    margin-bottom: $v-space;
-    padding-left: $h-space;
-    list-style-type: disc;
-}
+// If you want to have your unordered lists have default styles, uncomment the
+// following code:
+//
+// %ul {
+//     margin-bottom: $v-space;
+//     padding-left: $h-space;
+//     list-style-type: disc;
+// }
 
-// Use this extension to turn default styling for ordered lists back on
-%decimal-list {
-    margin-bottom: $v-space;
-    padding-left: $h-space;
-    list-style-type: decimal;
-}
+// If you want to have your ordered lists have default styles, uncomment the
+// following code:
+//
+// %ol {
+//     margin-bottom: $v-space;
+//     padding-left: $h-space;
+//     list-style-type: decimal;
+// }
 
 dl {
     margin-bottom: $v-space;
