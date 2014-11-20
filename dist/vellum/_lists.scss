@@ -1,8 +1,15 @@
-// LISTS
-// =====
+// Lists
+// ===
+
+
+// Ordered and Unordered Lists
+// ---
 //
 // We default to unstyled lists because they seem to be a more common usecase.
 // Use the extensions to re-add the defaults back in.
+//
+// It is our recommendation that instead of styling the ul and ol directly that
+// you create a list component that can be added to lists when needed.
 
 ul,
 ol {
@@ -28,6 +35,10 @@ ol {
 //     padding-left: $h-space;
 //     list-style-type: decimal;
 // }
+
+
+// Definition Lists
+// ---
 
 dl {
     margin-bottom: $v-space;
