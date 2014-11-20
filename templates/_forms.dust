@@ -1,0 +1,24 @@
+<form>
+    <fieldset>
+        <label for="text-input">This is a label</label>
+        <input id="text-input" type="text" name="some_name" value="This is a text input">
+        
+        <textarea>This is a textarea element.</textarea>
+        
+        <select>
+            <option>Select and its options</option>
+            <option>Select and its options</option>
+            <option>Select and its options</option>
+        </select>
+        
+        <div>
+            <input id="radio-button" type="radio" />
+            <label for="radio-button">A radio button and its label!</label>
+        </div>
+        
+        <div>
+            <input id="checkbox-button" type="checkbox" />
+            <label for="checkbox-button">A checkbox and its label!</label>
+        </div>
+    </fieldset>
+</form>

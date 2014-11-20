@@ -1,0 +1,16 @@
+<h1>Level 1 Heading</h1>
+<h2>Level 2 Heading</h2>
+<h3>Level 3 Heading</h3>
+<h4>Level 4 Heading</h4>
+<h5>Level 5 Heading</h5>
+<H6>Level 6 Heading</H6>
+
+<p>This is a paragraphy of text! How lovely.</p>
+
+<a href="#">This is an anchor link</a>
+
+<hr></hr>
+
+<blockquote>
+    This is a blockquote. If it looks like a blockquote, smells like a blockquote and tastes like a blockquote, then it's probably time you stop smelling and tasting just any random thing.
+</blockquote>
