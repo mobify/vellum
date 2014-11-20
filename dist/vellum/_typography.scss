@@ -1,9 +1,9 @@
-// Typography
-// ===
+// TYPOGRAPHY
+// ==========
 
 
-// Headers
-// ---
+// HEADERS
+// -------
 
 h1,
 h2,
@@ -47,9 +47,8 @@ h6,
     font-size: $font-size;
 }
 
-
-// Text Elements
-// ---
+// ADDITIONAL ELEMENTS
+// --------------------
 
 p {
     margin: 0 0 $v-space;
@@ -64,10 +63,6 @@ a {
         color: $active-link-color;
     }
 }
-
-
-// Miscellaneous Elements
-// ---
 
 hr {
     margin: $v-space*2 0;
