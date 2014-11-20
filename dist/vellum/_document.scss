@@ -1,14 +1,14 @@
-// DOCUMENT
-// ========
+// Document
+// ===
+//
+// 1. Provide default line-height as a ratio rather than a fixed value.
+//    http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/
 
 *,
 *:after,
 *:before {
     box-sizing: border-box;
 }
-
-// 1. Provide default line-height as a ratio rather than a fixed value.
-//    http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/
 
 html {
     background: $background-color;
