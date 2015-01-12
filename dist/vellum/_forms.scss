@@ -5,12 +5,12 @@
 // Form Specific Variables
 // ---
 
-$form-border-color: $border-color;
-$active-form-border-color: darken($border-color, 10);
-$focus-form-border-color: $accent-color;
-$form-border-radius: $border-radius;
-$form-font-size: $font-size;
-$form-font-family: $font-family;
+$forms__border-color: $border-color;
+$forms__active-border-color: darken($border-color, 10);
+$forms__focus-border-color: $accent-color;
+$forms__border-radius: $border-radius;
+$forms__font-size: $font-size;
+$forms__font-family: $font-family;
 
 
 // General Form Elements
@@ -33,8 +33,8 @@ label,
 textarea,
 select {
     display: block;
-    font-family: $form-font-family;
-    font-size: $form-font-size;
+    font-family: $forms__font-family;
+    font-size: $forms__font-size;
 }
 
 label {
@@ -68,7 +68,7 @@ textarea,
     height: 40px;
     padding: 10px 15px;
     border: $border;
-    border-radius: $form-border-radius;
+    border-radius: $forms__border-radius;
 
     background-color: #fff;
 
@@ -79,11 +79,11 @@ textarea,
     -webkit-appearance: none;
 
     &:active {
-        border-color: $active-form-border-color;
+        border-color: $forms__active-border-color;
     }
 
     &:focus {
-        border-color: $focus-form-border-color;
+        border-color: $forms__focus-border-color;
     }
 }
 
@@ -98,7 +98,7 @@ textarea {
 
 select {
     padding: 8px 15px;
-    border-color: darken($form-border-color, 0.25);
+    border-color: darken($forms__border-color, 0.25);
 
     text-indent: 5px;
 
@@ -122,7 +122,7 @@ select {
     width: 24px;
     height: 24px;
     margin-right: $h-space / 2;
-    border: 1px solid darken($form-border-color, 0.25);
+    border: 1px solid darken($forms__border-color, 0.25);
 
     background: $grey-10 $grey-gradient;
 
@@ -173,9 +173,9 @@ select {
             top: 0;
 
             color: $grey-50;
-            font-family: $form-font-family;
+            font-family: $forms__font-family;
             font-size: 32px;
-            line-height: $form-font-size;
+            line-height: $forms__font-size;
         }
     }
 }
@@ -190,7 +190,7 @@ button,
     width: 100%;
     padding: 10px 15px;
 
-    border: 1px solid darken($form-border-color, 0.25);
+    border: 1px solid darken($forms__border-color, 0.25);
     background: $grey-10 $grey-gradient;
 
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
