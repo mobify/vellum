@@ -12,10 +12,99 @@ h1[id] {
     margin-bottom: $v-space;
 }
 
-ul.default {
-    @extend %bullet-list;
+.c-swatches {
+    margin-top: $v-space;
+    margin-bottom: $v-space*2;
 }
 
-ol.default {
-    @extend %decimal-list;
+.c-swatches__item {
+    position: relative;
+
+    display: inline-block;
+    width: 100px;
+    padding: 10px;
+    height: 100px;
+    margin-right: 10px;
+    vertical-align: middle;
+
+    border-radius: $border-radius;
+
+    text-align: center;
+
+    span {
+        display: inline-block;
+        padding: 5px;
+
+        background: white;
+
+        font-size: 12px;
+    }
+
+    &.c--grey-10 {
+        background: $grey-10;
+    }
+
+    &.c--grey-20 {
+        background: $grey-20;
+    }
+
+    &.c--grey-30 {
+        background: $grey-30;
+    }
+
+    &.c--grey-40 {
+        background: $grey-40;
+    }
+
+    &.c--grey-50 {
+        background: $grey-50;
+    }
+
+    &.c--brand-color {
+        background: $brand-color;
+    }
+
+    &.c--light-brand-color {
+        background: $light-brand-color;
+    }
+
+    &.c--dark-brand-color {
+        background: $dark-brand-color;
+    }
+
+    &.c--accent-color {
+        background: $accent-color;
+    }
+
+    &.c--light-accent-color {
+        background: $light-accent-color;
+    }
+
+    &.c--dark-accent-color {
+        background: $dark-accent-color;
+    }
+
+    &.c--success-color {
+        background: $success-color;
+    }
+
+    &.c--light-success-color {
+        background: $light-success-color;
+    }
+
+    &.c--dark-success-color {
+        background: $dark-success-color;
+    }
+
+    &.c--error-color {
+        background: $error-color;
+    }
+
+    &.c--light-error-color {
+        background: $light-error-color;
+    }
+
+    &.c--dark-error-color {
+        background: $dark-error-color;
+    }
 }
