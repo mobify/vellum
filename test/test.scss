@@ -11,11 +11,3 @@ body {
 h1[id] {
     margin-bottom: $v-space;
 }
-
-ul.default {
-    @extend %bullet-list;
-}
-
-ol.default {
-    @extend %decimal-list;
-}
