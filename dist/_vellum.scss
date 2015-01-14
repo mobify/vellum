@@ -5,26 +5,19 @@
 // Variables
 // ---
 //
-// These must come first so that they are accessible in all the
-// following stylesheets.
+// These must come first so that they are accessible in all the following
+// stylesheets.
 
 @import 'vellum/variables';
 
 
-// Attributes
+// Global
 // ---
 //
-// Attribute styles. Works on any element using these attributes.
+// Global styles. Typically these cover generic styles that affect your entire
+// site.
 
-@import 'vellum/attributes';
-
-
-// Document
-// ---
-//
-// Document styles. Typically these cover your document-wide styles.
-
-@import 'vellum/document';
+@import 'vellum/global';
 
 
 // Typography
@@ -38,8 +31,8 @@
 // Forms
 // ---
 //
-// Styles for your forms, inputs, selects, radio buttons,
-// checkboxes, fields, legends, etc.
+// Styles for your forms, inputs, selects, radio buttons, checkboxes, fields,
+// legends, etc.
 
 @import 'vellum/forms';
 
