@@ -12,6 +12,14 @@ h1[id] {
     margin-bottom: $v-space;
 }
 
+ul.default {
+    @extend %ul;
+}
+
+ol.default {
+    @extend %ol;
+}
+
 .c-swatches {
     margin-top: $v-space;
     margin-bottom: $v-space*2;
