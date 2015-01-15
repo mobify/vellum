@@ -15,39 +15,44 @@ ul,
 ol {
     margin: 0;
     padding: 0;
+
     list-style-type: none;
 }
 
-// If you want to have your unordered lists have default styles, uncomment the
+// If you want your unordered lists to have default styles, extend the
 // following code:
-//
-// %ul {
-//     margin-bottom: $v-space;
-//     padding-left: $h-space;
-//     list-style-type: disc;
-// }
 
-// If you want to have your ordered lists have default styles, uncomment the
+%ul {
+    margin-bottom: $v-space;
+    padding-left: $h-space;
+
+    list-style-type: disc;
+}
+
+// If you want your ordered lists to have default styles, extend the
 // following code:
-//
-// %ol {
-//     margin-bottom: $v-space;
-//     padding-left: $h-space;
-//     list-style-type: decimal;
-// }
+
+%ol {
+    margin-bottom: $v-space;
+    padding-left: $h-space;
+
+    list-style-type: decimal;
+}
 
 
 // Definition Lists
 // ---
 
 dl {
-    margin-bottom: $v-space;
     line-height: $line-height;
+
+    margin-bottom: $v-space;
 }
 
 dt {
-    margin-top: $v-space;
     font-weight: bold;
+
+    margin-top: $v-space;
 }
 
 dd {
