@@ -18,13 +18,13 @@ Vellum comes with an easy to comprehend variable naming system so you can easily
 
 Vellum is built to get [Mobify](http://www.mobify.com) Adaptive.js projects off the ground quickly. It provides variable definitions, base typographic and form styles, and mobile-first defaults. It’s based on our mixin library, [Spline](https://www.github.com/mobify/spline) and relies on [Autoprefixer](https://github.com/ai/autoprefixer) for prefixing.
 
-Vellum is made to be as unopinionated as possible while still providing a bunch of sane defaults you can use for your projects. Install it in your Sass directory and bend it to your whim. Feel free to change anything and everything to match your project’s needs. 
+Vellum is made to be as unopinionated as possible while still providing a bunch of sane defaults you can use for your projects. Install it in your Sass directory and bend it to your whim. Feel free to change anything and everything to match your project’s needs.
 
 ## Requirements
 
-* Sass 3.3.0+
-* Spline 0.3.0+
-* Autoprefixer 1.3.1+
+* [Sass](http://sass-lang.com/)
+* [Spline](http://github.com/mobify/spline)
+* [Autoprefixer](https://github.com/postcss/autoprefixer)
 
 ## Installation
 
@@ -32,7 +32,7 @@ We don’t provide Vellum through a package manager because it’s made to be ed
 
 1. Install [Spline](https://www.github.com/mobify/spline).
 
-    ```bower install spline``` 
+    ```bower install spline```
 2. Clone this repository and copy everything in the `dist` folder into your Sass folder.
 3. Install some form of [Autoprefixer](https://github.com/ai/autoprefixer). We use Grunt so we recommend [grunt-autoprefixer](https://github.com/nDmitry/grunt-autoprefixer).
 4. Import Vellum after Normalize and Spline in your main `scss` file. Any additional stylesheets should be included after Vellum.
@@ -41,7 +41,7 @@ We don’t provide Vellum through a package manager because it’s made to be ed
     @import "bower_components/modularized-normalize-scss/normalize";
     @import "bower_components/spline/dist/spline";
     @import "vellum";
-    ``` 
+    ```
 
 ## Using Vellum
 
@@ -98,6 +98,14 @@ Organizes z-index usage by providing a set of named layers. Values can be increm
 
 #### Shorthand Variables
 This is a place to collect quick ways to write certain properties that you re-use often. We only declare a default `$border` here but you could add any you need.
+
+## The Mobify CSS Triforce ![Triforce](http://img4.wikia.nocookie.net/__cb20091113050618/zelda/images/1/1a/Obtained_Triforce_Piece.gif)
+
+Vellum is part of the _Mobify CSS Triforce_: a collection of three UI Development projects built for making mobile e-commerce builds easier.
+
+- [**Spline**](http://github.com/mobify/spline): A mobile-first mixin and function library for Sass.
+- **Vellum**: A set of default styles for mobile-first builds.
+- [**Stencil**](http://github.com/mobify/stencil): A library of common UI patterns for mobile e-commerce builds.
 
 ## Special Thanks
 
