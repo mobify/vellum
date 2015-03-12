@@ -11,7 +11,10 @@ $forms__focus-border-color: $accent-color;
 $forms__border-radius: $border-radius;
 $forms__font-size: $font-size;
 $forms__font-family: $font-family;
-$forms__form-item-height: 40px;
+$forms__element-height: 40px;
+$forms__element-padding: 10px 15px;
+$forms__select-padding: 8px 15px;
+$forms__background-color: #fff;
 
 
 // General Form Elements
@@ -66,12 +69,12 @@ textarea,
 [type="tel"],
 [type="color"] {
     width: 100%;
-    height: $forms__form-item-height;
-    padding: 10px 15px;
+    height: $forms__element-height;
+    padding: $forms__element-padding;
     border: $border;
     border-radius: $forms__border-radius;
 
-    background-color: #fff;
+    background-color: $forms__background-color;
 
     line-height: $line-height;
 
@@ -98,7 +101,7 @@ textarea {
 }
 
 select {
-    padding: 8px 15px;
+    padding: $forms__select-padding;
     border-color: darken($forms__border-color, 0.25);
 
     text-indent: 5px;
