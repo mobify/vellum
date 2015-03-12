@@ -15,6 +15,7 @@ $forms__element-height: 40px;
 $forms__element-padding: 10px 15px;
 $forms__select-padding: 8px 15px;
 $forms__background-color: #fff;
+$forms__element-width: 100%;
 
 
 // General Form Elements
@@ -68,7 +69,7 @@ textarea,
 [type="url"],
 [type="tel"],
 [type="color"] {
-    width: 100%;
+    width: $forms__element-width;
     height: $forms__element-height;
     padding: $forms__element-padding;
     border: $border;
