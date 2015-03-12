@@ -16,6 +16,7 @@ $forms__element-padding: 10px 15px;
 $forms__select-padding: 8px 15px;
 $forms__background-color: #fff;
 $forms__element-width: 100%;
+$forms__select-text-indent: 5px;
 
 
 // General Form Elements
@@ -25,6 +26,7 @@ $forms__element-width: 100%;
 //
 // 1. These properties must be set with a slightly higher specificity for search
 //    inputs because Normalize's defaults are a bit too specific
+// 2. Align selects with input
 
 fieldset {
     min-width: 0;
@@ -105,7 +107,7 @@ select {
     padding: $forms__select-padding;
     border-color: darken($forms__border-color, 0.25);
 
-    text-indent: 5px;
+    text-indent: $forms__select-text-indent; // 2
 
     // Turn Select Appearance back on
     // If you want to style this select box, delete this line
