@@ -16,7 +16,6 @@ $forms__element-padding: 10px 50px 10px 15px;
 $forms__select-padding: 8px 15px;
 $forms__background-color: #fff;
 $forms__element-width: 100%;
-$forms__select-text-indent: 5px;
 
 
 // General Form Elements
@@ -106,8 +105,6 @@ textarea {
 select {
     padding: $forms__select-padding;
     border-color: darken($forms__border-color, 0.25);
-
-    text-indent: $forms__select-text-indent; // 2
 
     // Turn Select Appearance back on
     // If you want to style this select box, delete this line
