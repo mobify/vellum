@@ -42,15 +42,15 @@ $line-height: $font-size * $leading-ratio;
 // Colors
 // ---
 //
-// [1] The value on the end of the variable maps to the lightness value
+// 1. The value on the end of the variable maps to the lightness value
 
-// Neutrals - [1]
-$grey-10: hsl(0, 0%, 10%); // #1a1a1a
-$grey-20: hsl(0, 0%, 20%); // #333
-$grey-30: hsl(0, 0%, 30%); // #4d4d4d
-$grey-50: hsl(0, 0%, 50%); // #808080
-$grey-70: hsl(0, 0%, 70%); // #b3b3b3
-$grey-90: hsl(0, 0%, 90%); // #e5e5e5
+// Neutrals - 1
+$grey-10: hsl(0, 0%, 10%);
+$grey-20: hsl(0, 0%, 20%);
+$grey-30: hsl(0, 0%, 30%);
+$grey-50: hsl(0, 0%, 50%);
+$grey-70: hsl(0, 0%, 70%);
+$grey-90: hsl(0, 0%, 90%);
 
 // Brand Colors
 $brand-color: #3498db; // blue
@@ -124,19 +124,19 @@ $v-space: round($line-height * 0.5);
 // Organizes z-index usage by providing a set of named layers. Values can be
 // incremented/decremented slightly as necessary. eg. $stage-layer + 1;
 //
-// [1] “backdrop” should be used for purposefully placing an item behind a staged item. Likely
+// 1. “backdrop” should be used for purposefully placing an item behind a staged item. Likely
 //    a background for an element.
-// [2] "stage" should be your first choice for moving an item in front of others. Likely an icon or
+// 2. "stage" should be your first choice for moving an item in front of others. Likely an icon or
 //    an interface element.
-// [3] "orchestra" should be used to explicitly place content in front of the stage.
+// 3. "orchestra" should be used to explicitly place content in front of the stage.
 //    Likely a modal shield.
-// [4] "frontrow" is your last resort for moving content forward. Likely a
+// 4. "frontrow" is your last resort for moving content forward. Likely a
 //    modal dialog.
 
-$backdrop-layer:  1;    // [1]
-$stage-layer:     10;   // [2]
-$orchestra-layer: 100;  // [3]
-$frontrow-layer:  1000; // [4]
+$backdrop-layer:  1;    // 1
+$stage-layer:     10;   // 2
+$orchestra-layer: 100;  // 3
+$frontrow-layer:  1000; // 4
 
 
 // Shorthand Variables

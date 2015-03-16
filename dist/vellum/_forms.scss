@@ -18,7 +18,7 @@ $forms__font-family: $font-family;
 //
 // Notes:
 //
-// [1] These properties must be set with a slightly higher specificity for search
+// 1. These properties must be set with a slightly higher specificity for search
 //    inputs because Normalize's defaults are a bit too specific
 
 fieldset {
@@ -90,7 +90,7 @@ textarea,
     }
 }
 
-input[type="search"] { // [1]
+input[type="search"] { // 1
     box-sizing: border-box;
 
     -webkit-appearance: none;
@@ -113,12 +113,12 @@ select {
 // Checkbox and Radios
 // ---
 //
-// [1] Aligns them with any inline content that follows
+// 1. Aligns them with any inline content that follows
 
 [type="checkbox"],
 [type="radio"] {
     position: relative;
-    top: -2px; // [1]
+    top: -2px; // 1
 
     display: inline-block;
     width: 24px;
