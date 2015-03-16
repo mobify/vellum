@@ -70,6 +70,9 @@ $error-color: #c0392b; // red
 $light-error-color: lighten($error-color, 15%);
 $dark-error-color: darken($error-color, 15%);
 
+// Disabled Color
+$disabled-color: $neutral-40;
+
 // Font Colors
 $font-color: $neutral-70;
 
@@ -113,8 +116,16 @@ $border-radius: 4px;
 // Layout
 // ---
 
-$h-space: $line-height;
-$v-space: round($line-height * 0.5);
+// We define `$unit` as the basic measure for spacing and alignment of elements.
+// For best results, set a value between 6px and 12px and apply `$unit` in whole
+// and half multiples only. If you’re intentionally breaking from the design
+// system for a certain element, don’t use `$unit`.
+$unit: round($line-height * 0.5);
+
+// Deprecated – these will be removed from Vellum in a future release. Feel free
+// to re-define them in your project if you prefer them.
+$h-space: $unit * 2;
+$v-space: $unit;
 
 
 // Layers and `z-index`
