@@ -6,11 +6,16 @@
 // ---
 
 $forms__border-color: $border-color;
+$forms__input-color: #fff;
 $forms__active-border-color: darken($border-color, 10);
 $forms__focus-border-color: $accent-color;
 $forms__border-radius: $border-radius;
 $forms__font-size: $font-size;
 $forms__font-family: $font-family;
+$forms__checked-background: $grey-10;
+$forms__disabled-color: $disabled-color;
+$forms__disabled-background: $grey-10;
+$forms__placeholder-color: $grey-30;
 
 
 // General Form Elements
@@ -33,12 +38,14 @@ label,
 textarea,
 select {
     display: block;
+
     font-family: $forms__font-family;
     font-size: $forms__font-size;
 }
 
 label {
     margin-bottom: $v-space / 2;
+
     font-weight: bold;
 
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -68,15 +75,34 @@ textarea,
     height: 40px;
     padding: 10px 15px;
     border: $border;
+
     border-radius: $forms__border-radius;
 
-    background-color: #fff;
+    background-color: $forms__input-color;
 
     line-height: $line-height;
 
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
     -webkit-appearance: none;
+
+    &[disabled] {
+        opacity: 1;
+
+        background: $forms__disabled-background;
+
+        color: $forms__disabled-color;
+
+        -webkit-text-fill-color: $forms__disabled-color;
+
+        &:active,
+        &:focus {
+            border-color: $forms__disabled-color;
+        }
+    }
+
+    &::-webkit-input-placeholder {
+        color: $forms__placeholder-color;
+    }
 
     &:active {
         border-color: $forms__active-border-color;
@@ -89,6 +115,7 @@ textarea,
 
 input[type="search"] { // 1
     box-sizing: border-box;
+
     -webkit-appearance: none;
 }
 
@@ -130,12 +157,22 @@ select {
 
     -webkit-appearance: none;
 
-    &:active {
+    &[disabled] {
+        background: $forms__disabled-background;
+
+        &:active,
+        &:checked {
+            background: $forms__disabled-background;
+        }
+    }
+
+    &:active,
+    &:focus {
         background: $grey-20 reverse-gradient($grey-gradient);
     }
 
     &:checked {
-        background: $grey-10;
+        background: $forms__checked-background;
         box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1);
 
         &::after {
@@ -151,6 +188,16 @@ select {
 [type="radio"] {
     border-radius: 24px;
 
+    &[disabled] {
+        &:active,
+        &:focus,
+        &:checked {
+            &::after {
+                background-color: $forms__disabled-color;
+            }
+        }
+    }
+
     &:after {
         top: 20%;
         right: 20%;
@@ -159,11 +206,20 @@ select {
 
         border-radius: 24px;
 
-        background: $grey-50;
+        background-color: $grey-50;
     }
 }
 
 [type="checkbox"] {
+
+    &[disabled] {
+        &:checked {
+            &::after {
+                color: $forms__disabled-color;
+            }
+        }
+    }
+
     &:checked {
         &:after {
             content: '\2714';
@@ -186,15 +242,30 @@ button,
 [type="submit"] {
     display: block;
     padding: 10px 15px;
-
     border: 1px solid darken($forms__border-color, 0.25);
+
     background: $grey-10 $grey-gradient;
 
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
     -webkit-appearance: none;
 
-    &:active {
+    &[disabled] {
+        opacity: 1;
+
+        background: $forms__disabled-background;
+
+        color: $forms__disabled-color;
+
+        -webkit-text-fill-color: $forms__disabled-color;
+
+        &:active {
+            background: $forms__disabled-background;
+        }
+    }
+
+    &:active,
+    &:focus {
         background: $grey-20 reverse-gradient($grey-gradient);
     }
 }
