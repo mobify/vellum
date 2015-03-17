@@ -44,15 +44,15 @@ ol {
 // ---
 
 dl {
-    line-height: $line-height;
-
     margin-bottom: $v-space;
+
+    line-height: $line-height;
 }
 
 dt {
-    font-weight: bold;
-
     margin-top: $v-space;
+
+    font-weight: bold;
 }
 
 dd {
