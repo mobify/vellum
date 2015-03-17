@@ -45,11 +45,11 @@ $line-height: $font-size * $leading-ratio;
 // 1. The value on the end of the variable maps to the lightness value
 
 // Neutrals - 1
-$grey-20: hsl(192, 9%, 20%);
-$grey-55: hsl(184, 10%, 55%);
-$grey-65: hsl(184, 10%, 65%);
-$grey-80: hsl(204, 5%, 80%);
-$grey-95: hsl(192, 2%, 95%);
+$grey-20: hsl(192, 9%, 20%); // #2e3233
+$grey-55: hsl(184, 10%, 55%); // #7e8b8c
+$grey-65: hsl(184, 10%, 65%); // #95a5a6
+$grey-80: hsl(204, 5%, 80%); // #c2c8cc
+$grey-95: hsl(192, 2%, 95%); // #edf1f2
 
 // Brand Colors
 $brand-color: #3498db; // blue
