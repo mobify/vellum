@@ -84,7 +84,7 @@ e.g. `background-image: reverse-gradient($grey-gradient);`
 Any variable pertaining to default appearance should be declared here. We basically only set default `border-radius` in this section.
 
 #### Layout
-We define default horizontal spacing (`$h-space`) and vertical spacing (`$v-space`) in this section.
+We define `$unit` as the basic measure for spacing and alignment of elements. For best results, set a value between 5px and 10px. When applying the variable, use it in whole and half multiples.
 
 If you use a vertical rhythm, feel free to add variables for it here.
 

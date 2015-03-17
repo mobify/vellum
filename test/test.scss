@@ -5,11 +5,11 @@
 // Test CSS
 
 body {
-    padding: $v-space $h-space;
+    padding: $unit $unit*2;
 }
 
 h1[id] {
-    margin-bottom: $v-space;
+    margin-bottom: $unit;
 }
 
 ul.default {
@@ -21,8 +21,8 @@ ol.default {
 }
 
 .c-swatches {
-    margin-top: $v-space;
-    margin-bottom: $v-space*2;
+    margin-top: $unit;
+    margin-bottom: $unit*2;
 }
 
 .c-swatches__item {
