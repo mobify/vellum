@@ -25,6 +25,8 @@ $forms__placeholder-color: $grey-30;
 //
 // 1. These properties must be set with a slightly higher specificity for search
 //    inputs because Normalize's defaults are a bit too specific
+// 2. Turn Select Appearance back on if you want to style this select
+//    box, delete this line
 
 fieldset {
     min-width: 0;
@@ -85,21 +87,6 @@ textarea,
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-appearance: none;
 
-    &[disabled] {
-        opacity: 1;
-
-        background: $forms__disabled-background;
-
-        color: $forms__disabled-color;
-
-        -webkit-text-fill-color: $forms__disabled-color;
-
-        &:active,
-        &:focus {
-            border-color: $forms__disabled-color;
-        }
-    }
-
     &::-webkit-input-placeholder {
         color: $forms__placeholder-color;
     }
@@ -127,9 +114,7 @@ select {
     padding: 8px 15px;
     border-color: darken($forms__border-color, 0.25);
 
-    // Turn Select Appearance back on
-    // If you want to style this select box, delete this line
-    -webkit-appearance: menulist-button;
+    -webkit-appearance: menulist-button; // 2
 }
 
 
@@ -157,15 +142,6 @@ select {
 
     -webkit-appearance: none;
 
-    &[disabled] {
-        background: $forms__disabled-background;
-
-        &:active,
-        &:checked {
-            background: $forms__disabled-background;
-        }
-    }
-
     &:active,
     &:focus {
         background: $grey-20 reverse-gradient($grey-gradient);
@@ -188,16 +164,6 @@ select {
 [type="radio"] {
     border-radius: 24px;
 
-    &[disabled] {
-        &:active,
-        &:focus,
-        &:checked {
-            &::after {
-                background-color: $forms__disabled-color;
-            }
-        }
-    }
-
     &:after {
         top: 20%;
         right: 20%;
@@ -211,15 +177,6 @@ select {
 }
 
 [type="checkbox"] {
-
-    &[disabled] {
-        &:checked {
-            &::after {
-                color: $forms__disabled-color;
-            }
-        }
-    }
-
     &:checked {
         &:after {
             content: '\2714';
@@ -250,22 +207,48 @@ button,
 
     -webkit-appearance: none;
 
-    &[disabled] {
-        opacity: 1;
-
-        background: $forms__disabled-background;
-
-        color: $forms__disabled-color;
-
-        -webkit-text-fill-color: $forms__disabled-color;
-
-        &:active {
-            background: $forms__disabled-background;
-        }
-    }
-
     &:active,
     &:focus {
         background: $grey-20 reverse-gradient($grey-gradient);
+    }
+}
+
+
+// Disabled
+// ---
+//
+// 1. web-kit default disabled style
+// 2. Disabled style for button, checkbox, radio, input and select
+// 3. Checkbox and Radio style
+
+[disabled] {
+    opacity: 1;
+
+    background: $forms__disabled-background;
+
+    color: $forms__disabled-color;
+
+    -webkit-text-fill-color: $forms__disabled-color; // 1
+
+    // 2
+    &:active,
+    &:checked,
+    &:focus {
+        border-color: $forms__disabled-color;
+
+        background: $forms__disabled-background;
+    }
+
+    // 3
+    &:active,
+    &:focus,
+    &:checked {
+        &::after {
+            color: $forms__disabled-color;
+        }
+    }
+
+    &[type="radio"]:after {
+        background-color: $forms__disabled-color;
     }
 }
