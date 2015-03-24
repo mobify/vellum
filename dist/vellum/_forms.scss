@@ -11,6 +11,11 @@ $forms__focus-border-color: $accent-color;
 $forms__border-radius: $border-radius;
 $forms__font-size: $font-size;
 $forms__font-family: $font-family;
+$forms__element-height: 40px;
+$forms__element-padding: 10px 50px 10px 15px;
+$forms__select-padding: 8px 15px;
+$forms__background-color: #fff;
+$forms__element-width: 100%;
 
 
 // General Form Elements
@@ -20,6 +25,7 @@ $forms__font-family: $font-family;
 //
 // 1. These properties must be set with a slightly higher specificity for search
 //    inputs because Normalize's defaults are a bit too specific
+// 2. Align selects with input
 
 fieldset {
     min-width: 0;
@@ -64,13 +70,13 @@ textarea,
 [type="url"],
 [type="tel"],
 [type="color"] {
-    width: 100%;
-    height: 40px;
-    padding: 10px 15px;
+    width: $forms__element-width;
+    height: $forms__element-height;
+    padding: $forms__element-padding;
     border: $border;
     border-radius: $forms__border-radius;
 
-    background-color: #fff;
+    background-color: $forms__background-color;
 
     line-height: $line-height;
 
@@ -97,7 +103,7 @@ textarea {
 }
 
 select {
-    padding: 8px 15px;
+    padding: $forms__select-padding;
     border-color: darken($forms__border-color, 0.25);
 
     // Turn Select Appearance back on
