@@ -25,6 +25,8 @@ $forms__placeholder-color: $neutral-50;
 //
 // 1. These properties must be set with a slightly higher specificity for search
 //    inputs because Normalize's defaults are a bit too specific
+// 2. Turn Select Appearance back on if you want to style this select
+//    box, delete this line
 
 fieldset {
     min-width: 0;
@@ -111,9 +113,7 @@ select {
     padding: 8px 15px;
     border-color: darken($forms__border-color, 0.25);
 
-    // Turn Select Appearance back on
-    // If you want to style this select box, delete this line
-    -webkit-appearance: menulist-button;
+    -webkit-appearance: menulist-button; // 2
 }
 
 
