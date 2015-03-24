@@ -232,8 +232,7 @@ button,
 
     // 2
     &:active,
-    &:checked,
-    &:focus {
+    &:checked {
         border-color: $forms__disabled-color;
 
         background: $forms__disabled-background;
@@ -241,7 +240,6 @@ button,
 
     // 3
     &:active,
-    &:focus,
     &:checked {
         &::after {
             color: $forms__disabled-color;
