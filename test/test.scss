@@ -5,7 +5,7 @@
 // Test CSS
 
 body {
-    padding: $unit $unit*2;
+    padding: $unit ($unit * 2);
 }
 
 h1[id] {
@@ -22,7 +22,7 @@ ol.default {
 
 .c-swatches {
     margin-top: $unit;
-    margin-bottom: $unit*2;
+    margin-bottom: ($unit * 2);
 }
 
 .c-swatches__item {
