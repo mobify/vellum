@@ -169,8 +169,7 @@ select {
         left: 20%;
 
         border-radius: 24px;
-
-        background-color: $neutral-70;
+        background: $neutral-70;
     }
 }
 
@@ -202,7 +201,6 @@ button,
     background: $neutral-30 $neutral-gradient;
 
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
     -webkit-appearance: none;
 
     &:active {
