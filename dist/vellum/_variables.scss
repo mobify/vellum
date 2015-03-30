@@ -12,18 +12,18 @@
 //
 // * Variables without a qualifier are considered “base” variables,
 //   i.e. the default value for that type, e.g. $font-size, $brand-color,
-//   $grey-50.
+//   $neutral-50.
 //
 // * Variables with qualifiers at the beginning are considered “variations” on a
 //   base variable, e.g. $small-font-size, $light-brand-color.
 //
 // * Neutral variables use a scale defined in multiples of 10
-//   from $grey-30 (lightest) to $grey-70 (darkest). Their value can be changed
+//   from $neutral-30 (lightest) to $neutral-70 (darkest). Their value can be changed
 //   according to the project needs but variable names should remain the same.
 //   This provides room to adjust values without changing variable names,
 //   but allows users to use more neutral variables. Additional variables can be
 //   inserted between, below or above these values depending on the colour intensity
-//   and be named $grey-55, $grey-25, etc.
+//   and be named $neutral-55, $neutral-25, etc.
 
 
 // Typography
@@ -44,11 +44,11 @@ $line-height: $font-size * $leading-ratio;
 // ---
 
 // Neutrals
-$grey-30: #E8E8E8;
-$grey-40: #BBB;
-$grey-50: #888;
-$grey-60: #555;
-$grey-70: #333;
+$neutral-30: #E8E8E8;
+$neutral-40: #BBB;
+$neutral-50: #888;
+$neutral-60: #555;
+$neutral-70: #333;
 
 // Brand Colors
 $brand-color: #3498db; // blue
@@ -71,7 +71,7 @@ $light-error-color: lighten($error-color, 15%);
 $dark-error-color: darken($error-color, 15%);
 
 // Font Colors
-$font-color: $grey-70;
+$font-color: $neutral-70;
 
 // Text Link Colors
 $link-color: $accent-color;
@@ -82,7 +82,7 @@ $background-color: white;
 $input-background-color: white;
 
 // Borders
-$border-color: $grey-40;
+$border-color: $neutral-40;
 
 
 // Gradient Colors
@@ -92,10 +92,10 @@ $border-color: $grey-40;
 // e.g. background-image: $light-grey-gradient;
 //
 // To reverse a gradient, you can use the Spline function `reverse-gradient()`
-// e.g. background-image: reverse-gradient($grey-gradient);
+// e.g. background-image: reverse-gradient($neutral-gradient);
 
 // Neutral Gradient
-$grey-gradient: linear-gradient(white, $grey-30);
+$neutral-gradient: linear-gradient(white, $neutral-30);
 
 // Brand Gradient
 $brand-gradient: linear-gradient($light-brand-color, $brand-color);
