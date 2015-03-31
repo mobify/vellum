@@ -84,9 +84,11 @@ e.g. `background-image: reverse-gradient($grey-gradient);`
 Any variable pertaining to default appearance should be declared here. We basically only set default `border-radius` in this section.
 
 #### Layout
-We define default horizontal spacing (`$h-space`) and vertical spacing (`$v-space`) in this section.
+We define `$unit` as the basic measure for spacing and alignment of elements. For best results, set a value between 6px and 12px. When applying the variable, use it in whole and half multiples.
 
-If you use a vertical rhythm, feel free to add variables for it here.
+If you prefer several distinct variables for spacing, such as `$v-space` or `$h-space`, add these here. In general these should be derived from `$unit`.
+
+Any other project-specific variables for layout should go here as well.
 
 #### Z-Index
 Organizes z-index usage by providing a set of named layers. Values can be incremented/decremented slightly as necessary. eg. `$stage-layer + 1`;
