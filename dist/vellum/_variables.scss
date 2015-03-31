@@ -69,6 +69,9 @@ $error-color: #c0392b; // red
 $light-error-color: lighten($error-color, 15%);
 $dark-error-color: darken($error-color, 15%);
 
+// Disabled Color
+$disabled-color: $grey-20;
+
 // Font Colors
 $font-color: $grey-50;
 

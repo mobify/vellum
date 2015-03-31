@@ -6,11 +6,16 @@
 // ---
 
 $forms__border-color: $border-color;
+$forms__input-color: #fff;
 $forms__active-border-color: darken($border-color, 10);
 $forms__focus-border-color: $accent-color;
 $forms__border-radius: $border-radius;
 $forms__font-size: $font-size;
 $forms__font-family: $font-family;
+$forms__checked-background: $grey-10;
+$forms__disabled-color: $disabled-color;
+$forms__disabled-background: $grey-10;
+$forms__placeholder-color: $grey-30;
 
 
 // General Form Elements
@@ -33,6 +38,7 @@ label,
 textarea,
 select {
     display: block;
+
     font-family: $forms__font-family;
     font-size: $forms__font-size;
 }
@@ -68,15 +74,19 @@ textarea,
     height: 40px;
     padding: 10px 15px;
     border: $border;
+
     border-radius: $forms__border-radius;
 
-    background-color: #fff;
+    background-color: $forms__input-color;
 
     line-height: $line-height;
 
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
     -webkit-appearance: none;
+
+    &::-webkit-input-placeholder {
+        color: $forms__placeholder-color;
+    }
 
     &:active {
         border-color: $forms__active-border-color;
@@ -89,6 +99,7 @@ textarea,
 
 input[type="search"] { // 1
     box-sizing: border-box;
+
     -webkit-appearance: none;
 }
 
@@ -130,12 +141,13 @@ select {
 
     -webkit-appearance: none;
 
-    &:active {
+    &:active,
+    &:focus {
         background: $grey-20 reverse-gradient($grey-gradient);
     }
 
     &:checked {
-        background: $grey-10;
+        background: $forms__checked-background;
         box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1);
 
         &::after {
@@ -159,7 +171,7 @@ select {
 
         border-radius: 24px;
 
-        background: $grey-50;
+        background-color: $grey-50;
     }
 }
 
@@ -186,15 +198,54 @@ button,
 [type="submit"] {
     display: block;
     padding: 10px 15px;
-
     border: 1px solid darken($forms__border-color, 0.25);
+
     background: $grey-10 $grey-gradient;
 
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
     -webkit-appearance: none;
 
-    &:active {
+    &:active,
+    &:focus {
         background: $grey-20 reverse-gradient($grey-gradient);
+    }
+}
+
+
+// Disabled
+// ---
+//
+// 1. web-kit default disabled style
+// 2. Disabled style for button, checkbox, radio, input and select
+// 3. Checkbox and Radio style
+
+[disabled] {
+    opacity: 1;
+
+    background: $forms__disabled-background;
+
+    color: $forms__disabled-color;
+
+    -webkit-text-fill-color: $forms__disabled-color; // 1
+
+    // 2
+    &:active,
+    &:checked {
+        border-color: $forms__disabled-color;
+
+        background: $forms__disabled-background;
+    }
+
+    // 3
+    &:active,
+    &:checked {
+        &::after {
+            color: $forms__disabled-color;
+        }
+    }
+
+    &[type="radio"]:after {
+        background-color: $forms__disabled-color;
     }
 }
