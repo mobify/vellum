@@ -2,22 +2,6 @@
 // ===
 
 
-// Form Specific Variables
-// ---
-
-$forms__border-color: $border-color;
-$forms__input-color: #fff;
-$forms__active-border-color: darken($border-color, 10);
-$forms__focus-border-color: $accent-color;
-$forms__border-radius: $border-radius;
-$forms__font-size: $font-size;
-$forms__font-family: $font-family;
-$forms__checked-background: $grey-10;
-$forms__disabled-color: $disabled-color;
-$forms__disabled-background: $grey-10;
-$forms__placeholder-color: $grey-30;
-
-
 // General Form Elements
 // ---
 //
@@ -39,8 +23,8 @@ textarea,
 select {
     display: block;
 
-    font-family: $forms__font-family;
-    font-size: $forms__font-size;
+    font-family: $font-family;
+    font-size: $font-size;
 }
 
 label {
@@ -75,9 +59,9 @@ textarea,
     padding: 10px 15px;
     border: $border;
 
-    border-radius: $forms__border-radius;
+    border-radius: $border-radius;
 
-    background-color: $forms__input-color;
+    background-color: white;
 
     line-height: $line-height;
 
@@ -85,15 +69,15 @@ textarea,
     -webkit-appearance: none;
 
     &::-webkit-input-placeholder {
-        color: $forms__placeholder-color;
+        color: $grey-30;
     }
 
     &:active {
-        border-color: $forms__active-border-color;
+        border-color: darken($border-color, 10);
     }
 
     &:focus {
-        border-color: $forms__focus-border-color;
+        border-color: $accent-color;
     }
 }
 
@@ -109,7 +93,7 @@ textarea {
 
 select {
     padding: 8px 15px;
-    border-color: darken($forms__border-color, 0.25);
+    border-color: darken($border-color, 0.25);
 
     // Turn Select Appearance back on
     // If you want to style this select box, delete this line
@@ -131,7 +115,7 @@ select {
     width: 24px;
     height: 24px;
     margin-right: $unit;
-    border: 1px solid darken($forms__border-color, 0.25);
+    border: 1px solid darken($border-color, 0.25);
 
     background: $grey-10 $grey-gradient;
 
@@ -147,7 +131,7 @@ select {
     }
 
     &:checked {
-        background: $forms__checked-background;
+        background: $grey-10;
         box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1);
 
         &::after {
@@ -183,9 +167,9 @@ select {
             top: 0;
 
             color: $grey-50;
-            font-family: $forms__font-family;
+            font-family: $font-family;
             font-size: 32px;
-            line-height: $forms__font-size;
+            line-height: $font-size;
         }
     }
 }
@@ -198,7 +182,7 @@ button,
 [type="submit"] {
     display: block;
     padding: 10px 15px;
-    border: 1px solid darken($forms__border-color, 0.25);
+    border: 1px solid darken($border-color, 0.25);
 
     background: $grey-10 $grey-gradient;
 
@@ -223,29 +207,29 @@ button,
 [disabled] {
     opacity: 1;
 
-    background: $forms__disabled-background;
+    background: $grey-10;
 
-    color: $forms__disabled-color;
+    color: $disabled-color;
 
-    -webkit-text-fill-color: $forms__disabled-color; // 1
+    -webkit-text-fill-color: $disabled-color; // 1
 
     // 2
     &:active,
     &:checked {
-        border-color: $forms__disabled-color;
+        border-color: $disabled-color;
 
-        background: $forms__disabled-background;
+        background: $grey-10;
     }
 
     // 3
     &:active,
     &:checked {
         &::after {
-            color: $forms__disabled-color;
+            color: $disabled-color;
         }
     }
 
     &[type="radio"]:after {
-        background-color: $forms__disabled-color;
+        background-color: $disabled-color;
     }
 }
