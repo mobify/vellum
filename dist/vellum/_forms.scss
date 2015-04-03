@@ -64,7 +64,7 @@ textarea,
     -webkit-appearance: none;
 
     &::-webkit-input-placeholder {
-        color: $grey-30;
+        color: $neutral-50;
     }
 
     &:focus {
@@ -81,7 +81,7 @@ textarea {
 }
 
 
-// Input Search
+// Search input
 // ---
 //
 // These properties must be set with a slightly higher specificity for search
@@ -132,9 +132,8 @@ select {
 
     -webkit-appearance: none;
 
-    &:active,
-    &:focus {
-        background: $grey-20;
+    &:active {
+        background: $neutral-40;
     }
 
     &:checked {
@@ -173,7 +172,7 @@ select {
 
             top: 0;
 
-            color: $font-color;
+            color: $neutral-70;
             font-family: $font-family;
             font-size: 32px;
             line-height: $font-size;
@@ -191,15 +190,13 @@ button,
     padding: 10px 15px;
     border: 1px solid darken($border-color, 0.25);
 
-    background: $grey-10 $grey-gradient;
+    background: $neutral-30 $neutral-gradient;
 
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
     -webkit-appearance: none;
 
-    &:active,
-    &:focus {
-        background: $grey-20 reverse-gradient($grey-gradient);
+    &:active {
+        background: $neutral-40 reverse-gradient($neutral-gradient);
     }
 }
 
@@ -214,7 +211,47 @@ button,
 [disabled] {
     opacity: 1;
 
-    background: $grey-10;
+    background: $input-disabled-background;
+
+    color: $input-disabled-color;
+
+    -webkit-text-fill-color: $input-disabled-color; // 1
+
+    // 2
+    &:active,
+    &:checked,
+    &:focus {
+        border-color: $input-disabled-color;
+
+        background: $input-disabled-background;
+    }
+
+    // 3
+    &:active,
+    &:checked,
+    &:focus {
+        &::after {
+            color: $input-disabled-color;
+        }
+    }
+
+    &[type="radio"]:after {
+        background-color: $input-disabled-color;
+    }
+}
+
+
+// Disabled
+// ---
+//
+// 1. web-kit default disabled style
+// 2. Disabled style for button, checkbox, radio, input and select
+// 3. Checkbox and Radio style
+
+[disabled] {
+    opacity: 1;
+
+    background: $neutral-30;
 
     color: $disabled-color;
 
@@ -225,7 +262,7 @@ button,
     &:checked {
         border-color: $disabled-color;
 
-        background: $grey-10;
+        background: $neutral-30;
     }
 
     // 3
