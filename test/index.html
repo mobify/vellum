@@ -23,11 +23,11 @@
 
         <h2>Neutrals</h2>
         <div class="c-swatches">
-            <div class="c-swatches__item c--grey-10"><span>$grey-10</span></div>
-            <div class="c-swatches__item c--grey-20"><span>$grey-20</span></div>
-            <div class="c-swatches__item c--grey-30"><span>$grey-30</span></div>
-            <div class="c-swatches__item c--grey-40"><span>$grey-40</span></div>
-            <div class="c-swatches__item c--grey-50"><span>$grey-50</span></div>
+            <div class="c-swatches__item c--neutral-30"><span>$neutral-30</span></div>
+            <div class="c-swatches__item c--neutral-40"><span>$neutral-40</span></div>
+            <div class="c-swatches__item c--neutral-50"><span>$neutral-50</span></div>
+            <div class="c-swatches__item c--neutral-60"><span>$neutral-60</span></div>
+            <div class="c-swatches__item c--neutral-70"><span>$neutral-70</span></div>
         </div>
 
         <h2>Brand Colors</h2>
@@ -133,8 +133,17 @@
                 </p>
 
                 <p>
+                    <label for="text_field">Disabled Text Field:</label>
+                    <input type="text" id="text_field" placeholder="Placeholder" disabled="disabled"/>
+                </p>
+
+                <p>
                     <label for="text_area">Text Area:</label>
                     <textarea id="text_area"></textarea>
+                </p>
+
+                <p><label for="text_area">Disabled Text Area:</label>
+                    <textarea id="text_area" disabled="disabled">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.</textarea>
                 </p>
 
                 <p>
@@ -162,11 +171,15 @@
                     </p>
                     <p>
                         <input id="radio-button" type="radio" name="radio_button" value="radio_2" />
-                        <label for="radio-button">A radio button and its label 2!</label>
+                        <label for="radio-button">AA radio button and its label 2 (that drops to the new line)!!</label>
                     </p>
                     <p>
-                        <input id="radio-button" type="radio" name="radio_button" value="radio_3" />
-                        <label for="radio-button">A radio button and its label 3 (that drops to the new line)!</label>
+                        <input type="radio" class="radio" name="radio_button" value="radio_3" disabled="disabled" />
+                        <label>Disabled Radio</label>
+                    </p>
+                    <p>
+                        <input type="radio" class="radio" name="radio_button" value="radio_4" disabled="disabled" checked />
+                        <label>Disabled Radio Checked</label>
                     </p>
                 </div>
 
@@ -179,13 +192,17 @@
                     </p>
 
                     <p>
-                        <input id="checkbox-button" type="checkbox" name="checkboxes" value="check_2" />
-                        <label for="checkbox-button">A checkbox and its label 2!</label>
+                        <input id="checkbox-button" type="checkbox" name="checkboxes" value="check_3" />
+                        <label for="checkbox-button">A checkbox and its label 2 (that drops to the new line)!</label>
                     </p>
 
                     <p>
-                        <input id="checkbox-button" type="checkbox" name="checkboxes" value="check_3" />
-                        <label for="checkbox-button">A checkbox and its label 3 (that drops to the new line)!</label>
+                        <input type="checkbox" class="checkbox" name="checkboxes" value="check_3" disabled="disabled" />
+                        <label>Disabled Checkbox</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" class="checkbox" name="checkboxes" value="check_4" disabled="disabled" checked />
+                        <label>Disabled Checkbox Checked</label>
                     </p>
                 </div>
 
@@ -200,6 +217,9 @@
                 </p>
 
                 <p><input class="button" type="submit" value="Submit" /></p>
+                <p><input class="button" type="submit" value="Disabled Submit" disabled/></p>
+                <p><button type="button">Button</button></p>
+                <p><button type="button" disabled>Button</button></p>
             </form>
         </fieldset>
 

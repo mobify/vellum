@@ -5,11 +5,11 @@
 // Test CSS
 
 body {
-    padding: $v-space $h-space;
+    padding: $unit ($unit * 2);
 }
 
 h1[id] {
-    margin-bottom: $v-space;
+    margin-bottom: $unit;
 }
 
 ul.default {
@@ -21,8 +21,8 @@ ol.default {
 }
 
 .c-swatches {
-    margin-top: $v-space;
-    margin-bottom: $v-space*2;
+    margin-top: $unit;
+    margin-bottom: ($unit * 2);
 }
 
 .c-swatches__item {
@@ -48,24 +48,24 @@ ol.default {
         font-size: 12px;
     }
 
-    &.c--grey-10 {
-        background: $grey-10;
+    &.c--neutral-30 {
+        background: $neutral-30;
     }
 
-    &.c--grey-20 {
-        background: $grey-20;
+    &.c--neutral-40 {
+        background: $neutral-40;
     }
 
-    &.c--grey-30 {
-        background: $grey-30;
+    &.c--neutral-50 {
+        background: $neutral-50;
     }
 
-    &.c--grey-40 {
-        background: $grey-40;
+    &.c--neutral-60 {
+        background: $neutral-60;
     }
 
-    &.c--grey-50 {
-        background: $grey-50;
+    &.c--neutral-70 {
+        background: $neutral-70;
     }
 
     &.c--brand-color {
