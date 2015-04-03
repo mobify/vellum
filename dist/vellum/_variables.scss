@@ -122,7 +122,7 @@ $unit: 10px;
 
 // Deprecated – these will be removed from Vellum in a future release. Feel free
 // to re-define them in your project if you prefer them.
-$h-space: $unit;
+$h-space: $unit * 2;
 $v-space: $unit;
 
 
