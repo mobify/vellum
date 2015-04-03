@@ -32,12 +32,12 @@ input,
 label,
 textarea,
 select {
-    display: block;
     font-family: $forms__font-family;
     font-size: $forms__font-size;
 }
 
 label {
+    display: inline-block;
     margin-bottom: $v-space / 2;
     font-weight: bold;
 
@@ -64,6 +64,7 @@ textarea,
 [type="url"],
 [type="tel"],
 [type="color"] {
+    display: block;
     width: 100%;
     height: 40px;
     padding: 10px 15px;
