@@ -126,6 +126,18 @@ $h-space: $unit * 2;
 $v-space: $unit;
 
 
+// Forms
+// ---
+
+// Input variables
+$input-height: 40px;
+$input-vertical-padding: $unit;
+$input-horizontal-padding: $unit;
+$input-background-color: white;
+$input-border-radius: $border-radius;
+$input-focus-outline-color: $accent-color;
+
+
 // Layers and `z-index`
 // ---
 //
