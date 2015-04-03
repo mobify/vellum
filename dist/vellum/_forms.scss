@@ -219,8 +219,7 @@ button,
 
     // 2
     &:active,
-    &:checked,
-    &:focus {
+    &:checked {
         border-color: $input-disabled-color;
 
         background: $input-disabled-background;
@@ -228,8 +227,7 @@ button,
 
     // 3
     &:active,
-    &:checked,
-    &:focus {
+    &:checked {
         &::after {
             color: $input-disabled-color;
         }
