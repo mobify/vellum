@@ -12,17 +12,18 @@
 //
 // * Variables without a qualifier are considered “base” variables,
 //   i.e. the default value for that type, e.g. $font-size, $brand-color,
-//   $grey-50.
+//   $neutral-50.
 //
 // * Variables with qualifiers at the beginning are considered “variations” on a
 //   base variable, e.g. $small-font-size, $light-brand-color.
 //
-// * Some variables use a predefined, loose scale: $grey-10, -20, -30, etc.
-//   These should be defined in multiples of 10, with actual values
-//   only approximate. This provides room to adjust values without changing
-//   variable names, but allows users to more precisely gauge the variable by
-//   name. Additional variables can be inserted between values with a variation
-//   prefix such as $light-grey-10.
+// * Neutral variables use a scale defined in multiples of 10
+//   from $neutral-30 (lightest) to $neutral-70 (darkest). Their value can be changed
+//   according to the project needs but variable names should remain the same.
+//   This provides room to adjust values without changing variable names,
+//   but allows users to use more neutral variables. Additional variables can be
+//   inserted between, below or above these values depending on the colour intensity
+//   and be named $neutral-55, $neutral-25, etc.
 
 
 // Typography
@@ -43,11 +44,11 @@ $line-height: $font-size * $leading-ratio;
 // ---
 
 // Neutrals
-$grey-10: #ecf0f1;
-$grey-20: #bdc3c7;
-$grey-30: #95a5a6;
-$grey-40: #7f8c8d;
-$grey-50: #343839;
+$neutral-30: #E8E8E8;
+$neutral-40: #BBB;
+$neutral-50: #888;
+$neutral-60: #555;
+$neutral-70: #333;
 
 // Brand Colors
 $brand-color: #3498db; // blue
@@ -70,10 +71,10 @@ $light-error-color: lighten($error-color, 15%);
 $dark-error-color: darken($error-color, 15%);
 
 // Disabled Color
-$disabled-color: $grey-20;
+$disabled-color: $neutral-40;
 
 // Font Colors
-$font-color: $grey-50;
+$font-color: $neutral-70;
 
 // Text Link Colors
 $link-color: $accent-color;
@@ -83,20 +84,20 @@ $active-link-color: $dark-accent-color;
 $background-color: white;
 
 // Borders
-$border-color: $grey-20;
+$border-color: $neutral-40;
 
 
 // Gradient Colors
 // ---
 //
 // Variables containing all of the gradients used in the site
-// e.g. background-image: $light-grey-gradient;
+// e.g. background-image: $light-neutral-gradient;
 //
 // To reverse a gradient, you can use the Spline function `reverse-gradient()`
-// e.g. background-image: reverse-gradient($grey-gradient);
+// e.g. background-image: reverse-gradient($neutral-gradient);
 
 // Neutral Gradient
-$grey-gradient: linear-gradient(white, $grey-10);
+$neutral-gradient: linear-gradient(white, $neutral-30);
 
 // Brand Gradient
 $brand-gradient: linear-gradient($light-brand-color, $brand-color);

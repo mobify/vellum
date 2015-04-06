@@ -12,19 +12,14 @@ $forms__focus-border-color: $accent-color;
 $forms__border-radius: $border-radius;
 $forms__font-size: $font-size;
 $forms__font-family: $font-family;
-$forms__checked-background: $grey-10;
+$forms__checked-background: $neutral-30;
 $forms__disabled-color: $disabled-color;
-$forms__disabled-background: $grey-10;
-$forms__placeholder-color: $grey-30;
+$forms__disabled-background: $neutral-30;
+$forms__placeholder-color: $neutral-50;
 
 
 // General Form Elements
 // ---
-//
-// Notes:
-//
-// 1. These properties must be set with a slightly higher specificity for search
-//    inputs because Normalize's defaults are a bit too specific
 
 fieldset {
     min-width: 0;
@@ -97,23 +92,35 @@ textarea,
     }
 }
 
-input[type="search"] { // 1
+textarea {
+    height: auto;
+}
+
+
+// Search input
+// ---
+//
+// These properties must be set with a slightly higher specificity for search
+// inputs because Normalize's defaults are a bit too specific
+
+input[type="search"] {
     box-sizing: border-box;
 
     -webkit-appearance: none;
 }
 
-textarea {
-    height: auto;
-}
+
+// Select
+// ---
+//
+// 1. Turn Select Appearance back on.
+//    If you want to style this select box, delete this line
 
 select {
     padding: 8px 15px;
     border-color: darken($forms__border-color, 0.25);
 
-    // Turn Select Appearance back on
-    // If you want to style this select box, delete this line
-    -webkit-appearance: menulist-button;
+    -webkit-appearance: menulist-button; // 1
 }
 
 
@@ -133,7 +140,7 @@ select {
     margin-right: $unit;
     border: 1px solid darken($forms__border-color, 0.25);
 
-    background: $grey-10 $grey-gradient;
+    background: $neutral-30 $neutral-gradient;
 
     vertical-align: middle;
 
@@ -141,9 +148,8 @@ select {
 
     -webkit-appearance: none;
 
-    &:active,
-    &:focus {
-        background: $grey-20 reverse-gradient($grey-gradient);
+    &:active {
+        background: $neutral-40 reverse-gradient($neutral-gradient);
     }
 
     &:checked {
@@ -170,8 +176,7 @@ select {
         left: 20%;
 
         border-radius: 24px;
-
-        background-color: $grey-50;
+        background: $neutral-70;
     }
 }
 
@@ -182,7 +187,7 @@ select {
 
             top: 0;
 
-            color: $grey-50;
+            color: $neutral-70;
             font-family: $forms__font-family;
             font-size: 32px;
             line-height: $forms__font-size;
@@ -200,15 +205,53 @@ button,
     padding: 10px 15px;
     border: 1px solid darken($forms__border-color, 0.25);
 
-    background: $grey-10 $grey-gradient;
+    background: $neutral-30 $neutral-gradient;
 
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
     -webkit-appearance: none;
 
+    &:active {
+        background: $neutral-40 reverse-gradient($neutral-gradient);
+    }
+}
+
+
+// Disabled
+// ---
+//
+// 1. web-kit default disabled style
+// 2. Disabled style for button, checkbox, radio, input and select
+// 3. Checkbox and Radio style
+
+[disabled] {
+    opacity: 1;
+
+    background: $forms__disabled-background;
+
+    color: $forms__disabled-color;
+
+    -webkit-text-fill-color: $forms__disabled-color; // 1
+
+    // 2
     &:active,
+    &:checked,
     &:focus {
-        background: $grey-20 reverse-gradient($grey-gradient);
+        border-color: $forms__disabled-color;
+
+        background: $forms__disabled-background;
+    }
+
+    // 3
+    &:active,
+    &:checked,
+    &:focus {
+        &::after {
+            color: $forms__disabled-color;
+        }
+    }
+
+    &[type="radio"]:after {
+        background-color: $forms__disabled-color;
     }
 }
 
