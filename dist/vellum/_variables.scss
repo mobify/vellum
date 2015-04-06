@@ -127,19 +127,20 @@ $h-space: $unit * 2;
 $v-space: $unit;
 
 
-// Forms
+// Form Specific Variables
 // ---
 
-// Input variables
-$input-height: 40px;
-$input-vertical-padding: $unit;
-$input-horizontal-padding: $unit;
-$input-background-color: white;
-$input-border-radius: $border-radius;
-$input-focus-outline-color: $accent-color;
-
-$input-disabled-background: $neutral-30;
-$input-disabled-color: $disabled-color;
+$forms-border-color: $border-color;
+$forms-input-color: #fff;
+$forms-active-border-color: darken($border-color, 10);
+$forms-focus-border-color: $accent-color;
+$forms-border-radius: $border-radius;
+$forms-font-size: $font-size;
+$forms-font-family: $font-family;
+$forms-checked-background: $neutral-30;
+$forms-disabled-color: $disabled-color;
+$forms-disabled-background: $neutral-30;
+$forms-placeholder-color: $neutral-50;
 
 
 // Layers and `z-index`
