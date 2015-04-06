@@ -211,46 +211,6 @@ button,
 
     // 2
     &:active,
-    &:checked,
-    &:focus {
-        border-color: $forms-disabled-color;
-
-        background: $forms-disabled-background;
-    }
-
-    // 3
-    &:active,
-    &:checked,
-    &:focus {
-        &::after {
-            color: $forms-disabled-color;
-        }
-    }
-
-    &[type="radio"]:after {
-        background-color: $forms-disabled-color;
-    }
-}
-
-
-// Disabled
-// ---
-//
-// 1. web-kit default disabled style
-// 2. Disabled style for button, checkbox, radio, input and select
-// 3. Checkbox and Radio style
-
-[disabled] {
-    opacity: 1;
-
-    background: $forms-disabled-background;
-
-    color: $forms-disabled-color;
-
-    -webkit-text-fill-color: $forms-disabled-color; // 1
-
-    // 2
-    &:active,
     &:checked {
         border-color: $forms-disabled-color;
 
