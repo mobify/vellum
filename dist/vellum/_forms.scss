@@ -37,7 +37,6 @@ select {
 }
 
 label {
-
     display: inline-block;
     margin-bottom: $unit / 2;
 
@@ -165,10 +164,6 @@ select {
 
             display: block;
         }
-    }
-
-    & + label {
-        display: inline-block;
     }
 }
 
