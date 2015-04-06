@@ -2,8 +2,29 @@
 // ===
 
 
+// Form Specific Variables
+// ---
+
+$forms__border-color: $border-color;
+$forms__input-color: #fff;
+$forms__active-border-color: darken($border-color, 10);
+$forms__focus-border-color: $accent-color;
+$forms__border-radius: $border-radius;
+$forms__font-size: $font-size;
+$forms__font-family: $font-family;
+$forms__checked-background: $grey-10;
+$forms__disabled-color: $disabled-color;
+$forms__disabled-background: $grey-10;
+$forms__placeholder-color: $grey-30;
+
+
 // General Form Elements
 // ---
+//
+// Notes:
+//
+// 1. These properties must be set with a slightly higher specificity for search
+//    inputs because Normalize's defaults are a bit too specific
 
 fieldset {
     min-width: 0;
@@ -18,8 +39,8 @@ textarea,
 select {
     display: block;
 
-    font-family: $font-family;
-    font-size: $font-size;
+    font-family: $forms__font-family;
+    font-size: $forms__font-size;
 }
 
 label {
@@ -50,13 +71,13 @@ textarea,
 [type="tel"],
 [type="color"] {
     width: 100%;
-    height: $input-height;
-    padding: $input-vertical-padding $input-horizontal-padding;
+    height: 40px;
+    padding: 10px 15px;
     border: $border;
 
-    border-radius: $input-border-radius;
+    border-radius: $forms__border-radius;
 
-    background-color: $input-background-color;
+    background-color: $forms__input-color;
 
     line-height: $line-height;
 
@@ -64,47 +85,35 @@ textarea,
     -webkit-appearance: none;
 
     &::-webkit-input-placeholder {
-        color: $neutral-50;
-    }
-
-    &:focus {
-        border-color: $input-focus-outline-color;
+        color: $forms__placeholder-color;
     }
 
     &:active {
-        border-color: darken($border-color, 10);
+        border-color: $forms__active-border-color;
     }
+
+    &:focus {
+        border-color: $forms__focus-border-color;
+    }
+}
+
+input[type="search"] { // 1
+    box-sizing: border-box;
+
+    -webkit-appearance: none;
 }
 
 textarea {
     height: auto;
 }
 
-
-// Search input
-// ---
-//
-// These properties must be set with a slightly higher specificity for search
-// inputs because Normalize's defaults are a bit too specific
-
-input[type="search"] {
-    box-sizing: border-box;
-
-    -webkit-appearance: none;
-}
-
-
-// Select
-// ---
-//
-// 1. Turn Select Appearance back on.
-//    If you want to style this select box, delete this line
-
 select {
-    padding: $input-vertical-padding $input-horizontal-padding;
-    border-color: darken($border-color, 0.25);
+    padding: 8px 15px;
+    border-color: darken($forms__border-color, 0.25);
 
-    -webkit-appearance: menulist-button; // 1
+    // Turn Select Appearance back on
+    // If you want to style this select box, delete this line
+    -webkit-appearance: menulist-button;
 }
 
 
@@ -122,9 +131,9 @@ select {
     width: 24px;
     height: 24px;
     margin-right: $unit;
-    border: 1px solid darken($border-color, 0.25);
+    border: 1px solid darken($forms__border-color, 0.25);
 
-    background: $input-background-color;
+    background: $grey-10 $grey-gradient;
 
     vertical-align: middle;
 
@@ -132,12 +141,13 @@ select {
 
     -webkit-appearance: none;
 
-    &:active {
-        background: $neutral-40;
+    &:active,
+    &:focus {
+        background: $grey-20 reverse-gradient($grey-gradient);
     }
 
     &:checked {
-        background: $input-background-color;
+        background: $forms__checked-background;
         box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1);
 
         &::after {
@@ -161,7 +171,7 @@ select {
 
         border-radius: 24px;
 
-        background-color: $font-color;
+        background-color: $grey-50;
     }
 }
 
@@ -172,10 +182,10 @@ select {
 
             top: 0;
 
-            color: $neutral-70;
-            font-family: $font-family;
+            color: $grey-50;
+            font-family: $forms__font-family;
             font-size: 32px;
-            line-height: $font-size;
+            line-height: $forms__font-size;
         }
     }
 }
@@ -188,15 +198,17 @@ button,
 [type="submit"] {
     display: block;
     padding: 10px 15px;
-    border: 1px solid darken($border-color, 0.25);
+    border: 1px solid darken($forms__border-color, 0.25);
 
-    background: $neutral-30 $neutral-gradient;
+    background: $grey-10 $grey-gradient;
 
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
     -webkit-appearance: none;
 
-    &:active {
-        background: $neutral-40 reverse-gradient($neutral-gradient);
+    &:active,
+    &:focus {
+        background: $grey-20 reverse-gradient($grey-gradient);
     }
 }
 
@@ -211,67 +223,29 @@ button,
 [disabled] {
     opacity: 1;
 
-    background: $input-disabled-background;
+    background: $forms__disabled-background;
 
-    color: $input-disabled-color;
+    color: $forms__disabled-color;
 
-    -webkit-text-fill-color: $input-disabled-color; // 1
+    -webkit-text-fill-color: $forms__disabled-color; // 1
 
     // 2
     &:active,
     &:checked {
-        border-color: $input-disabled-color;
+        border-color: $forms__disabled-color;
 
-        background: $input-disabled-background;
+        background: $forms__disabled-background;
     }
 
     // 3
     &:active,
     &:checked {
         &::after {
-            color: $input-disabled-color;
+            color: $forms__disabled-color;
         }
     }
 
     &[type="radio"]:after {
-        background-color: $input-disabled-color;
-    }
-}
-
-
-// Disabled
-// ---
-//
-// 1. web-kit default disabled style
-// 2. Disabled style for button, checkbox, radio, input and select
-// 3. Checkbox and Radio style
-
-[disabled] {
-    opacity: 1;
-
-    background: $neutral-30;
-
-    color: $disabled-color;
-
-    -webkit-text-fill-color: $disabled-color; // 1
-
-    // 2
-    &:active,
-    &:checked {
-        border-color: $disabled-color;
-
-        background: $neutral-30;
-    }
-
-    // 3
-    &:active,
-    &:checked {
-        &::after {
-            color: $disabled-color;
-        }
-    }
-
-    &[type="radio"]:after {
-        background-color: $disabled-color;
+        background-color: $forms__disabled-color;
     }
 }
