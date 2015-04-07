@@ -1,7 +1,7 @@
 1.0.0
     - Initial Vellum release
 
-1.1.0
+1.1.1
     - Text indent removed from `select` element
     - Disabled form styles added
     - `$v-space` and `$h-space` replaced with `$unit`
