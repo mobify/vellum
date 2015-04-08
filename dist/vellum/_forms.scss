@@ -51,20 +51,7 @@ label {
 
 select,
 textarea,
-[type="text"],
-[type="search"],
-[type="password"],
-[type="datetime"],
-[type="datetime-local"],
-[type="date"],
-[type="month"],
-[type="time"],
-[type="week"],
-[type="number"],
-[type="email"],
-[type="url"],
-[type="tel"],
-[type="color"] {
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]) {
     width: 100%;
     height: 40px;
     padding: 10px 15px;
