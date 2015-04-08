@@ -1,6 +1,3 @@
-1.0.0
-    - Initial Vellum release
-
 1.1.1
     - Text indent removed from `select` element
     - Disabled form styles added
@@ -11,3 +8,6 @@
     - `*.css.map` added to ignore list
     - `/templates` folder renamed to `/almanac`
     - `Readme` updated
+
+1.0.0
+    - Initial Vellum release
