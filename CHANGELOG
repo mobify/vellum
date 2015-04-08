@@ -1,2 +1,13 @@
 1.0.0
     - Initial Vellum release
+
+1.1.1
+    - Text indent removed from `select` element
+    - Disabled form styles added
+    - `$v-space` and `$h-space` replaced with `$unit`
+    - `$unit` value is 10px
+    - Grey-10, -20, -30, -40, -50 variables replaced with Neutral-30, -40, -50, -60, -70 variables
+    - `$grey-gradient` renamed to `$neutral-gradient`
+    - `*.css.map` added to ignore list
+    - `/templates` folder renamed to `/almanac`
+    - `Readme` updated
