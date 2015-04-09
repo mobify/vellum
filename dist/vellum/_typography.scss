@@ -1,9 +1,9 @@
-// TYPOGRAPHY
-// ==========
+// Typography
+// ===
 
 
-// HEADERS
-// -------
+// Headers
+// ---
 
 h1,
 h2,
@@ -17,41 +17,42 @@ h6 {
     line-height: 1.25;
 }
 
-%h1,
-h1 {
+h1,
+%h1 {
     font-size: 28px;
 }
 
-%h2,
-h2 {
+h2,
+%h2 {
     font-size: 24px;
 }
 
-%h3,
-h3 {
+h3,
+%h3 {
     font-size: 20px;
 }
 
-%h4,
-h4 {
+h4,
+%h4 {
     font-size: 18px;
 }
 
-%h5,
-h5 {
+h5,
+%h5 {
     font-size: 16px;
 }
 
-%h6,
-h6 {
+h6,
+%h6 {
     font-size: $font-size;
 }
 
-// ADDITIONAL ELEMENTS
-// --------------------
+
+// Text Elements
+// ---
 
 p {
-    margin: 0 0 $v-space;
+    margin: 0 0 $unit;
 }
 
 a {
@@ -64,8 +65,12 @@ a {
     }
 }
 
+
+// Miscellaneous Elements
+// ---
+
 hr {
-    margin: $v-space*2 0;
+    margin: ($unit * 2) 0;
     border: 1px solid $border-color;
     border-width: 0 0 1px;
 }
@@ -76,8 +81,8 @@ img {
 }
 
 blockquote {
-    margin: $v-space*2 0;
-    padding-left: $h-space;
+    margin: ($unit * 2) 0;
+    padding-left: $unit;
     border-left: 2px solid $border-color;
 
     color: lighten($font-color, 15);

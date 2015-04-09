@@ -1,0 +1,36 @@
+// Global
+// ===
+
+// Document
+// ---
+//
+// 1. Provide default line-height as a ratio rather than a fixed value.
+//    http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/
+// 2. Applying styles to *::before or *::after is a performance issue on some
+//    legacy Android devices (4.1.x). As such, these are disabled by default.
+
+// *::before, // 2
+// *::after, // 2
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: $background-color;
+
+    color: $font-color;
+    font-family: $font-family;
+    font-size: $font-size;
+    line-height: $leading-ratio; // 1
+}
+
+// Hidden
+// ---
+//
+// Hide visually and from screen readers. The html5 `hidden` attribute is
+// preferred to a `u-hidden` class because it exactly matches our intent and
+// has machine-readable semantics.
+
+[hidden] {
+    display: none !important;
+}

@@ -1,23 +1,13 @@
 // Forms
 // ===
 
-// Form Specific Variables
-// ---
-
-$form-border-color: $border-color;
-$active-form-border-color: darken($border-color, 10);
-$focus-form-border-color: $accent-color;
-$form-border-radius: $border-radius;
-$form-font-size: $font-size;
-$form-font-family: $font-family;
-
 
 // General Form Elements
 // ---
 
 fieldset {
     min-width: 0;
-    margin: 0 0 $v-space;
+    margin: 0 0 $unit;
     padding: 0;
     border: 0;
 }
@@ -27,12 +17,13 @@ label,
 textarea,
 select {
     display: block;
-    font-family: $form-font-family;
-    font-size: $form-font-size;
+
+    font-family: $forms-font-family;
+    font-size: $forms-font-size;
 }
 
 label {
-    margin-bottom: $v-space / 2;
+    margin-bottom: $unit / 2;
     font-weight: bold;
 
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -63,21 +54,24 @@ textarea,
     padding: 10px 15px;
     border: $border;
 
-    border-radius: $border-radius;
-    background-color: #fff;
+    border-radius: $forms-border-radius;
+    background-color: $forms-input-color;
 
     line-height: $line-height;
 
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
     -webkit-appearance: none;
 
+    &::-webkit-input-placeholder {
+        color: $forms-placeholder-color;
+    }
+
     &:active {
-        border-color: $active-form-border-color;
+        border-color: $forms-active-border-color;
     }
 
     &:focus {
-        border-color: $focus-form-border-color;
+        border-color: $forms-focus-border-color;
     }
 }
 
@@ -89,11 +83,12 @@ textarea {
 // Search input
 // ---
 //
-// 1. These properties must be set with a slightly higher specificity for search inputs
-//    because Normalize's defaults are a bit too specific
+// These properties must be set with a slightly higher specificity for search
+// inputs because Normalize's defaults are a bit too specific
 
-input[type="search"] { // 1
+input[type="search"] {
     box-sizing: border-box;
+
     -webkit-appearance: none;
 }
 
@@ -101,14 +96,12 @@ input[type="search"] { // 1
 // Select
 // ---
 //
-// 1. Turn Select Appearance back on
+// 1. Turn Select Appearance back on.
 //    If you want to style this select box, delete this line
 
 select {
     padding: 8px 15px;
-    border-color: darken($form-border-color, 0.25);
-
-    text-indent: 5px;
+    border-color: darken($forms-border-color, 0.25);
 
     -webkit-appearance: menulist-button; // 1
 }
@@ -127,10 +120,10 @@ select {
     display: inline-block;
     width: 24px;
     height: 24px;
-    margin-right: $h-space / 2;
-    border: 1px solid darken($form-border-color, 0.25);
+    margin-right: $unit;
+    border: 1px solid darken($forms-border-color, 0.25);
 
-    background: $grey-10 $grey-gradient;
+    background: $neutral-30 $neutral-gradient;
 
     vertical-align: middle;
 
@@ -139,11 +132,11 @@ select {
     -webkit-appearance: none;
 
     &:active {
-        background: $grey-20 reverse-gradient($grey-gradient);
+        background: $neutral-40 reverse-gradient($neutral-gradient);
     }
 
     &:checked {
-        background: $grey-10;
+        background: $forms-checked-background;
         box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1);
 
         &::after {
@@ -165,8 +158,8 @@ select {
         bottom: 20%;
         left: 20%;
 
-        background: $grey-50;
         border-radius: 24px;
+        background: $neutral-70;
     }
 }
 
@@ -177,10 +170,10 @@ select {
 
             top: 0;
 
-            color: $grey-50;
-            font-family: $form-font-family;
+            color: $neutral-70;
+            font-family: $forms-font-family;
             font-size: 32px;
-            line-height: $form-font-size;
+            line-height: $forms-font-size;
         }
     }
 }
@@ -196,19 +189,55 @@ select {
 button,
 [type="submit"] {
     display: block;
-    width: 100%;
     padding: 10px 15px;
+    border: 1px solid darken($forms-border-color, 0.25);
 
-    border: 1px solid darken($form-border-color, 0.25);
-    background: $grey-10 $grey-gradient;
+    background: $neutral-30 $neutral-gradient;
 
     cursor: pointer; // 1
 
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
     -webkit-appearance: none;
 
     &:active {
-        background: $grey-20 reverse-gradient($grey-gradient);
+        background: $neutral-40 reverse-gradient($neutral-gradient);
+    }
+}
+
+
+// Disabled
+// ---
+//
+// 1. web-kit default disabled style
+// 2. Disabled style for button, checkbox, radio, input and select
+// 3. Checkbox and Radio style
+
+[disabled] {
+    opacity: 1;
+
+    background: $forms-disabled-background;
+
+    color: $forms-disabled-color;
+
+    -webkit-text-fill-color: $forms-disabled-color; // 1
+
+    // 2
+    &:active,
+    &:checked {
+        border-color: $forms-disabled-color;
+
+        background: $forms-disabled-background;
+    }
+
+    // 3
+    &:active,
+    &:checked {
+        &::after {
+            color: $forms-disabled-color;
+        }
+    }
+
+    &[type="radio"]:after {
+        background-color: $forms-disabled-color;
     }
 }

@@ -1,38 +1,58 @@
-// LISTS
-// =====
+// Lists
+// ===
+
+
+// Ordered and Unordered Lists
+// ---
 //
 // We default to unstyled lists because they seem to be a more common usecase.
 // Use the extensions to re-add the defaults back in.
+//
+// It is our recommendation that instead of styling the ul and ol directly that
+// you create a list component that can be added to lists when needed.
 
 ul,
 ol {
     margin: 0;
     padding: 0;
+
     list-style-type: none;
 }
 
-// Use this extension to turn default styling for unordered lists back on
-%bullet-list {
-    margin-bottom: $v-space;
-    padding-left: $h-space;
+// If you want your unordered lists to have default styles, extend the
+// following code:
+
+%ul {
+    margin-bottom: $unit;
+    padding-left: $unit * 2;
+
     list-style-type: disc;
 }
 
-// Use this extension to turn default styling for ordered lists back on
-%decimal-list {
-    margin-bottom: $v-space;
-    padding-left: $h-space;
+// If you want your ordered lists to have default styles, extend the
+// following code:
+
+%ol {
+    margin-bottom: $unit;
+    padding-left: $unit * 2;
+
     list-style-type: decimal;
 }
 
+
+// Definition Lists
+// ---
+
 dl {
-    margin-bottom: $v-space;
     line-height: $line-height;
+
+    margin-bottom: $unit;
 }
 
 dt {
-    margin-top: $v-space;
     font-weight: bold;
+
+    margin-top: $unit;
 }
 
 dd {

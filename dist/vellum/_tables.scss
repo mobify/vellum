@@ -1,21 +1,21 @@
-// TABLES
-// ======
+// Tables
+// ===
 
 table {
-    width: 100%;
-    margin: $v-space 0;
     border-collapse: collapse;
+    width: 100%;
+    margin: $unit 0;
 }
 
 th {
-    padding: $v-space 0;
+    padding: $unit 0;
     border-bottom: 1px solid darken($border-color, 15%);
     font-weight: bold;
     text-align: left;
 }
 
 td {
-    padding: $v-space 0;
+    padding: $unit 0;
     border-bottom: 1px solid $border-color;
 }
 

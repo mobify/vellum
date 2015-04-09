@@ -5,17 +5,114 @@
 // Test CSS
 
 body {
-    padding: $v-space $h-space;
+    padding: $unit ($unit * 2);
 }
 
 h1[id] {
-    margin-bottom: $v-space;
+    margin-bottom: $unit;
 }
 
 ul.default {
-    @extend %bullet-list;
+    @extend %ul;
 }
 
 ol.default {
-    @extend %decimal-list;
+    @extend %ol;
+}
+
+.c-swatches {
+    margin-top: $unit;
+    margin-bottom: ($unit * 2);
+}
+
+.c-swatches__item {
+    position: relative;
+
+    display: inline-block;
+    width: 100px;
+    padding: 10px;
+    height: 100px;
+    margin-right: 10px;
+    vertical-align: middle;
+
+    border-radius: $border-radius;
+
+    text-align: center;
+
+    span {
+        display: inline-block;
+        padding: 5px;
+
+        background: white;
+
+        font-size: 12px;
+    }
+
+    &.c--neutral-30 {
+        background: $neutral-30;
+    }
+
+    &.c--neutral-40 {
+        background: $neutral-40;
+    }
+
+    &.c--neutral-50 {
+        background: $neutral-50;
+    }
+
+    &.c--neutral-60 {
+        background: $neutral-60;
+    }
+
+    &.c--neutral-70 {
+        background: $neutral-70;
+    }
+
+    &.c--brand-color {
+        background: $brand-color;
+    }
+
+    &.c--light-brand-color {
+        background: $light-brand-color;
+    }
+
+    &.c--dark-brand-color {
+        background: $dark-brand-color;
+    }
+
+    &.c--accent-color {
+        background: $accent-color;
+    }
+
+    &.c--light-accent-color {
+        background: $light-accent-color;
+    }
+
+    &.c--dark-accent-color {
+        background: $dark-accent-color;
+    }
+
+    &.c--success-color {
+        background: $success-color;
+    }
+
+    &.c--light-success-color {
+        background: $light-success-color;
+    }
+
+    &.c--dark-success-color {
+        background: $dark-success-color;
+    }
+
+    &.c--error-color {
+        background: $error-color;
+    }
+
+    &.c--light-error-color {
+        background: $light-error-color;
+    }
+
+    &.c--dark-error-color {
+        background: $dark-error-color;
+    }
 }

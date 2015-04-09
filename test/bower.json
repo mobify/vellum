@@ -1,6 +1,6 @@
 {
   "name": "vellum",
-  "version": "0.1.0",
+  "version": "1.1.1",
   "homepage": "https://github.com/mobify/vellum",
   "authors": [
     "Kyle Peatt <kpeatt@gmail.com>"
@@ -16,7 +16,7 @@
     "tests"
   ],
   "devDependencies": {
-    "spline": "~0.2.0",
-    "modularized-normalize-scss": "~3.0.0"
+    "spline": "~1.0.1",
+    "modularized-normalize-scss": "~3.0.2"
   }
 }

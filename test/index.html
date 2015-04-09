@@ -19,6 +19,47 @@
 
   <hr />
 
+  <h1 id="swatches">Colors</h1>
+
+  <h2>Neutrals</h2>
+  <div class="c-swatches">
+    <div class="c-swatches__item c--neutral-30"><span>$neutral-30</span></div>
+    <div class="c-swatches__item c--neutral-40"><span>$neutral-40</span></div>
+    <div class="c-swatches__item c--neutral-50"><span>$neutral-50</span></div>
+    <div class="c-swatches__item c--neutral-60"><span>$neutral-60</span></div>
+    <div class="c-swatches__item c--neutral-70"><span>$neutral-70</span></div>
+  </div>
+
+  <h2>Brand Colors</h2>
+  <div class="c-swatches">
+    <div class="c-swatches__item c--brand-color"><span>$brand-color</span></div>
+    <div class="c-swatches__item c--light-brand-color"><span>$light-brand-color</span></div>
+    <div class="c-swatches__item c--dark-brand-color"><span>$dark-brand-color</span></div>
+  </div>
+
+  <h2>Accent Colors</h2>
+  <div class="c-swatches">
+    <div class="c-swatches__item c--accent-color"><span>$accent-color</span></div>
+    <div class="c-swatches__item c--light-accent-color"><span>$light-accent-color</span></div>
+    <div class="c-swatches__item c--dark-accent-color"><span>$dark-accent-color</span></div>
+  </div>
+
+  <h2>Success Colors</h2>
+  <div class="c-swatches">
+    <div class="c-swatches__item c--success-color"><span>$success-color</span></div>
+    <div class="c-swatches__item c--light-success-color"><span>$light-success-color</span></div>
+    <div class="c-swatches__item c--dark-success-color"><span>$dark-success-color</span></div>
+  </div>
+
+  <h2>Error Colors</h2>
+  <div class="c-swatches">
+    <div class="c-swatches__item c--error-color"><span>$error-color</span></div>
+    <div class="c-swatches__item c--light-error-color"><span>$light-error-color</span></div>
+    <div class="c-swatches__item c--dark-error-color"><span>$dark-error-color</span></div>
+  </div>
+
+  <hr />
+
   <h1 id="headings">Headings</h1>
 
   <h1>h1. Heading</h1>
@@ -89,11 +130,31 @@
       <p><label for="text_field">Text Field:</label>
         <input type="text" id="text_field" placeholder="Placeholder"/></p>
 
+      <p><label for="text_field">Disabled Text Field:</label>
+        <input type="text" id="text_field" placeholder="Placeholder" disabled="disabled"/></p>
+
       <p><label for="text_area">Text Area:</label>
         <textarea id="text_area"></textarea></p>
 
+      <p><label for="text_area">Disabled Text Area:</label>
+        <textarea id="text_area" disabled="disabled">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.</textarea></p>
+
       <p><label for="select_element">Select Element:</label>
         <select name="select_element">
+          <optgroup label="Option Group 1">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </optgroup>
+          <optgroup label="Option Group 2">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </optgroup>
+      </select></p>
+
+      <p><label for="select_element">Disabled Select Element:</label>
+        <select name="select_element" disabled>
           <optgroup label="Option Group 1">
             <option value="1">Option 1</option>
             <option value="2">Option 2</option>
@@ -114,19 +175,25 @@
           <input type="radio" class="radio" name="radio_button" value="radio_2" /> Radio 2
         </label>
         <label>
-          <input type="radio" class="radio" name="radio_button" value="radio_3" /> Radio 3
+          <input type="radio" class="radio" name="radio_button" value="radio_3" disabled="disabled" /> Disabled Radio
+        </label>
+        <label>
+          <input type="radio" class="radio" name="radio_button" value="radio_4" disabled="disabled" checked /> Disabled Radio Checked
         </label>
       </p>
 
       <p><label for="checkboxes">Checkboxes:</label>
         <label>
-          <input type="checkbox" class="checkbox" name="checkboxes" value="check_1" /> Radio 1
+          <input type="checkbox" class="checkbox" name="checkboxes" value="check_1" /> Checkbox 1
         </label>
         <label>
-          <input type="checkbox" class="checkbox" name="checkboxes" value="check_2" /> Radio 2
+          <input type="checkbox" class="checkbox" name="checkboxes" value="check_2" /> Checkbox 2
         </label>
         <label>
-          <input type="checkbox" class="checkbox" name="checkboxes" value="check_3" /> Radio 3
+          <input type="checkbox" class="checkbox" name="checkboxes" value="check_3" disabled="disabled" /> Disabled Checkbox
+        </label>
+        <label>
+          <input type="checkbox" class="checkbox" name="checkboxes" value="check_4" disabled="disabled" checked /> Disabled Checkbox Checked
         </label>
       </p>
 
@@ -138,8 +205,13 @@
         <input type="file" class="file" name="file" />
       </p>
 
-
       <p><input class="button" type="submit" value="Submit" /></p>
+
+      <p><input class="button" type="submit" value="Disabled Submit" disabled/></p>
+
+      <p><button type="button">Button</button></p>
+
+      <p><button type="button" disabled>Button</button></p>
     </form>
   </fieldset>
 
