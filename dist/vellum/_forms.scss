@@ -62,9 +62,9 @@ textarea,
 // [type="week"],
 // [type="tel"],
 // [type="color"],
+// [type="url"],
 [type="number"],
-[type="email"],
-[type="url"], {
+[type="email"] {
     width: 100%;
     height: 40px;
     padding: 10px 15px;
