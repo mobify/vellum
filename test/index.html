@@ -65,12 +65,12 @@
         <section>
             <h1 id="headings">Headings</h1>
 
-            <h1>h1. Heading</h1>
-            <h2>h2. Heading</h2>
-            <h3>h3. Heading</h3>
-            <h4>h4. Heading</h4>
-            <h5>h5. Heading</h5>
-            <h6>h6. Heading</h6>
+            <h1>h1 Heading</h1>
+            <h2>h2 Heading</h2>
+            <h3>h3 Heading</h3>
+            <h4>h4 Heading</h4>
+            <h5>h5 Heading</h5>
+            <h6>h6 Heading</h6>
         </section>
 
         <hr />
@@ -90,7 +90,9 @@
 
             <h3>Definition List</h3>
             <dl>
-                <dt>Definition List Title</dt>
+                <dt>Definition List Title 1</dt>
+                <dd>This is a definition list division.</dd>
+                <dt>Definition List Title 2</dt>
                 <dd>This is a definition list division.</dd>
             </dl>
 
@@ -130,25 +132,35 @@
 
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.</p>
 
+
             <form>
                 <h2>Form Element</h2>
 
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.</p>
 
-                <p><label for="text-field">Text Field:</label>
-                    <input type="text" id="text-field" placeholder="Placeholder"/></p>
+                <fieldset>
+                    <label for="text-field">Text Field:</label>
+                    <input type="text" id="text-field" placeholder="Placeholder"/>
+                </fieldset>
 
-                <p><label for="text-field">Disabled Text Field:</label>
-                    <input type="text" id="text-field" placeholder="Placeholder" disabled="disabled"/></p>
+                <fieldset>
+                    <label for="text-field">Disabled Text Field:</label>
+                    <input type="text" id="text-field" placeholder="Placeholder" disabled="disabled"/>
+                </fieldset>
 
-                <p><label for="text-area">Text Area:</label>
-                    <textarea id="text-area"></textarea></p>
+                <fieldset>
+                    <label for="text-area-1">Text Area:</label>
+                    <textarea id="text-area-1"></textarea>
+                </fieldset>
 
-                <p><label for="text-area">Disabled Text Area:</label>
-                    <textarea id="text-area" disabled="disabled">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.</textarea></p>
+                <fieldset>
+                    <label for="text-area-2">Disabled Text Area:</label>
+                    <textarea id="text-area-2" disabled="disabled">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.</textarea>
+                </fieldset>
 
-                <p><label for="select-element">Select Element:</label>
-                    <select name="select-element">
+                <fieldset>
+                    <label for="select-element">Select Element:</label>
+                    <select name="select-element" id="select-element">
                         <optgroup label="Option Group 1">
                             <option value="1">Option 1</option>
                             <option value="2">Option 2</option>
@@ -159,9 +171,11 @@
                             <option value="2">Option 2</option>
                             <option value="3">Option 3</option>
                         </optgroup>
-                </select></p>
+                    </select>
+                </fieldset>
 
-                <p><label for="select-element">Disabled Select Element:</label>
+                <fieldset>
+                    <label for="select-element">Disabled Select Element:</label>
                     <select name="select-element" disabled>
                         <optgroup label="Option Group 1">
                             <option value="1">Option 1</option>
@@ -173,53 +187,75 @@
                             <option value="2">Option 2</option>
                             <option value="3">Option 3</option>
                         </optgroup>
-                </select></p>
+                    </select>
+                </fieldset>
 
-                <p><label for="radio-buttons">Radio Buttons:</label>
-                    <label>
-                        <input type="radio" class="radio" name="radio-button" value="radio-1" /> Radio 1
-                    </label>
-                    <label>
-                        <input type="radio" class="radio" name="radio-button" value="radio-2" /> Radio 2
-                    </label>
-                    <label>
-                        <input type="radio" class="radio" name="radio-button" value="radio-3" disabled="disabled" /> Disabled Radio
-                    </label>
-                    <label>
-                        <input type="radio" class="radio" name="radio-button" value="radio-4" disabled="disabled" checked /> Disabled Radio Checked
-                    </label>
-                </p>
+                <fieldset>
 
-                <p><label for="checkboxes">Checkboxes:</label>
-                    <label>
-                        <input type="checkbox" class="checkbox" name="checkboxes" value="check-1" /> Checkbox 1
-                    </label>
-                    <label>
-                        <input type="checkbox" class="checkbox" name="checkboxes" value="check-2" /> Checkbox 2
-                    </label>
-                    <label>
-                        <input type="checkbox" class="checkbox" name="checkboxes" value="check-3" disabled="disabled" /> Disabled Checkbox
-                    </label>
-                    <label>
-                        <input type="checkbox" class="checkbox" name="checkboxes" value="check-4" disabled="disabled" checked /> Disabled Checkbox Checked
-                    </label>
-                </p>
+                    <legend>Radio Buttons:</legend>
 
-                <p><label for="password">Password:</label>
-                    <input type="password" class="password" name="password" />
-                </p>
+                    <div>
+                        <input type="radio" class="radio" name="radio-button" value="Radio 1" />
+                        <label for="radio-button">Radio 1</label>
+                    </div>
+                    <div>
+                        <input type="radio" class="radio" name="radio-button" value="Radio 2" />
+                        <label for="radio-button">Radio 2</label>
+                    </div>
 
-                <p><label for="file">File Input:</label>
-                    <input type="file" class="file" name="file" />
-                </p>
+                    <div>
+                        <input type="radio" class="radio" name="radio-button" value="Disabled Radio" disabled="disabled" />
+                        <label for="radio-button">Disabled Radio</label>
+                    </div>
 
-                <p><input class="button" type="submit" value="Submit" /></p>
+                    <div>
+                        <input type="radio" class="radio" name="radio-button" value="Disabled Radio Checked" disabled="disabled" checked />
+                        <label for="radio-button">Disabled Radio Checked</label>
+                    </div>
 
-                <p><input class="button" type="submit" value="Disabled Submit" disabled/></p>
 
-                <p><button type="button">Button</button></p>
+                </fieldset>
 
-                <p><button type="button" disabled>Button</button></p>
+                <fieldset>
+                    <legend>Checkboxes:</legend>
+
+                    <div>
+                        <input type="checkbox" id="checkbox-1" class="checkbox" name="checkboxes" value="Checkbox 1" />
+                        <label for="checkbox-1">Checkbox 1</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="checkbox-2" class="checkbox" name="checkboxes" value="Checkbox 2" />
+                        <label for="checkbox-2">Checkbox 2</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="checkbox-3" class="checkbox" name="checkboxes" value="Disabled checkbox" disabled="disabled" />
+                        <label for="checkbox-3">Disabled Checkbox</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="checkbox-4" class="checkbox" name="checkboxes" value="Disabled checkbox" disabled="disabled" checked />
+                        <label for="checkbox-4">Disabled Checkbox Checked</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <label for="password">Password:</label>
+                    <input type="password" class="password" id="password" name="password" />
+                </fieldset>
+
+                <fieldset>
+                    <label for="file-input">File Input:</label>
+                    <input type="file" class="file" name="file" id="file-input" />
+                </fieldset>
+
+                <fieldset>
+                    <input class="button" type="submit" value="Submit" />
+                    <input class="button" type="submit" value="Disabled Submit" disabled/>
+                    <button type="button">Button</button>
+                    <button type="button" disabled>Button</button>
+                </fieldset>
             </form>
         </section>
 
