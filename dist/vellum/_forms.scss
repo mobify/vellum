@@ -38,17 +38,10 @@ textarea,
 [type="text"],
 [type="search"],
 [type="password"],
-[type="datetime"],
-[type="datetime-local"],
-[type="date"],
-[type="month"],
-[type="time"],
-[type="week"],
-[type="number"],
-[type="email"],
-[type="url"],
 [type="tel"],
-[type="color"] {
+[type="url"],
+[type="number"],
+[type="email"] {
     width: 100%;
     height: 40px;
     padding: 10px 15px;
