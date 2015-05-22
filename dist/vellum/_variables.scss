@@ -64,10 +64,6 @@ $font-color: $neutral-70;
 $link-color: $accent-color;
 $active-link-color: $dark-accent-color;
 
-// Background and border colors
-$background-color: white;
-$border-color: $neutral-40;
-
 
 // Gradients
 // ---
@@ -83,13 +79,14 @@ $accent-gradient: linear-gradient($light-accent-color, $accent-color);
 // Appearance
 // ---
 
-$border-radius: 4px;
-$focus-color: $accent-color;
 $input-horizontal-padding: $unit;
 $input-vertical-padding: $unit;
+$border-color: $neutral-40;
+$border-radius: 4px;
 $input-background-color: #fff;
 $input-disabled-color: $neutral-40;
 $input-disabled-background: $neutral-30;
+$focus-color: $accent-color;
 
 
 // Layer (z-index)
