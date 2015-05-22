@@ -84,10 +84,12 @@ $accent-gradient: linear-gradient($light-accent-color, $accent-color);
 // ---
 
 $border-radius: 4px;
+$focus-color: $accent-color;
+$input-horizontal-padding: $unit;
+$input-vertical-padding: $unit;
 $input-background-color: #fff;
 $input-disabled-color: $neutral-40;
 $input-disabled-background: $neutral-30;
-$focus-color: $accent-color;
 
 
 // Layer (z-index)
@@ -105,3 +107,4 @@ $layer-30: 1000; // modal dialog or similar
 // Quick ways to write properties that you re-use often.
 
 $border: 1px solid $border-color;
+$input-padding: $input-vertical-padding $input-horizontal-padding;
