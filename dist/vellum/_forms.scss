@@ -204,29 +204,29 @@ button,
 [disabled] {
     opacity: 1;
 
-    background: $input-disabled-background;
+    background: $disabled-input-background-color;
 
-    color: $input-disabled-color;
+    color: $disabled-input-color;
 
-    -webkit-text-fill-color: $input-disabled-color; // 1
+    -webkit-text-fill-color: $disabled-input-color; // 1
 
     // 2
     &:active,
     &:checked {
-        border-color: $input-disabled-color;
+        border-color: $disabled-input-color;
 
-        background: $input-disabled-background;
+        background: $disabled-input-background-color;
     }
 
     // 3
     &:active,
     &:checked {
         &::after {
-            color: $input-disabled-color;
+            color: $disabled-input-color;
         }
     }
 
     &[type="radio"]:after {
-        background-color: $input-disabled-color;
+        background-color: $disabled-input-color;
     }
 }

@@ -12,8 +12,8 @@
 // Layout
 // ---
 
-// Basic unit for spacing and alignment of elements. Suggested value: 6 to 12px.
-// Apply in whole or half multiples.
+// Basic unit for spacing and alignment; 6 to 12px recommended. Apply in whole
+// or half multiples.
 $unit: 10px !default;
 
 // Standard tap-target size
@@ -59,11 +59,6 @@ $error-color: #c0392b; // red
 $light-error-color: lighten($error-color, 15%);
 $dark-error-color: darken($error-color, 15%);
 
-// Text colors
-$font-color: $neutral-70;
-$link-color: $accent-color;
-$active-link-color: $dark-accent-color;
-
 
 // Gradients
 // ---
@@ -79,14 +74,21 @@ $accent-gradient: linear-gradient($light-accent-color, $accent-color);
 // Appearance
 // ---
 
-$input-horizontal-padding: $unit;
-$input-vertical-padding: $unit;
+$font-color: $neutral-70;
+
+$link-color: $accent-color;
+$active-link-color: $dark-accent-color;
+
+$focus-color: $accent-color;
+
 $border-color: $neutral-40;
 $border-radius: 4px;
+
 $input-background-color: #fff;
-$input-disabled-color: $neutral-40;
-$input-disabled-background: $neutral-30;
-$focus-color: $accent-color;
+$disabled-input-color: $neutral-40;
+$disabled-input-background-color: $neutral-30;
+$horizontal-input-padding: $unit;
+$vertical-input-padding: $unit;
 
 
 // Layer (z-index)
@@ -98,10 +100,10 @@ $layer-20: 100;  // modal shade or similar
 $layer-30: 1000; // modal dialog or similar
 
 
-// Shorthand Variables
+// Shorthand
 // ---
 //
 // Quick ways to write properties that you re-use often.
 
 $border: 1px solid $border-color;
-$input-padding: $input-vertical-padding $input-horizontal-padding;
+$input-padding: $vertical-input-padding $horizontal-input-padding;
