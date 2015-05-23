@@ -94,10 +94,13 @@ $vertical-input-padding: $unit;
 // Layer (z-index)
 // ---
 
-$layer-00: 1;    // background
-$layer-10: 10;   // icon or other ui element
-$layer-20: 100;  // modal shade or similar
-$layer-30: 1000; // modal dialog or similar
+// Organizes z-index usage by name. Values can be incremented/decremented
+// slightly as necessary. eg. $stage-layer + 1;
+
+$backdrop-layer:  1;    // background
+$stage-layer:     10;   // icon or other ui element
+$orchestra-layer: 100;  // modal shade or similar
+$frontrow-layer:  1000; // modal dialog or similar
 
 
 // Shorthand
