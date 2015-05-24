@@ -94,8 +94,6 @@ input[type="search"] {
 //    If you want to style this select box, delete this line
 
 select {
-    border-color: darken($border-color, 0.25);
-
     -webkit-appearance: menulist-button; // 1
 }
 
