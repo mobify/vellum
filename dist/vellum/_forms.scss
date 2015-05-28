@@ -43,7 +43,7 @@ textarea,
 [type="number"],
 [type="email"] {
     width: 100%;
-    height: 40px;
+    min-height: $tap-size;
     padding: $input-padding;
     border: $border;
 
@@ -69,10 +69,6 @@ textarea,
     }
 }
 
-textarea {
-    height: auto;
-}
-
 
 // Search input
 // ---
@@ -90,10 +86,11 @@ input[type="search"] {
 // Select
 // ---
 //
-// 1. Turn Select Appearance back on.
-//    If you want to style this select box, delete this line
+// 1. Restore browser default styling. If you’re taking full control of select
+//    styling, remove both these lines.
 
 select {
+    height: $tap-size; // 1
     -webkit-appearance: menulist-button; // 1
 }
 
@@ -176,6 +173,7 @@ select {
 button,
 [type="submit"] {
     display: block;
+    min-height: $tap-size;
     padding: $input-padding;
     border: 1px solid darken($border-color, 0.25);
 
