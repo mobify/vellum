@@ -1,173 +1,112 @@
 // Variables
 // ===
 //
-// Variables are formatted using the following rules:
-//
-// * Names must be lowercase and dash-separated (kebab-case).
-//
-// * Names should represent properties or applications as closely as possible
-//
-// * Modifiers, qualifiers, or applications should be prepended to the variable
-//   name. e.g. $form-family (bad) vs. $form-font-family (better)
-//
-// * Variables without a qualifier are considered “base” variables,
-//   i.e. the default value for that type, e.g. $font-size, $brand-color,
-//   $neutral-50.
-//
-// * Variables with qualifiers at the beginning are considered “variations” on a
-//   base variable, e.g. $small-font-size, $light-brand-color.
-//
-// * Neutral variables use a scale defined in multiples of 10
-//   from $neutral-30 (lightest) to $neutral-70 (darkest). Their value can be changed
-//   according to the project needs but variable names should remain the same.
-//   This provides room to adjust values without changing variable names,
-//   but allows users to use more neutral variables. Additional variables can be
-//   inserted between, below or above these values depending on the colour intensity
-//   and be named $neutral-55, $neutral-25, etc.
+// - Names should be lowercase and dash-separated;
+// - Qualifiers should be added to the beginning of related variables: use
+//   `$small-font-size`, not `$font-size-small`;
+// - Numeric scales should use increments of 10; these numbers are arbitrary and
+//   should not map to actual values. If really necessary, additional values can
+//   be added in between, e.g. $neutral-15 between 10 and 20.
+
+
+// Layout
+// ---
+
+// Basic unit for spacing and alignment; 6 to 12px recommended. Apply in whole
+// or half multiples.
+$unit: 10px !default;
+
+// Standard tap-target size
+$tap-size: 45px !default;
 
 
 // Typography
 // ---
 
-$sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif: Georgia, Times, "Times New Roman", serif;
-
-$font-family: $sans-serif;
+$font-family: 'Helvetica Neue', 'Roboto', sans-serif;
 $header-font-family: $font-family;
-
 $font-size: 14px;
-$leading-ratio: 1.5;
-$line-height: $font-size * $leading-ratio;
+$line-height: 20px;
 
 
-// Colors
+// Color palette
 // ---
 
 // Neutrals
-$neutral-30: #E8E8E8;
-$neutral-40: #BBB;
+$neutral-30: #e8e8e8;
+$neutral-40: #bbb;
 $neutral-50: #888;
 $neutral-60: #555;
 $neutral-70: #333;
 
-// Brand Colors
+// Brand colors
 $brand-color: #3498db; // blue
 $light-brand-color: lighten($brand-color, 15%);
 $dark-brand-color: darken($brand-color, 15%);
 
-// Accent Colors
+// Accent colors
 $accent-color: #16a085; // turquoise
 $light-accent-color: lighten($accent-color, 15%);
 $dark-accent-color: darken($accent-color, 15%);
 
-// Success Colors
+// Success colors
 $success-color: #27ae60; // green
 $light-success-color: lighten($success-color, 15%);
 $dark-success-color: darken($success-color, 15%);
 
-// Error Colors
+// Error colors
 $error-color: #c0392b; // red
 $light-error-color: lighten($error-color, 15%);
 $dark-error-color: darken($error-color, 15%);
 
-// Disabled Color
-$disabled-color: $neutral-40;
 
-// Font Colors
-$font-color: $neutral-70;
-
-// Text Link Colors
-$link-color: $accent-color;
-$active-link-color: $dark-accent-color;
-
-// Background Colors
-$background-color: white;
-
-// Borders
-$border-color: $neutral-40;
-
-
-// Gradient Colors
+// Gradients
 // ---
 //
-// Variables containing all of the gradients used in the site
-// e.g. background-image: $light-neutral-gradient;
-//
-// To reverse a gradient, you can use the Spline function `reverse-gradient()`
-// e.g. background-image: reverse-gradient($neutral-gradient);
+// Note: Spline provides a handy function for reversing a gradient,
+// e.g. `reverse-gradient($neutral-gradient)`;
 
-// Neutral Gradient
 $neutral-gradient: linear-gradient(white, $neutral-30);
-
-// Brand Gradient
 $brand-gradient: linear-gradient($light-brand-color, $brand-color);
-
-// Accent Gradient
 $accent-gradient: linear-gradient($light-accent-color, $accent-color);
 
 
 // Appearance
 // ---
 
+$font-color: $neutral-70;
+
+$link-color: $accent-color;
+$active-link-color: $dark-accent-color;
+
+$focus-color: $accent-color;
+
+$border-color: $neutral-40;
 $border-radius: 4px;
 
+$input-background-color: #fff;
+$disabled-input-color: $neutral-40;
+$disabled-input-background-color: $neutral-30;
+$horizontal-input-padding: $unit;
+$vertical-input-padding: $unit;
 
-// Layout
+
+// Layer (z-index)
 // ---
 
-// We define `$unit` as the basic measure for spacing and alignment of elements.
-// For best results, set a value between 6px and 12px and apply `$unit` in whole
-// and half multiples only. If you’re intentionally breaking from the design
-// system for a certain element, don’t use `$unit`.
-$unit: 10px;
+// Organizes z-index usage by name. Values can be incremented/decremented
+// slightly as necessary. eg. $stage-layer + 1;
 
-// Deprecated – these will be removed from Vellum in a future release. Feel free
-// to re-define them in your project if you prefer them.
-$h-space: $unit * 2;
-$v-space: $unit;
+$backdrop-layer:  1;    // background
+$stage-layer:     10;   // icon or other ui element
+$orchestra-layer: 100;  // modal shade or similar
+$frontrow-layer:  1000; // modal dialog or similar
 
 
-// Form Specific Variables
-// ---
-
-$forms-border-color: $border-color;
-$forms-input-color: #fff;
-$forms-active-border-color: darken($border-color, 10);
-$forms-focus-border-color: $accent-color;
-$forms-border-radius: $border-radius;
-$forms-font-size: $font-size;
-$forms-font-family: $font-family;
-$forms-checked-background: $neutral-30;
-$forms-disabled-color: $disabled-color;
-$forms-disabled-background: $neutral-30;
-$forms-placeholder-color: $neutral-50;
-
-
-// Layers and `z-index`
+// Shorthand
 // ---
 //
-// Organizes z-index usage by providing a set of named layers. Values can be
-// incremented/decremented slightly as necessary. eg. $stage-layer + 1;
-//
-// 1. “backdrop” should be used for purposefully placing an item behind a staged item. Likely
-//    a background for an element.
-// 2. "stage" should be your first choice for moving an item in front of others. Likely an icon or
-//    an interface element.
-// 3. "orchestra" should be used to explicitly place content in front of the stage.
-//    Likely a modal shield.
-// 4. "frontrow" is your last resort for moving content forward. Likely a
-//    modal dialog.
-
-$backdrop-layer:  1;    // 1
-$stage-layer:     10;   // 2
-$orchestra-layer: 100;  // 3
-$frontrow-layer:  1000; // 4
-
-
-// Shorthand Variables
-// ---
-//
-// This is a place to collect quick ways to write certain properties that you
-// re-use often
+// Quick ways to write properties that you re-use often.
 
 $border: 1px solid $border-color;
+$input-padding: $vertical-input-padding $horizontal-input-padding;
