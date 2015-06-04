@@ -48,7 +48,6 @@ textarea,
     border: $border;
 
     border-radius: $forms-border-radius;
-
     background-color: $forms-input-color;
 
     line-height: $line-height;
@@ -175,6 +174,10 @@ select {
 
 // Buttons
 // ---
+//
+// 1. Android does not always respect taps on buttons styled with
+//    `-webkit-appearance: none`. This ensures the system treats them as
+//    clickable.
 
 button,
 [type="submit"] {
@@ -183,6 +186,8 @@ button,
     border: 1px solid darken($forms-border-color, 0.25);
 
     background: $neutral-30 $neutral-gradient;
+
+    cursor: pointer; // 1
 
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-appearance: none;
