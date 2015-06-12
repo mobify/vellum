@@ -2,8 +2,7 @@
 @import "../dist/variables";
 
 // Import dev dependencies
-@import "bower_components/modularized-normalize-scss/normalize";
-@import "bower_components/spline/dist/spline";
+@import "level/level";
 
 // Import base styles
 @import "../dist/base";
