@@ -1,3 +1,32 @@
+2.0.0
+    - Briefer and clearer variable naming guidelines.
+    - Improve reliability and consistency of form element styles
+    - [Breaking] Variables stylesheet is now a separate import
+    - [Breaking] Base styles renamed from _vellum.scss to _base.scss
+    - [Breaking] Many variables removed or renamed:
+        `$sans-serif`: removed; use $font-family
+        `$serif`: removed
+        `$leading-ratio`: removed; use $line-height or calculate inline
+        `$disabled-color`: removed
+        `$background-color`: removed
+        `$v-space` and `$h-space`: removed, were deprecated; use $unit by default
+        `$forms-border-color`: removed; use $border-color by default
+        `$forms-input-color`: renamed → $input-background-color
+        `$forms-active-border-color`: removed
+        `$forms-focus-border-color`: renamed → $focus-color
+        `$forms-border-radius`: removed; use $border-radius by default
+        `$forms-font-size`: removed; use $font-size by default
+        `$forms-font-family`: removed; use $font-family by default
+        `$forms-checked-background`: removed
+        `$forms-disabled-color`: renamed → $disabled-input-color
+        `$forms-disabled-background`: renamed → $disabled-input-background-color
+        `$forms-placeholder-color`: removed
+    - New variables:
+        `$tap-size`
+        `$horizontal-input-padding`
+        `$vertical-input-padding`
+        `$input-padding`
+
 1.1.1
     - Text indent removed from `select` element
     - Disabled form styles added
