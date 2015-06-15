@@ -1,11 +1,14 @@
 {
   "name": "vellum",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "homepage": "https://github.com/mobify/vellum",
   "authors": [
-    "Kyle Peatt <kpeatt@gmail.com>"
+    "Mobify"
   ],
-  "main": "dist/_vellum.scss",
+  "main": [
+    "dist/_base.scss",
+    "dist/_variables.scss"
+  ],
   "license": "MIT",
   "private": true,
   "ignore": [
