@@ -1,6 +1,12 @@
-@import "bower_components/modularized-normalize-scss/_normalize.scss";
-@import "bower_components/spline/dist/_spline.scss";
-@import "../dist/_vellum.scss";
+// Variables should always be imported first.
+@import "../dist/variables";
+
+// Import dev dependencies
+@import "bower_components/modularized-normalize-scss/normalize";
+@import "bower_components/spline/dist/spline";
+
+// Import base styles
+@import "../dist/base";
 
 // Test CSS
 
