@@ -1,3 +1,6 @@
+2.0.1
+    - Fix some variables that had `!default` flags by mistake.
+
 2.0.0
     - Briefer and clearer variable naming guidelines.
     - Improve reliability and consistency of form element styles
