@@ -17,7 +17,10 @@ module.exports = function(grunt) {
         dist: {
             options: {
                 style: 'nested',
-                sourcemap: 'none'
+                sourcemap: 'none',
+                loadPath: [
+                  'bower_components',
+                ]
             },
             files: {
                 'test/test.css': 'test/test.scss'
