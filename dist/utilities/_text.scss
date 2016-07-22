@@ -1,0 +1,71 @@
+// Text utils
+// ===
+
+$u-text__success: if(variable-exists(success-color), $success-color, green) !default;
+$u-text__error: if(variable-exists(error-color), $error-color, red) !default;
+
+
+// All Caps
+// ---
+//
+// Set text uppercase, letterspaced for legibility.
+
+.u-text-all-caps,
+%u-text-all-caps {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+// Text Flow Alignment
+// ---
+//
+// Writing-direction independent text alignment. For RTL stylesheets, re-define
+// these styles with the opposite direction. Templates need not be changed.
+
+.u-text-align-start,
+%u-text-align-start {
+    text-align: left !important;
+}
+
+.u-text-align-center,
+%u-text-align-center {
+    text-align: center !important;
+}
+
+.u-text-align-end,
+%u-text-align-end {
+    text-align: right !important;
+}
+
+
+// Vertical Alignment
+// ---
+//
+// Vertical aligment of text and replaced (inline-block) elements within a line.
+
+.u-align-middle,
+%u-align-middle {
+    vertical-align: middle !important;
+}
+
+.u-align-baseline,
+%u-align-baseline {
+    vertical-align: baseline !important;
+}
+
+
+// Colour accents
+// ---
+//
+// When we need to mark text with colour
+
+.u-text-success,
+%u-text-success {
+    color: $u-text__success;
+}
+
+.u-text-error,
+%u-text-error {
+    color: $u-text__error;
+}
