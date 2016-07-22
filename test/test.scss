@@ -6,6 +6,7 @@
 @import "bower_components/spline/dist/spline";
 
 // Import base styles
+@import "../dist/utilities";
 @import "../dist/base";
 
 // Test CSS
@@ -120,5 +121,10 @@ ol.default {
 
     &.c--dark-error-color {
         background: $dark-error-color;
+    }
+
+    &.c--no-dimensions {
+        width: auto;
+        height: auto;
     }
 }
