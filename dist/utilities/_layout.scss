@@ -1,0 +1,67 @@
+// Layout utils
+// ===
+
+
+// Floats
+// ---
+//
+// Writing-direction independent floats. For RTL stylesheets, re-define
+// these styles with the opposite direction. Templates need not be changed.
+
+.u-float-start,
+%u-float-start {
+    float: left !important;
+}
+
+.u-float-end,
+%u-float-end {
+    float: right !important;
+}
+
+
+// Contain floats
+// ---
+//
+// Contain all floated children and their margins.
+//
+// Dependencies:
+//
+// - Mixin `clearfix` from Spline.
+
+@if mixin-exists(clearfix) {
+    .u-clearfix,
+    %u-clearfix {
+        @include clearfix;
+    }
+} @else {
+    @warn 'Mixin `clearfix` from Spline not found. Run `bower install` and ensure the clearfix partial is imported in your project.';
+}
+
+
+// Positioning context
+// ---
+//
+// Create a new positioning context.
+
+.u-position-context,
+%u-position-context {
+    position: relative !important;
+}
+
+
+// Block Formatting Context
+// ---
+//
+// Create a new Block Formatting Context. BFCs won’t overlap adjacent floats and
+// will contain floated children and their margins.
+//
+// N.B. Will clip overflow.
+//
+// Attribution:
+//
+// - https://github.com/suitcss/utils-layout
+
+.u-block-context,
+%u-block-context {
+    overflow: hidden !important;
+}
